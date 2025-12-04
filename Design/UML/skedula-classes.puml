@@ -1,0 +1,167 @@
+@startuml
+skinparam defaultFontName Consolas
+skinparam defaultFontSize 16
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment left
+hide footbox
+skinparam dpi 150
+skinparam LifelineStrategy solid
+'skinparam linetype ortho
+skinparam ClassBackgroundColor white
+'left to right direction
+
+title Skedula - classes
+package Domain
+{
+    +enum Priority
+    {
+        Low, 
+        Normal, 
+        High, 
+        Critical
+    }
+
+    note left of Priority
+        Or just numbers like TDL
+    end note
+
+    +enum Status
+    {
+        Pending, 
+        Done, 
+        Archived
+    }
+
+    +class SkedNode
+    {
+        +SkedId: int
+        +Title: string
+        +Descrition: string
+        +CreationTime: DateTime
+        +LastModified: DateTime
+        +Priority: Priority
+        +IconKey: string
+        +ParentId : int?
+        +ChildrenIds: List<int>
+    }
+
+    +class ExtendedSkedNode
+    {
+        +Status : Status
+        +Tags : List<string>
+        +IsCollapsed : bool
+        +OrderIndex: int
+        +CustomFields : Dictionary<string,string>
+    }
+
+    note top of ExtendedSkedNode
+      suggested by ChatGPT
+    end note
+
+    SkedNode <|--ExtendedSkedNode
+
+    +class SkedTree
+    {
+        +Nodes: List<SkedNode>
+        +Title: string
+        +Descrition: string
+        +CreationTime: DateTime
+        +LastModified: DateTime
+
+        +FindNode(nodeId: int): SkedNode
+    }
+
+    note top of SkedTree
+        root Nodes
+    end note
+}
+
+package Management
+{
+    +class Settings
+    {
+
+    }
+
+    +interface ISkedManager
+    {
+        +SkedTree: SkedTree
+        -_skedTreeFilename: string
+        +SelectedNode: SkedNode
+        +Settings: Settings
+        -_settingsFileName: string
+        ---
+        SkedTree management
+        ---
+        +NewSkedTree() : void
+        +LoadSkedTree(): void
+        +SaveSkedTree(): void
+        +SaveSkedTreeAs(fileName: string): void
+        ---
+        SkedNode management
+        ---
+        +AddSkedNode()
+        +ReplaceSkedNode()
+        +DeleteSkedNode()
+        ---
+        Settings management
+        ----
+        +UpdateSettings(): void
+        +LoadSettings(): void
+    }
+
+    +class BasicSkedManager
+    {
+
+    }
+    
+    ISkedManager <|--BasicSkedManager
+}
+
+package Gui
+{
+    package Interfaces
+    {
+        +interface ISkedNodeDevice
+        {
+            +SkedNode : SkedNode {get;set;}
+        }
+
+        +interface ISkedTreeDevice
+        {
+            +Display(skedTree: SkedTree) : void
+            +SelectedNode: SkedNode
+        }
+    }
+
+    package Controls
+    {
+        +class SkedTreeControl
+        {
+        }
+
+        +class SimpleSkedNodeControl
+        {
+        }
+
+        +class ExtendedSkedNodeControl
+        {
+        }
+    }
+
+    package Dialogs
+    {
+        +class SimpleSkedNodeDialog
+        {
+        }
+    }
+
+    ISkedTreeDevice <|- SkedTreeControl
+    ISkedNodeDevice <|- SimpleSkedNodeControl
+    ISkedNodeDevice <|- ExtendedSkedNodeControl
+    ISkedNodeDevice <|- SimpleSkedNodeDialog
+}
+
+Domain --[hidden] Management
+Management --[hidden] Gui
+@enduml

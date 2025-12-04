@@ -1,0 +1,1868 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="2133.6792"
+   preserveAspectRatio="none"
+   version="1.1"
+   viewBox="0 0 3827.3925 2132.8538"
+   width="3827.5972"
+   zoomAndPan="magnify"
+   id="svg85"
+   sodipodi:docname="skedula-classes.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview85"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.52585226"
+     inkscape:cx="1913.0849"
+     inkscape:cy="1066.8396"
+     inkscape:window-width="2560"
+     inkscape:window-height="1373"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg85" />
+  <defs
+     id="defs1" />
+  <text
+     fill="#000000"
+     font-family="Consolas"
+     font-size="21.875px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="212.5"
+     x="2805.4688"
+     y="37.4786"
+     id="text1"
+     transform="translate(-3.906225,-22.386131)">Skedula - classes</text>
+  <g
+     id="cluster_Domain"
+     transform="translate(-3.906225,-22.386131)">
+    <path
+       d="m 13.2813,67.8009 h 85.9375 a 5.8594,5.8594 0 0 1 3.9062,3.9063 l 10.9375,34.7412 h 1811.7188 a 3.9063,3.9063 0 0 1 3.9062,3.9062 v 950.4151 a 3.9063,3.9063 0 0 1 -3.9062,3.9062 H 13.2813 A 3.9063,3.9063 0 0 1 9.375,1060.7697 V 71.7072 a 3.9063,3.9063 0 0 1 3.9063,-3.9063"
+       fill="none"
+       style="stroke:#000000;stroke-width:2.34375"
+       id="path1" />
+    <line
+       style="stroke:#000000;stroke-width:2.34375"
+       x1="9.375"
+       x2="114.0625"
+       y1="106.4484"
+       y2="106.4484"
+       id="line1" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="84.375"
+       x="15.625"
+       y="95.901497"
+       id="text2">Domain</text>
+  </g>
+  <g
+     id="elem_Priority"
+     transform="translate(-3.906225,-22.386131)">
+    <rect
+       codeLine="15"
+       fill="#ffffff"
+       height="192.0898"
+       id="Priority"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="179.6875"
+       x="1682.0312"
+       y="211.5509" />
+    <circle
+       cx="1705.4688"
+       cy="236.5509"
+       fill="#eb937f"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse7"
+       r="17.1875" />
+    <path
+       d="m 1704.1504,237.4054 v 3.6621 h 6.3965 v -1.3428 q 0,-0.9033 0.3418,-1.2939 0.3418,-0.3906 0.9033,-0.3906 0.5615,0 0.9033,0.3906 0.3418,0.3906 0.3418,1.2939 v 3.8575 h -11.7676 q -0.9033,0 -1.2939,-0.3541 -0.3906,-0.354 -0.3906,-0.9155 0,-0.5371 0.3906,-0.8911 0.3906,-0.354 1.2939,-0.354 h 0.3907 v -9.79 h -0.3907 q -0.9033,0 -1.2939,-0.3418 -0.3906,-0.3418 -0.3906,-0.9034 0,-0.5615 0.3906,-0.9155 0.3906,-0.354 1.2939,-0.354 l 11.2305,0.0244 v 3.8086 q 0,0.8789 -0.3418,1.2696 -0.3418,0.3906 -0.9033,0.3906 -0.5615,0 -0.9155,-0.3784 -0.354,-0.3785 -0.354,-1.2818 v -1.3183 h -5.835 v 3.6132 h 2.1973 q 0,-0.9765 0.1953,-1.2451 0.3662,-0.6103 1.0742,-0.6103 0.5371,0 0.8911,0.3906 0.354,0.3906 0.354,1.2939 v 2.8809 q 0,0.8057 -0.1953,1.0986 -0.3906,0.5616 -1.0498,0.5616 -0.708,0 -1.0742,-0.586 -0.1953,-0.2929 -0.1953,-1.2695 z"
+       fill="#000000"
+       id="path7" />
+    <circle
+       cx="1735.1562"
+       cy="235.7697"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse8"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="1744.5312"
+       y="246.8903"
+       id="text8">Priority</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="1683.5938"
+       x2="1860.1562"
+       y1="261.5509"
+       y2="261.5509"
+       id="line8" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="56.25"
+       x="1691.4062"
+       y="292.77649"
+       id="text9">Low,</text>
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="98.4375"
+       x="1691.4062"
+       y="322.04901"
+       id="text10">Normal,</text>
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="70.3125"
+       x="1691.4062"
+       y="351.32141"
+       id="text11">High,</text>
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="1691.4062"
+       y="380.5939"
+       id="text12">Critical</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="1683.5938"
+       x2="1860.1562"
+       y1="391.14069"
+       y2="391.14069"
+       id="line12" />
+  </g>
+  <g
+     id="elem_GMN4"
+     transform="translate(-3.906225,-22.386131)">
+    <path
+       d="m 1257.0313,284.9884 v 44.8975 h 370.3125 v -15.9912 l 54.375,-6.25 -54.375,-6.25 v -0.7813 l -15.625,-15.625 h -354.6875"
+       fill="#feffdd"
+       style="stroke:#181818;stroke-width:0.78125"
+       id="path12" />
+    <path
+       d="m 1611.7188,284.9884 v 15.625 h 15.625 l -15.625,-15.625"
+       fill="#feffdd"
+       style="stroke:#181818;stroke-width:0.78125"
+       id="path13" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="337.5"
+       x="1266.4062"
+       y="317.77649"
+       id="text13">Or just numbers like TDL</text>
+  </g>
+  <g
+     id="elem_Status"
+     transform="translate(-3.906225,-22.386131)">
+    <rect
+       codeLine="27"
+       fill="#ffffff"
+       height="162.8174"
+       id="Status"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="151.5625"
+       x="1050.7812"
+       y="226.3947" />
+    <circle
+       cx="1074.2188"
+       cy="251.3947"
+       fill="#eb937f"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse13"
+       r="17.1875" />
+    <path
+       d="m 1072.9004,252.2491 v 3.6622 h 6.3965 v -1.3428 q 0,-0.9033 0.3418,-1.294 0.3418,-0.3906 0.9033,-0.3906 0.5615,0 0.9033,0.3906 0.3418,0.3907 0.3418,1.294 v 3.8574 h -11.7676 q -0.9033,0 -1.2939,-0.354 -0.3906,-0.354 -0.3906,-0.9155 0,-0.5371 0.3906,-0.8911 0.3906,-0.354 1.2939,-0.354 h 0.3907 v -9.7901 h -0.3907 q -0.9033,0 -1.2939,-0.3418 -0.3906,-0.3418 -0.3906,-0.9033 0,-0.5615 0.3906,-0.9155 0.3906,-0.354 1.2939,-0.354 l 11.2305,0.0244 v 3.8086 q 0,0.8789 -0.3418,1.2695 -0.3418,0.3906 -0.9033,0.3906 -0.5615,0 -0.9155,-0.3784 -0.354,-0.3784 -0.354,-1.2817 v -1.3184 h -5.835 v 3.6133 h 2.1973 q 0,-0.9766 0.1953,-1.2451 0.3662,-0.6104 1.0742,-0.6104 0.5371,0 0.8911,0.3907 0.354,0.3906 0.354,1.2939 v 2.8809 q 0,0.8056 -0.1953,1.0986 -0.3906,0.5615 -1.0498,0.5615 -0.708,0 -1.0742,-0.5859 -0.1953,-0.293 -0.1953,-1.2696 z"
+       fill="#000000"
+       id="path14" />
+    <circle
+       cx="1103.9062"
+       cy="250.6134"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse14"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="84.375"
+       x="1113.2812"
+       y="261.73401"
+       id="text14">Status</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="1052.3438"
+       x2="1200.7812"
+       y1="276.39471"
+       y2="276.39471"
+       id="line14" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="1060.1562"
+       y="307.62021"
+       id="text15">Pending,</text>
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="70.3125"
+       x="1060.1562"
+       y="336.8927"
+       id="text16">Done,</text>
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="1060.1562"
+       y="366.16519"
+       id="text17">Archived</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="1052.3438"
+       x2="1200.7812"
+       y1="376.71201"
+       y2="376.71201"
+       id="line17" />
+  </g>
+  <g
+     id="elem_SkedNode"
+     transform="translate(-3.906225,-22.386131)">
+    <rect
+       codeLine="34"
+       fill="#ffffff"
+       height="338.45209"
+       id="SkedNode"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="350"
+       x="645.3125"
+       y="138.1134" />
+    <circle
+       cx="748.82812"
+       cy="163.1134"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse17"
+       r="17.1875" />
+    <path
+       d="m 752.832,156.7657 q 0.2442,-0.3173 0.5127,-0.476 0.2686,-0.1587 0.586,-0.1587 0.5615,0 0.9033,0.3784 0.3418,0.3784 0.3418,1.2817 v 2.1241 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3784 -0.9033,0.3784 -0.4883,0 -0.8057,-0.2685 -0.293,-0.293 -0.4395,-1.0498 -0.0976,-0.5127 -0.3417,-0.8057 -0.5127,-0.5371 -1.4039,-0.8667 -0.8911,-0.3296 -1.7944,-0.3296 -1.123,0 -2.063,0.4883 -0.9399,0.4883 -1.6601,1.5869 -0.7203,1.0986 -0.7203,2.6123 v 1.6113 q 0,1.8067 1.3062,3.0152 1.3062,1.2085 3.6499,1.2085 1.3916,0 2.3438,-0.3662 0.5615,-0.2198 1.1962,-0.879 0.3907,-0.3906 0.6104,-0.5004 0.2197,-0.1099 0.5127,-0.1099 0.4883,0 0.8667,0.3784 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0987 -0.7324,0.8545 -1.9043,1.3427 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9277 -1.4404,-0.7324 -2.4536,-2.3071 -1.0132,-1.5748 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9155,-3.6499 0.9156,-1.6968 2.5269,-2.6123 1.6113,-0.9155 3.418,-0.9155 1.0742,0 2.0263,0.2563 0.9522,0.2564 1.7578,0.769 z"
+       fill="#000000"
+       id="path17" />
+    <circle
+       cx="788.67188"
+       cy="162.3322"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse18"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="798.04688"
+       y="173.4528"
+       id="text18">SkedNode</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="646.875"
+       x2="993.75"
+       y1="188.1134"
+       y2="188.1134"
+       id="line18" />
+    <circle
+       cx="662.5"
+       cy="211.3434"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse19"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="154.6875"
+       x="676.5625"
+       y="219.339"
+       id="text19">SkedId: int</text>
+    <circle
+       cx="662.5"
+       cy="240.6158"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse20"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="182.8125"
+       x="676.5625"
+       y="248.6115"
+       id="text20">Title: string</text>
+    <circle
+       cx="662.5"
+       cy="269.88831"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse21"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="253.125"
+       x="676.5625"
+       y="277.88391"
+       id="text21">Descrition: string</text>
+    <circle
+       cx="662.5"
+       cy="299.1608"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse22"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="309.375"
+       x="676.5625"
+       y="307.1564"
+       id="text22">CreationTime: DateTime</text>
+    <circle
+       cx="662.5"
+       cy="328.4332"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse23"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="309.375"
+       x="676.5625"
+       y="336.4288"
+       id="text23">LastModified: DateTime</text>
+    <circle
+       cx="662.5"
+       cy="357.70569"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse24"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="253.125"
+       x="676.5625"
+       y="365.70129"
+       id="text24">Priority: Priority</text>
+    <circle
+       cx="662.5"
+       cy="386.97809"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse25"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="676.5625"
+       y="394.97379"
+       id="text25">IconKey: string</text>
+    <circle
+       cx="662.5"
+       cy="416.25061"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse26"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="676.5625"
+       y="424.24619"
+       id="text26">ParentId : int?</text>
+    <circle
+       cx="662.5"
+       cy="445.5231"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse27"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="309.375"
+       x="676.5625"
+       y="453.51871"
+       id="text27">ChildrenIds: List&lt;int&gt;</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="646.875"
+       x2="993.75"
+       y1="464.06561"
+       y2="464.06561"
+       id="line27" />
+  </g>
+  <g
+     id="elem_ExtendedSkedNode"
+     transform="translate(-3.906225,-22.386131)">
+    <rect
+       codeLine="47"
+       fill="#ffffff"
+       height="221.3623"
+       id="ExtendedSkedNode"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="603.125"
+       x="579.6875"
+       y="791.2384" />
+    <circle
+       cx="753.51562"
+       cy="816.2384"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse28"
+       r="17.1875" />
+    <path
+       d="m 757.5195,809.8907 q 0.2442,-0.3173 0.5127,-0.476 0.2686,-0.1587 0.586,-0.1587 0.5615,0 0.9033,0.3784 0.3418,0.3784 0.3418,1.2817 v 2.1241 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3784 -0.9033,0.3784 -0.4883,0 -0.8057,-0.2685 -0.293,-0.293 -0.4395,-1.0498 -0.0976,-0.5127 -0.3417,-0.8057 -0.5127,-0.5371 -1.4039,-0.8667 -0.8911,-0.3296 -1.7944,-0.3296 -1.123,0 -2.063,0.4883 -0.9399,0.4883 -1.6601,1.5869 -0.7203,1.0986 -0.7203,2.6123 v 1.6113 q 0,1.8067 1.3062,3.0152 1.3062,1.2085 3.6499,1.2085 1.3916,0 2.3438,-0.3662 0.5615,-0.2198 1.1962,-0.879 0.3907,-0.3906 0.6104,-0.5004 0.2197,-0.1099 0.5127,-0.1099 0.4883,0 0.8667,0.3784 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0987 -0.7324,0.8545 -1.9043,1.3427 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9277 -1.4404,-0.7324 -2.4536,-2.3071 -1.0132,-1.5748 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9155,-3.6499 0.9156,-1.6968 2.5269,-2.6123 1.6113,-0.9155 3.418,-0.9155 1.0742,0 2.0263,0.2563 0.9522,0.2564 1.7578,0.769 z"
+       fill="#000000"
+       id="path28" />
+    <circle
+       cx="793.35938"
+       cy="815.45721"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse29"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="225"
+       x="802.73438"
+       y="826.57782"
+       id="text29">ExtendedSkedNode</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="581.25"
+       x2="1181.25"
+       y1="841.2384"
+       y2="841.2384"
+       id="line29" />
+    <circle
+       cx="596.875"
+       cy="864.46838"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse30"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="610.9375"
+       y="872.46399"
+       id="text30">Status : Status</text>
+    <circle
+       cx="596.875"
+       cy="893.74078"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse31"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="267.1875"
+       x="610.9375"
+       y="901.73651"
+       id="text31">Tags : List&lt;string&gt;</text>
+    <circle
+       cx="596.875"
+       cy="923.01331"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse32"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="253.125"
+       x="610.9375"
+       y="931.00891"
+       id="text32">IsCollapsed : bool</text>
+    <circle
+       cx="596.875"
+       cy="952.28583"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse33"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="610.9375"
+       y="960.28137"
+       id="text33">OrderIndex: int</text>
+    <circle
+       cx="596.875"
+       cy="981.55823"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse34"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="562.5"
+       x="610.9375"
+       y="989.55377"
+       id="text34">CustomFields : Dictionary&lt;string,string&gt;</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="581.25"
+       x2="1181.25"
+       y1="1000.1007"
+       y2="1000.1007"
+       id="line34" />
+  </g>
+  <g
+     id="elem_GMN10"
+     transform="translate(-3.906225,-22.386131)">
+    <path
+       d="m 275.7813,284.9884 v 44.8975 h 167.2656 l 355.25,461.3213 -342.75,-461.3213 h 134.2969 v -29.2725 l -15.625,-15.625 H 275.7813"
+       fill="#feffdd"
+       style="stroke:#181818;stroke-width:0.78125"
+       id="path34" />
+    <path
+       d="m 574.2188,284.9884 v 15.625 h 15.625 l -15.625,-15.625"
+       fill="#feffdd"
+       style="stroke:#181818;stroke-width:0.78125"
+       id="path35" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="281.25"
+       x="285.15631"
+       y="317.77649"
+       id="text35">suggested by ChatGPT</text>
+  </g>
+  <g
+     id="elem_SkedTree"
+     transform="translate(-3.906225,-22.386131)">
+    <rect
+       codeLine="62"
+       fill="#ffffff"
+       height="250.6348"
+       id="SkedTree"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="476.5625"
+       x="47.6563"
+       y="777.1759" />
+    <circle
+       cx="214.45309"
+       cy="802.1759"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse35"
+       r="17.1875" />
+    <path
+       d="m 218.457,795.8282 q 0.2442,-0.3173 0.5127,-0.476 0.2686,-0.1587 0.586,-0.1587 0.5615,0 0.9033,0.3784 0.3418,0.3784 0.3418,1.2817 v 2.1241 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3784 -0.9033,0.3784 -0.4883,0 -0.8057,-0.2685 -0.293,-0.293 -0.4395,-1.0498 -0.0976,-0.5127 -0.3417,-0.8057 -0.5127,-0.5371 -1.4039,-0.8667 -0.8911,-0.3296 -1.7944,-0.3296 -1.123,0 -2.063,0.4883 -0.9399,0.4883 -1.6601,1.5869 -0.7203,1.0986 -0.7203,2.6123 v 1.6113 q 0,1.8067 1.3062,3.0152 1.3062,1.2085 3.6499,1.2085 1.3916,0 2.3438,-0.3662 0.5615,-0.2198 1.1962,-0.879 0.3907,-0.3906 0.6104,-0.5004 0.2197,-0.1099 0.5127,-0.1099 0.4883,0 0.8667,0.3784 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0987 -0.7324,0.8545 -1.9043,1.3427 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9277 -1.4404,-0.7324 -2.4536,-2.3071 -1.0132,-1.5748 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9155,-3.6499 0.9156,-1.6968 2.5269,-2.6123 1.6113,-0.9155 3.418,-0.9155 1.0742,0 2.0263,0.2563 0.9522,0.2564 1.7578,0.769 z"
+       fill="#000000"
+       id="path36" />
+    <circle
+       cx="254.29691"
+       cy="801.39471"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse36"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="263.67191"
+       y="812.51532"
+       id="text36">SkedTree</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="49.2188"
+       x2="522.65631"
+       y1="827.1759"
+       y2="827.1759"
+       id="line36" />
+    <circle
+       cx="64.843803"
+       cy="850.40588"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse37"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="295.3125"
+       x="78.906303"
+       y="858.40149"
+       id="text37">Nodes: List&lt;SkedNode&gt;</text>
+    <circle
+       cx="64.843803"
+       cy="879.67828"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse38"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="182.8125"
+       x="78.906303"
+       y="887.67401"
+       id="text38">Title: string</text>
+    <circle
+       cx="64.843803"
+       cy="908.95081"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse39"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="253.125"
+       x="78.906303"
+       y="916.94641"
+       id="text39">Descrition: string</text>
+    <circle
+       cx="64.843803"
+       cy="938.22333"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse40"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="309.375"
+       x="78.906303"
+       y="946.21887"
+       id="text40">CreationTime: DateTime</text>
+    <circle
+       cx="64.843803"
+       cy="967.49573"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse41"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="309.375"
+       x="78.906303"
+       y="975.49127"
+       id="text41">LastModified: DateTime</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="49.2188"
+       x2="522.65631"
+       y1="986.03821"
+       y2="986.03821"
+       id="line41" />
+    <circle
+       cx="64.843803"
+       cy="1009.2682"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse42"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="435.9375"
+       x="78.906303"
+       y="1017.2638"
+       id="text42">FindNode(nodeId: int): SkedNode</text>
+  </g>
+  <g
+     id="elem_GMN15"
+     transform="translate(-3.906225,-22.386131)">
+    <path
+       d="m 47.6563,284.9884 v 44.8975 h 86.0468 L 254.2187,776.8478 146.2031,329.8859 h 74.8907 v -29.2725 l -15.625,-15.625 H 47.6563"
+       fill="#feffdd"
+       style="stroke:#181818;stroke-width:0.78125"
+       id="path42" />
+    <path
+       d="m 205.4688,284.9884 v 15.625 h 15.625 l -15.625,-15.625"
+       fill="#feffdd"
+       style="stroke:#181818;stroke-width:0.78125"
+       id="path43" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="140.625"
+       x="57.0313"
+       y="317.77649"
+       id="text43">root Nodes</text>
+  </g>
+  <g
+     id="link_SkedNode_ExtendedSkedNode"
+     transform="translate(-3.906225,-22.386131)">
+    <path
+       codeLine="60"
+       d="m 840.5383,505.4654 c 10.3594,100.5625 20.3367,197.4449 29.3992,285.398"
+       fill="none"
+       id="SkedNode-backto-ExtendedSkedNode"
+       style="stroke:#181818;stroke-width:1.5625" />
+    <polygon
+       fill="none"
+       points="831.2126,506.426 849.8639,504.5047 837.6563,477.4884 "
+       style="stroke:#181818;stroke-width:1.5625"
+       id="polygon80" />
+  </g>
+  <g
+     id="g85"
+     transform="translate(-1991.0156,592.78715)">
+    <g
+       id="cluster_Management">
+      <path
+         d="m 1996.0938,514.6759 h 142.1875 a 5.8594,5.8594 0 0 1 3.9062,3.9063 l 10.9375,34.7412 h 750.7813 a 3.9063,3.9063 0 0 1 3.9062,3.9062 v 977.7588 a 3.9063,3.9063 0 0 1 -3.9062,3.9063 h -907.8125 a 3.9063,3.9063 0 0 1 -3.9063,-3.9063 V 518.5822 a 3.9063,3.9063 0 0 1 3.9063,-3.9063"
+         fill="none"
+         style="stroke:#000000;stroke-width:2.34375"
+         id="path2" />
+      <line
+         style="stroke:#000000;stroke-width:2.34375"
+         x1="1992.1875"
+         x2="2153.125"
+         y1="553.32343"
+         y2="553.32343"
+         id="line2" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         font-weight="bold"
+         lengthAdjust="spacing"
+         textLength="140.625"
+         x="1998.4375"
+         y="542.77649"
+         id="text3">Management</text>
+    </g>
+    <g
+       id="elem_Settings">
+      <rect
+         codeLine="80"
+         fill="#ffffff"
+         height="75"
+         id="Settings"
+         rx="3.9063001"
+         ry="3.9063001"
+         style="stroke:#181818;stroke-width:0.78125"
+         width="179.6875"
+         x="2660.1562"
+         y="864.6759" />
+      <circle
+         cx="2683.5938"
+         cy="889.6759"
+         fill="#add1b2"
+         style="stroke:#181818;stroke-width:1.5625"
+         id="ellipse43"
+         r="17.1875" />
+      <path
+         d="m 2687.5977,883.3282 q 0.2441,-0.3173 0.5127,-0.476 0.2685,-0.1587 0.5859,-0.1587 0.5615,0 0.9033,0.3784 0.3418,0.3784 0.3418,1.2817 v 2.1241 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3784 -0.9033,0.3784 -0.4883,0 -0.8057,-0.2685 -0.2929,-0.293 -0.4394,-1.0498 -0.098,-0.5127 -0.3418,-0.8057 -0.5127,-0.5371 -1.4038,-0.8667 -0.8911,-0.3296 -1.7945,-0.3296 -1.123,0 -2.063,0.4883 -0.9399,0.4883 -1.6601,1.5869 -0.7202,1.0986 -0.7202,2.6123 v 1.6113 q 0,1.8067 1.3061,3.0152 1.3062,1.2085 3.6499,1.2085 1.3916,0 2.3438,-0.3662 0.5615,-0.2198 1.1963,-0.879 0.3906,-0.3906 0.6103,-0.5004 0.2197,-0.1099 0.5127,-0.1099 0.4883,0 0.8667,0.3784 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0987 -0.7324,0.8545 -1.9043,1.3427 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9277 -1.4404,-0.7324 -2.4536,-2.3071 -1.0132,-1.5748 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9156,-3.6499 0.9155,-1.6968 2.5268,-2.6123 1.6113,-0.9155 3.418,-0.9155 1.0742,0 2.0263,0.2563 0.9522,0.2564 1.7579,0.769 z"
+         fill="#000000"
+         id="path44" />
+      <circle
+         cx="2713.2812"
+         cy="888.89471"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse44"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="112.5"
+         x="2722.6562"
+         y="900.01532"
+         id="text44">Settings</text>
+      <line
+         style="stroke:#181818;stroke-width:0.78125"
+         x1="2661.7188"
+         x2="2838.2812"
+         y1="914.6759"
+         y2="914.6759"
+         id="line44" />
+      <line
+         style="stroke:#181818;stroke-width:0.78125"
+         x1="2661.7188"
+         x2="2838.2812"
+         y1="927.1759"
+         y2="927.1759"
+         id="line45" />
+    </g>
+    <g
+       id="elem_ISkedManager">
+      <rect
+         codeLine="85"
+         fill="#ffffff"
+         height="635.13177"
+         id="ISkedManager"
+         rx="3.9063001"
+         ry="3.9063001"
+         style="stroke:#181818;stroke-width:0.78125"
+         width="575"
+         x="2029.6875"
+         y="584.9884" />
+      <circle
+         cx="2217.5781"
+         cy="609.9884"
+         fill="#b4a7e5"
+         style="stroke:#181818;stroke-width:1.5625"
+         id="ellipse45"
+         r="17.1875" />
+      <path
+         d="m 2218.5303,604.715 v 9.79 h 2.5146 q 0.9033,0 1.294,0.354 0.3906,0.354 0.3906,0.9155 0,0.5371 -0.3906,0.8911 -0.3907,0.3541 -1.294,0.3541 h -7.5439 q -0.9033,0 -1.294,-0.3541 -0.3906,-0.354 -0.3906,-0.9155 0,-0.5371 0.3906,-0.8911 0.3907,-0.354 1.294,-0.354 h 2.5146 v -9.79 h -2.5146 q -0.9033,0 -1.294,-0.3418 -0.3906,-0.3418 -0.3906,-0.9034 0,-0.5615 0.3906,-0.9155 0.3907,-0.354 1.294,-0.354 l 7.5439,0.0244 q 0.9033,0 1.294,0.3418 0.3906,0.3418 0.3906,0.9033 0,0.5616 -0.3906,0.9034 -0.3907,0.3418 -1.294,0.3418 z"
+         fill="#000000"
+         id="path45" />
+      <circle
+         cx="2257.4219"
+         cy="609.20721"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse46"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         font-style="italic"
+         lengthAdjust="spacing"
+         textLength="168.75"
+         x="2266.7969"
+         y="620.32782"
+         id="text46">ISkedManager</text>
+      <line
+         style="stroke:#181818;stroke-width:0.78125"
+         x1="2031.25"
+         x2="2603.125"
+         y1="634.9884"
+         y2="634.9884"
+         id="line46" />
+      <circle
+         cx="2046.875"
+         cy="658.21838"
+         fill="none"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse47"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="253.125"
+         x="2060.9375"
+         y="666.21399"
+         id="text47">SkedTree: SkedTree</text>
+      <rect
+         fill="none"
+         height="9.375"
+         style="stroke:#c82930;stroke-width:1.5625"
+         width="9.375"
+         x="2042.1875"
+         y="682.80328"
+         id="rect47" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="351.5625"
+         x="2060.9375"
+         y="695.48651"
+         id="text48">_skedTreeFilename: string</text>
+      <circle
+         cx="2046.875"
+         cy="716.76331"
+         fill="none"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse48"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="309.375"
+         x="2060.9375"
+         y="724.75891"
+         id="text49">SelectedNode: SkedNode</text>
+      <circle
+         cx="2046.875"
+         cy="746.03583"
+         fill="none"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse49"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="253.125"
+         x="2060.9375"
+         y="754.03137"
+         id="text50">Settings: Settings</text>
+      <rect
+         fill="none"
+         height="9.375"
+         style="stroke:#c82930;stroke-width:1.5625"
+         width="9.375"
+         x="2042.1875"
+         y="770.62073"
+         id="rect50" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="351.5625"
+         x="2060.9375"
+         y="783.30377"
+         id="text51">_settingsFileName: string</text>
+      <line
+         style="stroke:#181818;stroke-width:1.5625"
+         x1="2031.25"
+         x2="2603.125"
+         y1="793.85071"
+         y2="793.85071"
+         id="line51" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="267.1875"
+         x="2039.0625"
+         y="825.07629"
+         id="text52">SkedTree management</text>
+      <line
+         style="stroke:#181818;stroke-width:1.5625"
+         x1="2031.25"
+         x2="2603.125"
+         y1="835.62323"
+         y2="835.62323"
+         id="line52" />
+      <circle
+         cx="2046.875"
+         cy="858.85309"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse52"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="281.25"
+         x="2060.9375"
+         y="866.84882"
+         id="text53">NewSkedTree() : void</text>
+      <circle
+         cx="2046.875"
+         cy="888.12561"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse53"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="281.25"
+         x="2060.9375"
+         y="896.12122"
+         id="text54">LoadSkedTree(): void</text>
+      <circle
+         cx="2046.875"
+         cy="917.39807"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse54"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="281.25"
+         x="2060.9375"
+         y="925.39368"
+         id="text55">SaveSkedTree(): void</text>
+      <circle
+         cx="2046.875"
+         cy="946.67047"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse55"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="534.375"
+         x="2060.9375"
+         y="954.66608"
+         id="text56">SaveSkedTreeAs(fileName: string): void</text>
+      <line
+         style="stroke:#181818;stroke-width:1.5625"
+         x1="2031.25"
+         x2="2603.125"
+         y1="965.21301"
+         y2="965.21301"
+         id="line56" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="267.1875"
+         x="2039.0625"
+         y="996.4386"
+         id="text57">SkedNode management</text>
+      <line
+         style="stroke:#181818;stroke-width:1.5625"
+         x1="2031.25"
+         x2="2603.125"
+         y1="1006.9855"
+         y2="1006.9855"
+         id="line57" />
+      <circle
+         cx="2046.875"
+         cy="1030.2155"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse57"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="182.8125"
+         x="2060.9375"
+         y="1038.2111"
+         id="text58">AddSkedNode()</text>
+      <circle
+         cx="2046.875"
+         cy="1059.4879"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse58"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="239.0625"
+         x="2060.9375"
+         y="1067.4835"
+         id="text59">ReplaceSkedNode()</text>
+      <circle
+         cx="2046.875"
+         cy="1088.7604"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse59"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="225"
+         x="2060.9375"
+         y="1096.756"
+         id="text60">DeleteSkedNode()</text>
+      <line
+         style="stroke:#181818;stroke-width:1.5625"
+         x1="2031.25"
+         x2="2603.125"
+         y1="1107.3029"
+         y2="1107.3029"
+         id="line60" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="267.1875"
+         x="2039.0625"
+         y="1138.5284"
+         id="text61">Settings management</text>
+      <line
+         style="stroke:#181818;stroke-width:1.5625"
+         x1="2031.25"
+         x2="2603.125"
+         y1="1149.0753"
+         y2="1149.0753"
+         id="line61" />
+      <circle
+         cx="2046.875"
+         cy="1172.3053"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse61"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="309.375"
+         x="2060.9375"
+         y="1180.3009"
+         id="text62">UpdateSettings(): void</text>
+      <circle
+         cx="2046.875"
+         cy="1201.5778"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse62"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="281.25"
+         x="2060.9375"
+         y="1209.5734"
+         id="text63">LoadSettings(): void</text>
+    </g>
+    <g
+       id="elem_BasicSkedManager">
+      <rect
+         codeLine="112"
+         fill="#ffffff"
+         height="75"
+         id="BasicSkedManager"
+         rx="3.9063001"
+         ry="3.9063001"
+         style="stroke:#181818;stroke-width:0.78125"
+         width="292.1875"
+         x="2171.0938"
+         y="1426.3947" />
+      <circle
+         cx="2194.5312"
+         cy="1451.3947"
+         fill="#add1b2"
+         style="stroke:#181818;stroke-width:1.5625"
+         id="ellipse63"
+         r="17.1875" />
+      <path
+         d="m 2198.5352,1445.047 q 0.2441,-0.3174 0.5127,-0.4761 0.2685,-0.1587 0.5859,-0.1587 0.5615,0 0.9033,0.3784 0.3418,0.3785 0.3418,1.2818 v 2.124 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3785 -0.9033,0.3785 -0.4883,0 -0.8057,-0.2686 -0.2929,-0.293 -0.4394,-1.0498 -0.098,-0.5127 -0.3418,-0.8057 -0.5127,-0.5371 -1.4038,-0.8667 -0.8911,-0.3295 -1.7945,-0.3295 -1.123,0 -2.063,0.4882 -0.9399,0.4883 -1.6601,1.587 -0.7202,1.0986 -0.7202,2.6123 v 1.6113 q 0,1.8066 1.3061,3.0151 1.3062,1.2085 3.6499,1.2085 1.3916,0 2.3438,-0.3662 0.5615,-0.2197 1.1963,-0.8789 0.3906,-0.3906 0.6103,-0.5005 0.2197,-0.1099 0.5127,-0.1099 0.4883,0 0.8667,0.3785 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0986 -0.7324,0.8545 -1.9043,1.3428 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9278 -1.4404,-0.7324 -2.4536,-2.3071 -1.0132,-1.5747 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9156,-3.6499 0.9155,-1.6967 2.5268,-2.6123 1.6113,-0.9155 3.418,-0.9155 1.0742,0 2.0263,0.2564 0.9522,0.2563 1.7579,0.769 z"
+         fill="#000000"
+         id="path63" />
+      <circle
+         cx="2224.2188"
+         cy="1450.6134"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1.5625"
+         id="ellipse64"
+         r="4.6875" />
+      <text
+         fill="#000000"
+         font-family="Consolas"
+         font-size="25px"
+         lengthAdjust="spacing"
+         textLength="225"
+         x="2233.5938"
+         y="1461.734"
+         id="text64">BasicSkedManager</text>
+      <line
+         style="stroke:#181818;stroke-width:0.78125"
+         x1="2172.6562"
+         x2="2461.7188"
+         y1="1476.3947"
+         y2="1476.3947"
+         id="line64" />
+      <line
+         style="stroke:#181818;stroke-width:0.78125"
+         x1="2172.6562"
+         x2="2461.7188"
+         y1="1488.8947"
+         y2="1488.8947"
+         id="line65" />
+    </g>
+    <g
+       id="link_ISkedManager_BasicSkedManager">
+      <path
+         codeLine="117"
+         d="m 2317.1875,1247.879 c 0,83.4532 0,134.3125 0,178.3594"
+         fill="none"
+         id="ISkedManager-backto-BasicSkedManager"
+         style="stroke:#181818;stroke-width:1.5625" />
+      <polygon
+         fill="none"
+         points="2326.5625,1247.879 2317.1875,1219.754 2307.8125,1247.879 "
+         style="stroke:#181818;stroke-width:1.5625"
+         id="polygon81" />
+    </g>
+  </g>
+  <g
+     id="cluster_Gui"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       d="m 2974.2188,1256.8634 h 43.75 a 5.8594,5.8594 0 0 1 3.9062,3.9063 l 10.9375,34.7412 h 2797.6563 a 3.9063,3.9063 0 0 1 3.9062,3.9062 v 301.9776 a 3.9063,3.9063 0 0 1 -3.9062,3.9062 h -2856.25 a 3.9063,3.9063 0 0 1 -3.9063,-3.9062 v -340.625 a 3.9063,3.9063 0 0 1 3.9063,-3.9063"
+       fill="none"
+       style="stroke:#000000;stroke-width:2.34375"
+       id="path3" />
+    <line
+       style="stroke:#000000;stroke-width:2.34375"
+       x1="2970.3125"
+       x2="3032.8125"
+       y1="1295.5109"
+       y2="1295.5109"
+       id="line3" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="42.1875"
+       x="2976.5625"
+       y="1284.964"
+       id="text4">Gui</text>
+  </g>
+  <g
+     id="cluster_Interfaces"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       d="m 4702.3438,1339.6759 h 142.1875 a 5.8594,5.8594 0 0 1 3.9062,3.9063 l 10.9375,34.7412 h 921.0938 a 3.9063,3.9063 0 0 1 3.9062,3.9062 v 169.1651 a 3.9063,3.9063 0 0 1 -3.9062,3.9062 h -1078.125 a 3.9063,3.9063 0 0 1 -3.9063,-3.9062 v -207.8125 a 3.9063,3.9063 0 0 1 3.9063,-3.9063"
+       fill="none"
+       style="stroke:#000000;stroke-width:2.34375"
+       id="path4" />
+    <line
+       style="stroke:#000000;stroke-width:2.34375"
+       x1="4698.4375"
+       x2="4859.375"
+       y1="1378.3234"
+       y2="1378.3234"
+       id="line4" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="140.625"
+       x="4704.6875"
+       y="1367.7765"
+       id="text5">Interfaces</text>
+  </g>
+  <g
+     id="cluster_Controls"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       d="m 3474.2188,1368.5822 h 114.0625 a 5.8594,5.8594 0 0 1 3.9062,3.9062 l 10.9375,34.7412 h 1053.9063 a 3.9063,3.9063 0 0 1 3.9062,3.9063 v 111.3525 a 3.9063,3.9063 0 0 1 -3.9062,3.9063 H 3474.2188 a 3.9063,3.9063 0 0 1 -3.9063,-3.9063 v -150 a 3.9063,3.9063 0 0 1 3.9063,-3.9062"
+       fill="none"
+       style="stroke:#000000;stroke-width:2.34375"
+       id="path5" />
+    <line
+       style="stroke:#000000;stroke-width:2.34375"
+       x1="3470.3125"
+       x2="3603.125"
+       y1="1407.2296"
+       y2="1407.2296"
+       id="line5" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="112.5"
+       x="3476.5625"
+       y="1396.6827"
+       id="text6">Controls</text>
+  </g>
+  <g
+     id="cluster_Dialogs"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       d="m 3036.7188,1368.5822 h 100 a 5.8594,5.8594 0 0 1 3.9062,3.9062 l 10.9375,34.7412 h 277.3438 a 3.9063,3.9063 0 0 1 3.9062,3.9063 v 111.3525 a 3.9063,3.9063 0 0 1 -3.9062,3.9063 h -392.1875 a 3.9063,3.9063 0 0 1 -3.9063,-3.9063 v -150 a 3.9063,3.9063 0 0 1 3.9063,-3.9062"
+       fill="none"
+       style="stroke:#000000;stroke-width:2.34375"
+       id="path6" />
+    <line
+       style="stroke:#000000;stroke-width:2.34375"
+       x1="3032.8125"
+       x2="3151.5625"
+       y1="1407.2296"
+       y2="1407.2296"
+       id="line6" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="98.4375"
+       x="3039.0625"
+       y="1396.6827"
+       id="text7">Dialogs</text>
+  </g>
+  <g
+     id="elem_ISkedNodeDevice"
+     transform="translate(-2008.1543,-86.900348)">
+    <rect
+       codeLine="124"
+       fill="#ffffff"
+       height="104.2725"
+       id="ISkedNodeDevice"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="462.5"
+       x="4723.4375"
+       y="1411.5509" />
+    <circle
+       cx="4833.9844"
+       cy="1436.5509"
+       fill="#b4a7e5"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse65"
+       r="17.1875" />
+    <path
+       d="m 4834.9365,1431.2775 v 9.79 h 2.5147 q 0.9033,0 1.2939,0.354 0.3906,0.354 0.3906,0.9155 0,0.5371 -0.3906,0.8911 -0.3906,0.3541 -1.2939,0.3541 h -7.544 q -0.9033,0 -1.2939,-0.3541 -0.3906,-0.354 -0.3906,-0.9155 0,-0.5371 0.3906,-0.8911 0.3906,-0.354 1.2939,-0.354 h 2.5147 v -9.79 h -2.5147 q -0.9033,0 -1.2939,-0.3418 -0.3906,-0.3418 -0.3906,-0.9034 0,-0.5615 0.3906,-0.9155 0.3906,-0.354 1.2939,-0.354 l 7.544,0.024 q 0.9033,0 1.2939,0.3418 0.3906,0.3418 0.3906,0.9033 0,0.5616 -0.3906,0.9034 -0.3906,0.3418 -1.2939,0.3418 z"
+       fill="#000000"
+       id="path65" />
+    <circle
+       cx="4873.8281"
+       cy="1435.7697"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse66"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-style="italic"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="4883.2031"
+       y="1446.8903"
+       id="text66">ISkedNodeDevice</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="4725"
+       x2="5184.375"
+       y1="1461.5509"
+       y2="1461.5509"
+       id="line66" />
+    <circle
+       cx="4740.625"
+       cy="1484.7809"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse67"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="421.875"
+       x="4754.6875"
+       y="1492.7765"
+       id="text67">SkedNode : SkedNode {get;set;}</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="4725"
+       x2="5184.375"
+       y1="1503.3234"
+       y2="1503.3234"
+       id="line67" />
+  </g>
+  <g
+     id="elem_ISkedTreeDevice"
+     transform="translate(-2008.1543,-86.900348)">
+    <rect
+       codeLine="129"
+       fill="#ffffff"
+       height="133.54491"
+       id="ISkedTreeDevice"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="518.75"
+       x="5240.625"
+       y="1397.4884" />
+    <circle
+       cx="5379.2969"
+       cy="1422.4884"
+       fill="#b4a7e5"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse68"
+       r="17.1875" />
+    <path
+       d="m 5380.249,1417.215 v 9.79 h 2.5147 q 0.9033,0 1.2939,0.354 0.3906,0.354 0.3906,0.9155 0,0.5371 -0.3906,0.8911 -0.3906,0.3541 -1.2939,0.3541 h -7.544 q -0.9033,0 -1.2939,-0.3541 -0.3906,-0.354 -0.3906,-0.9155 0,-0.5371 0.3906,-0.8911 0.3906,-0.354 1.2939,-0.354 h 2.5147 v -9.79 h -2.5147 q -0.9033,0 -1.2939,-0.3418 -0.3906,-0.3418 -0.3906,-0.9034 0,-0.5615 0.3906,-0.9155 0.3906,-0.354 1.2939,-0.354 l 7.544,0.024 q 0.9033,0 1.2939,0.3418 0.3906,0.3418 0.3906,0.9033 0,0.5616 -0.3906,0.9034 -0.3906,0.3418 -1.2939,0.3418 z"
+       fill="#000000"
+       id="path68" />
+    <circle
+       cx="5419.1406"
+       cy="1421.7072"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse69"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       font-style="italic"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="5428.5156"
+       y="1432.8278"
+       id="text69">ISkedTreeDevice</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="5242.1875"
+       x2="5757.8125"
+       y1="1447.4884"
+       y2="1447.4884"
+       id="line69" />
+    <circle
+       cx="5257.8125"
+       cy="1470.7184"
+       fill="none"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse70"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="309.375"
+       x="5271.875"
+       y="1478.714"
+       id="text70">SelectedNode: SkedNode</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="5242.1875"
+       x2="5757.8125"
+       y1="1489.2609"
+       y2="1489.2609"
+       id="line70" />
+    <circle
+       cx="5257.8125"
+       cy="1512.4908"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse71"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="478.125"
+       x="5271.875"
+       y="1520.4865"
+       id="text71">Display(skedTree: SkedTree) : void</text>
+  </g>
+  <g
+     id="elem_SkedTreeControl"
+     transform="translate(-2008.1543,-86.900348)">
+    <rect
+       codeLine="138"
+       fill="#ffffff"
+       height="75"
+       id="SkedTreeControl"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="278.125"
+       x="4357.8125"
+       y="1426.3947" />
+    <circle
+       cx="4381.25"
+       cy="1451.3947"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse72"
+       r="17.1875" />
+    <path
+       d="m 4385.2539,1445.047 q 0.2441,-0.3174 0.5127,-0.4761 0.2686,-0.1587 0.5859,-0.1587 0.5616,0 0.9034,0.3784 0.3418,0.3785 0.3418,1.2818 v 2.124 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3785 -0.9034,0.3785 -0.4882,0 -0.8056,-0.2686 -0.293,-0.293 -0.4395,-1.0498 -0.098,-0.5127 -0.3418,-0.8057 -0.5127,-0.5371 -1.4038,-0.8667 -0.8911,-0.3295 -1.7944,-0.3295 -1.1231,0 -2.063,0.4882 -0.9399,0.4883 -1.6602,1.587 -0.7202,1.0986 -0.7202,2.6123 v 1.6113 q 0,1.8066 1.3062,3.0151 1.3061,1.2085 3.6499,1.2085 1.3916,0 2.3437,-0.3662 0.5616,-0.2197 1.1963,-0.8789 0.3906,-0.3906 0.6104,-0.5005 0.2197,-0.1099 0.5127,-0.1099 0.4882,0 0.8667,0.3785 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0986 -0.7324,0.8545 -1.9043,1.3428 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9278 -1.4405,-0.7324 -2.4536,-2.3071 -1.0132,-1.5747 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9155,-3.6499 0.9155,-1.6967 2.5269,-2.6123 1.6113,-0.9155 3.4179,-0.9155 1.0742,0 2.0264,0.2564 0.9521,0.2563 1.7578,0.769 z"
+       fill="#000000"
+       id="path72" />
+    <circle
+       cx="4410.9375"
+       cy="1450.6134"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse73"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="210.9375"
+       x="4420.3125"
+       y="1461.734"
+       id="text73">SkedTreeControl</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="4359.375"
+       x2="4634.375"
+       y1="1476.3947"
+       y2="1476.3947"
+       id="line73" />
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="4359.375"
+       x2="4634.375"
+       y1="1488.8947"
+       y2="1488.8947"
+       id="line74" />
+  </g>
+  <g
+     id="elem_SimpleSkedNodeControl"
+     transform="translate(-2008.1543,-86.900348)">
+    <rect
+       codeLine="142"
+       fill="#ffffff"
+       height="75"
+       id="SimpleSkedNodeControl"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="362.5"
+       x="3940.625"
+       y="1426.3947" />
+    <circle
+       cx="3964.0625"
+       cy="1451.3947"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse74"
+       r="17.1875" />
+    <path
+       d="m 3968.0664,1445.047 q 0.2441,-0.3174 0.5127,-0.4761 0.2686,-0.1587 0.5859,-0.1587 0.5616,0 0.9034,0.3784 0.3418,0.3785 0.3418,1.2818 v 2.124 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3785 -0.9034,0.3785 -0.4882,0 -0.8056,-0.2686 -0.293,-0.293 -0.4395,-1.0498 -0.098,-0.5127 -0.3418,-0.8057 -0.5127,-0.5371 -1.4038,-0.8667 -0.8911,-0.3295 -1.7944,-0.3295 -1.1231,0 -2.063,0.4882 -0.9399,0.4883 -1.6602,1.587 -0.7202,1.0986 -0.7202,2.6123 v 1.6113 q 0,1.8066 1.3062,3.0151 1.3061,1.2085 3.6499,1.2085 1.3916,0 2.3437,-0.3662 0.5616,-0.2197 1.1963,-0.8789 0.3906,-0.3906 0.6104,-0.5005 0.2197,-0.1099 0.5127,-0.1099 0.4882,0 0.8667,0.3785 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0986 -0.7324,0.8545 -1.9043,1.3428 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9278 -1.4405,-0.7324 -2.4536,-2.3071 -1.0132,-1.5747 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9155,-3.6499 0.9155,-1.6967 2.5269,-2.6123 1.6113,-0.9155 3.4179,-0.9155 1.0742,0 2.0264,0.2564 0.9521,0.2563 1.7578,0.769 z"
+       fill="#000000"
+       id="path74" />
+    <circle
+       cx="3993.75"
+       cy="1450.6134"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse75"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="295.3125"
+       x="4003.125"
+       y="1461.734"
+       id="text75">SimpleSkedNodeControl</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="3942.1875"
+       x2="4301.5625"
+       y1="1476.3947"
+       y2="1476.3947"
+       id="line75" />
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="3942.1875"
+       x2="4301.5625"
+       y1="1488.8947"
+       y2="1488.8947"
+       id="line76" />
+  </g>
+  <g
+     id="elem_ExtendedSkedNodeControl"
+     transform="translate(-2008.1543,-86.900348)">
+    <rect
+       codeLine="146"
+       fill="#ffffff"
+       height="75"
+       id="ExtendedSkedNodeControl"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="390.625"
+       x="3495.3125"
+       y="1426.3947" />
+    <circle
+       cx="3518.75"
+       cy="1451.3947"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse76"
+       r="17.1875" />
+    <path
+       d="m 3522.7539,1445.047 q 0.2441,-0.3174 0.5127,-0.4761 0.2686,-0.1587 0.5859,-0.1587 0.5616,0 0.9034,0.3784 0.3418,0.3785 0.3418,1.2818 v 2.124 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3785 -0.9034,0.3785 -0.4882,0 -0.8056,-0.2686 -0.293,-0.293 -0.4395,-1.0498 -0.098,-0.5127 -0.3418,-0.8057 -0.5127,-0.5371 -1.4038,-0.8667 -0.8911,-0.3295 -1.7944,-0.3295 -1.1231,0 -2.063,0.4882 -0.9399,0.4883 -1.6602,1.587 -0.7202,1.0986 -0.7202,2.6123 v 1.6113 q 0,1.8066 1.3062,3.0151 1.3061,1.2085 3.6499,1.2085 1.3916,0 2.3437,-0.3662 0.5616,-0.2197 1.1963,-0.8789 0.3906,-0.3906 0.6104,-0.5005 0.2197,-0.1099 0.5127,-0.1099 0.4882,0 0.8667,0.3785 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0986 -0.7324,0.8545 -1.9043,1.3428 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9278 -1.4405,-0.7324 -2.4536,-2.3071 -1.0132,-1.5747 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9155,-3.6499 0.9155,-1.6967 2.5269,-2.6123 1.6113,-0.9155 3.4179,-0.9155 1.0742,0 2.0264,0.2564 0.9521,0.2563 1.7578,0.769 z"
+       fill="#000000"
+       id="path76" />
+    <circle
+       cx="3548.4375"
+       cy="1450.6134"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse77"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="323.4375"
+       x="3557.8125"
+       y="1461.734"
+       id="text77">ExtendedSkedNodeControl</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="3496.875"
+       x2="3884.375"
+       y1="1476.3947"
+       y2="1476.3947"
+       id="line77" />
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="3496.875"
+       x2="3884.375"
+       y1="1488.8947"
+       y2="1488.8947"
+       id="line78" />
+  </g>
+  <g
+     id="elem_SimpleSkedNodeDialog"
+     transform="translate(-2008.1543,-86.900348)">
+    <rect
+       codeLine="153"
+       fill="#ffffff"
+       height="75"
+       id="SimpleSkedNodeDialog"
+       rx="3.9063001"
+       ry="3.9063001"
+       style="stroke:#181818;stroke-width:0.78125"
+       width="348.4375"
+       x="3058.5938"
+       y="1426.3947" />
+    <circle
+       cx="3082.0312"
+       cy="1451.3947"
+       fill="#add1b2"
+       style="stroke:#181818;stroke-width:1.5625"
+       id="ellipse78"
+       r="17.1875" />
+    <path
+       d="m 3086.0352,1445.047 q 0.2441,-0.3174 0.5127,-0.4761 0.2685,-0.1587 0.5859,-0.1587 0.5615,0 0.9033,0.3784 0.3418,0.3785 0.3418,1.2818 v 2.124 q 0,0.9033 -0.3418,1.2817 -0.3418,0.3785 -0.9033,0.3785 -0.4883,0 -0.8057,-0.2686 -0.2929,-0.293 -0.4394,-1.0498 -0.098,-0.5127 -0.3418,-0.8057 -0.5127,-0.5371 -1.4038,-0.8667 -0.8911,-0.3295 -1.7945,-0.3295 -1.123,0 -2.063,0.4882 -0.9399,0.4883 -1.6601,1.587 -0.7202,1.0986 -0.7202,2.6123 v 1.6113 q 0,1.8066 1.3061,3.0151 1.3062,1.2085 3.6499,1.2085 1.3916,0 2.3438,-0.3662 0.5615,-0.2197 1.1963,-0.8789 0.3906,-0.3906 0.6103,-0.5005 0.2197,-0.1099 0.5127,-0.1099 0.4883,0 0.8667,0.3785 0.3784,0.3784 0.3784,0.8911 0,0.5127 -0.5127,1.0986 -0.7324,0.8545 -1.9043,1.3428 -1.5869,0.6592 -3.4912,0.6592 -2.2217,0 -4.0039,-0.9278 -1.4404,-0.7324 -2.4536,-2.3071 -1.0132,-1.5747 -1.0132,-3.4546 v -1.6846 q 0,-1.9531 0.9156,-3.6499 0.9155,-1.6967 2.5268,-2.6123 1.6113,-0.9155 3.418,-0.9155 1.0742,0 2.0263,0.2564 0.9522,0.2563 1.7579,0.769 z"
+       fill="#000000"
+       id="path78" />
+    <circle
+       cx="3111.7188"
+       cy="1450.6134"
+       fill="#84be84"
+       style="stroke:#038048;stroke-width:1.5625"
+       id="ellipse79"
+       r="4.6875" />
+    <text
+       fill="#000000"
+       font-family="Consolas"
+       font-size="25px"
+       lengthAdjust="spacing"
+       textLength="281.25"
+       x="3121.0938"
+       y="1461.734"
+       id="text79">SimpleSkedNodeDialog</text>
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="3060.1562"
+       x2="3405.4688"
+       y1="1476.3947"
+       y2="1476.3947"
+       id="line79" />
+    <line
+       style="stroke:#181818;stroke-width:0.78125"
+       x1="3060.1562"
+       x2="3405.4688"
+       y1="1488.8947"
+       y2="1488.8947"
+       id="line80" />
+  </g>
+  <g
+     id="link_ISkedTreeDevice_SkedTreeControl"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       codeLine="158"
+       d="m 5431.7012,1375.8436 c -55.6875,-66.0625 -134.2949,-137.7458 -244.9824,-150.2302 -50.8907,-5.75 -410.0469,-5.75 -460.9375,0 -12.3907,1.3906 -16.6563,-0.1562 -27.3438,6.25 -81.4531,48.8438 -147.0937,141.9375 -179.5156,194.1406"
+       fill="none"
+       id="ISkedTreeDevice-backto-SkedTreeControl"
+       style="stroke:#181818;stroke-width:1.5625" />
+    <polygon
+       fill="none"
+       points="5424.5331,1381.8859 5449.8281,1397.3478 5438.8692,1369.8013 "
+       style="stroke:#181818;stroke-width:1.5625"
+       id="polygon82" />
+  </g>
+  <g
+     id="link_ISkedNodeDevice_SimpleSkedNodeControl"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       codeLine="159"
+       d="m 4896.8648,1389.8916 c -54.8125,-65.9375 -142.5523,-150.6532 -263.271,-164.2782 -60.7188,-6.8594 -214.2813,-6.8594 -275,0 -12.3907,1.3906 -16.5938,-0.062 -27.3438,6.25 -83.2969,48.8906 -151.9844,141.9688 -186.1094,194.1563"
+       fill="none"
+       id="ISkedNodeDevice-backto-SimpleSkedNodeControl"
+       style="stroke:#181818;stroke-width:1.5625" />
+    <polygon
+       fill="none"
+       points="4889.6554,1395.8846 4914.8438,1411.5197 4904.0741,1383.8986 "
+       style="stroke:#181818;stroke-width:1.5625"
+       id="polygon83" />
+  </g>
+  <g
+     id="link_ISkedNodeDevice_ExtendedSkedNodeControl"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       codeLine="160"
+       d="m 4896.8648,1389.8916 c -54.8125,-65.9375 -142.5523,-150.6532 -263.271,-164.2782 -38.2188,-4.3125 -653.9688,-4.3125 -692.1875,0 -12.3907,1.3906 -16.4844,0.1094 -27.3438,6.25 -86.6562,48.9844 -160.8281,142.0313 -197.9844,194.1719"
+       fill="none"
+       id="ISkedNodeDevice-backto-ExtendedSkedNodeControl"
+       style="stroke:#181818;stroke-width:1.5625" />
+    <polygon
+       fill="none"
+       points="4889.6554,1395.8846 4914.8438,1411.5197 4904.0741,1383.8986 "
+       style="stroke:#181818;stroke-width:1.5625"
+       id="polygon84" />
+  </g>
+  <g
+     id="link_ISkedNodeDevice_SimpleSkedNodeDialog"
+     transform="translate(-2008.1543,-86.900348)">
+    <path
+       codeLine="161"
+       d="m 4896.8648,1389.8916 c -54.8125,-65.9375 -142.5523,-150.6532 -263.271,-164.2782 -62.7032,-7.0781 -1073.2344,-7.0781 -1135.9375,0 C 3381.5,1238.7228 3292.5,1362.3478 3253.875,1426.1603"
+       fill="none"
+       id="ISkedNodeDevice-backto-SimpleSkedNodeDialog"
+       style="stroke:#181818;stroke-width:1.5625" />
+    <polygon
+       fill="none"
+       points="4889.6554,1395.8846 4914.8438,1411.5197 4904.0741,1383.8986 "
+       style="stroke:#181818;stroke-width:1.5625"
+       id="polygon85" />
+  </g>
+</svg>

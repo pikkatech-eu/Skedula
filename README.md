@@ -1,5 +1,4 @@
-![Skedula-Logo](skedula-logo_48.png) 
-# Skedula  
+# ![Skedula-Logo](skedula-logo_48.png) Skedula  
 A lightweight, fast, uncluttered outliner for personal planning and note-keeping.
 
 Skedula is a minimalist tree-structured organizer inspired by the elegance of

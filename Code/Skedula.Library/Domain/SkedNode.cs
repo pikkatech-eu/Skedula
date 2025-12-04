@@ -18,16 +18,16 @@ namespace Skedula.Library.Domain
 	public class SkedNode
 	{
 		#region Properties
-		public int			Id				{get;set;} = 0;
-		public string		Title			{get;set;} = string.Empty;
-		public string		Description		{get;set;} = string.Empty;
-		public DateTime		CreationTime	{get;set;} = DateTime.Now;
-		public DateTime		LastModified	{get;set;} = DateTime.Now;
-		public Priority		Priority		{get;set;} = Priority.Normal;
-		public string		IconKey			{get;set;}
-		public int?			ParentId		{get;set;}
-		public List<int>	ChildrenIds		{get;set;} = new();
-		public Status		Status			{get;set;} = Status.Pending;
+		public Guid				Id				{get;set;} = Guid.NewGuid();
+		public string			Title			{get;set;} = string.Empty;
+		public string			Description		{get;set;} = string.Empty;
+		public DateTime			CreationTime	{get;set;} = DateTime.Now;
+		public DateTime			LastModified	{get;set;} = DateTime.Now;
+		public Priority			Priority		{get;set;} = Priority.Normal;
+		public string			IconKey			{get;set;}
+		public Guid?			ParentId		{get;set;}
+		public List<SkedNode>	Children		{get;set;} = new();
+		public Status			Status			{get;set;} = Status.Pending;
 		#endregion
 	}
 }

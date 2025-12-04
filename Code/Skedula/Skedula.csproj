@@ -1,15 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net9.0-windows</TargetFramework>
 		<Nullable>enable</Nullable>
+		<EnableWindowsTargeting>true</EnableWindowsTargeting>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<BaseOutputPath>C:\pikkatech.eu\Projects\Active\Skedula\Code\Binary</BaseOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\Factotum\Code\CSharp\Factotum\Factotum.csproj" />
 		<ProjectReference Include="..\Skedula.Library\Skedula.Library.csproj" />
 	</ItemGroup>
 

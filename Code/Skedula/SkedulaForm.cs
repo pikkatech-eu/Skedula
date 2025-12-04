@@ -16,6 +16,11 @@ namespace Skedula
 		public SkedulaForm()
 		{
 			InitializeComponent();
+
+			Factotum.Versioning.Version version = new Factotum.Versioning.Version();
+			version.FromToml();
+
+			this.Text = $"Skedula {version}";
 		}
 
 		#region SkedTree management
@@ -48,6 +53,11 @@ namespace Skedula
 		private void OnFileSaveSkedTreeAs(object sender, EventArgs e)
 		{
 			BSM.Instance.SaveSkedTreeAs();
+		}
+
+		private void OnSkedAdd(object sender, EventArgs e)
+		{
+			BSM.Instance.AddSkedNode();
 		}
 	}
 }

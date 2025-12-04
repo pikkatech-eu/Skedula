@@ -16,9 +16,8 @@
 		<NoWarn>1701;1702;CS0168;CS0414;CS8600;CS8602;CS8603;CS8604;CS8605;CS8618;CS8625;CS8629;CS8714;IDE0028;IDE0090</NoWarn>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Folder Include="Gui\Interfaces\" />
-	  <Folder Include="Gui\Controls\" />
-	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="xcopy &quot;$(SolutionDir)..\version.toml&quot; &quot;$(TargetDir)&quot; /Y" />
+	</Target>
 
 </Project>

@@ -81,8 +81,8 @@ namespace Skedula.Library.Management
 
 		public void SaveSkedTreeAs()
 		{
-			SaveFileDialog dialog = new SaveFileDialog();
-			dialog.Filter = $"Skedula Files ({DEFAULT_EXTENSION})|{DEFAULT_EXTENSION}|All files (*.*)|(*.*)";
+			SaveFileDialog dialog	= new SaveFileDialog();
+			dialog.Filter			= $"Skedula Files ({DEFAULT_EXTENSION})|{DEFAULT_EXTENSION}|All files (*.*)|(*.*)";
 
 			if (dialog.ShowDialog() == DialogResult.OK)
 			{
@@ -96,7 +96,39 @@ namespace Skedula.Library.Management
 		#region SkedNode Management
 		public void AddSkedNode()
 		{
-			throw new NotImplementedException();
+			if (this.SkedTree == null)
+			{
+
+				MessageBox.Show
+								(
+									"You must create a new sked tree or load one", 
+									"No sked tree defined", 
+									MessageBoxButtons.OKCancel, 
+									MessageBoxIcon.Stop
+								);
+
+				return;
+			}
+
+			SkedNodeDialog dialog = new SkedNodeDialog();
+
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				SkedNode skedNode = dialog.SkedNode;
+
+				if (this.SelectedNode != null)
+				{
+					this.SelectedNode.Children.Add(skedNode);
+					skedNode.ParentId	= this.SelectedNode.Id;
+				}
+				else
+				{
+					this.SkedTree.Nodes.Add(skedNode);
+					skedNode.ParentId = null;
+				}
+			}
+
+			this.SaveSkedTree();
 		}
 
 		public void ReplaceSkedNode()

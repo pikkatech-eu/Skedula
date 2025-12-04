@@ -8,6 +8,7 @@
 		<IsPackable>false</IsPackable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<BaseOutputPath>C:\pikkatech.eu\Projects\Active\Skedula\Code\Binary</BaseOutputPath>
+		<GenerateProgramFile>false</GenerateProgramFile>
 	</PropertyGroup>
 
 	<ItemGroup>

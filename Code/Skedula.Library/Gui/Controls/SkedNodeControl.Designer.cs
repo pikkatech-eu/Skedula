@@ -178,6 +178,7 @@
 			this._cxIcons.Dock = DockStyle.Fill;
 			this._cxIcons.DrawMode = DrawMode.OwnerDrawFixed;
 			this._cxIcons.DropDownStyle = ComboBoxStyle.DropDownList;
+			this._cxIcons.Font = new Font("Consolas", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			this._cxIcons.FormattingEnabled = true;
 			this._cxIcons.ItemHeight = 20;
 			this._cxIcons.Location = new Point(114, 360);

@@ -107,9 +107,7 @@ namespace Skedula.Library.Management
 			{
 				this.SkedTree.Save(this._skedTreeFileName);
 			}
-			catch (Exception)
-			{
-			}
+			catch (Exception)	{}
 		}
 
 		public void EditSkedTree()

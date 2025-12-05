@@ -53,8 +53,8 @@ namespace Skedula.Library.Gui.Controls
 		{
 			foreach (SkedNode child in skedNode.Children)
 			{
-				TreeNode childTreeNode = new TreeNode(child.Title);
-				childTreeNode.Tag = child;
+				TreeNode childTreeNode	= new TreeNode(child.Title);
+				childTreeNode.Tag		= child;
 
 				if (!String.IsNullOrEmpty(child.IconKey))
 				{

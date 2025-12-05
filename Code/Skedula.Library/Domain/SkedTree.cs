@@ -7,6 +7,7 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using System;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
@@ -53,6 +54,7 @@ namespace Skedula.Library.Domain
 			found.Priority		= skedNode.Priority;
 			found.Status		= skedNode.Status;
 			found.IconKey		= skedNode.IconKey;
+			found.LastModified	= DateTime.Now;
 		}
 		#endregion
 
@@ -113,6 +115,27 @@ namespace Skedula.Library.Domain
 			}
 
 			return null;
+		}
+
+		internal void Delete(Guid id)
+		{
+			SkedNode found = this.Find(id);
+
+			if (found == null)
+			{
+				return;
+			}
+
+			if (found.ParentId == null)
+			{
+				// found is a root node
+				this.Nodes.Remove(found);
+			}
+			else
+			{
+				SkedNode parent = this.Find((Guid)found.ParentId);
+				parent.Children.Remove(found);
+			}
 		}
 	}
 }

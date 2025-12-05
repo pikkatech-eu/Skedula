@@ -159,7 +159,28 @@ namespace Skedula.Library.Management
 
 		public void DeleteSkedNode()
 		{
-			throw new NotImplementedException();
+			if (this.SelectedSkedNode == null)
+			{
+				return;
+			}
+
+
+			if (
+					MessageBox.Show
+									(
+										$"Sure to delete node {this.SelectedSkedNode}?", 
+										"Node about to be deleted", 
+										MessageBoxButtons.OKCancel, 
+										MessageBoxIcon.Question
+									) == DialogResult.OK
+				)
+			{
+				this.SkedTree.Delete(this.SelectedSkedNode.Id);
+
+				this.SkedTreeChanged?.Invoke(this.SkedTree);
+				this.SaveSkedTree();
+			}
+				
 		}
 		#endregion
 

@@ -29,5 +29,10 @@ namespace Skedula.Library.Domain
 		public List<SkedNode>	Children		{get;set;} = new();
 		public Status			Status			{get;set;} = Status.Pending;
 		#endregion
+
+		public override string ToString()
+		{
+			return $"{this.Title}";
+		}
 	}
 }

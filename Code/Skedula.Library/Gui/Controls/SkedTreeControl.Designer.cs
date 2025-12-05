@@ -32,11 +32,11 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SkedTreeControl));
 			this._tlpUserControl = new TableLayoutPanel();
 			this._tvSkedTree = new TreeView();
-			this._ilIcons = new ImageList(this.components);
 			this._cmsSkedTree = new ContextMenuStrip(this.components);
 			this.addNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.editNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.deleteNodeToolStripMenuItem = new ToolStripMenuItem();
+			this._ilIcons = new ImageList(this.components);
 			this._tlpUserControl.SuspendLayout();
 			this._cmsSkedTree.SuspendLayout();
 			this.SuspendLayout();
@@ -77,13 +77,6 @@
 			this._tvSkedTree.TabIndex = 0;
 			this._tvSkedTree.AfterSelect += this.SelectedNodeChanged;
 			// 
-			// _ilIcons
-			// 
-			this._ilIcons.ColorDepth = ColorDepth.Depth32Bit;
-			this._ilIcons.ImageStream = (ImageListStreamer)resources.GetObject("_ilIcons.ImageStream");
-			this._ilIcons.TransparentColor = Color.Transparent;
-			this._ilIcons.Images.SetKeyName(0, "framework");
-			// 
 			// _cmsSkedTree
 			// 
 			this._cmsSkedTree.Font = new Font("Consolas", 10F);
@@ -104,12 +97,21 @@
 			this.editNodeToolStripMenuItem.Name = "editNodeToolStripMenuItem";
 			this.editNodeToolStripMenuItem.Size = new Size(177, 24);
 			this.editNodeToolStripMenuItem.Text = "&Edit Node";
+			this.editNodeToolStripMenuItem.Click += this.OnNodeEdit;
 			// 
 			// deleteNodeToolStripMenuItem
 			// 
 			this.deleteNodeToolStripMenuItem.Name = "deleteNodeToolStripMenuItem";
 			this.deleteNodeToolStripMenuItem.Size = new Size(177, 24);
 			this.deleteNodeToolStripMenuItem.Text = "&Delete Node";
+			this.deleteNodeToolStripMenuItem.Click += this.OnNodeDelete;
+			// 
+			// _ilIcons
+			// 
+			this._ilIcons.ColorDepth = ColorDepth.Depth32Bit;
+			this._ilIcons.ImageStream = (ImageListStreamer)resources.GetObject("_ilIcons.ImageStream");
+			this._ilIcons.TransparentColor = Color.Transparent;
+			this._ilIcons.Images.SetKeyName(0, "framework");
 			// 
 			// SkedTreeControl
 			// 

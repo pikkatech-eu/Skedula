@@ -132,6 +132,7 @@
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
 			this.deleteToolStripMenuItem.Size = new Size(224, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
+			this.deleteToolStripMenuItem.Click += this.OnSkedDelete;
 			// 
 			// toolsToolStripMenuItem
 			// 

@@ -67,5 +67,15 @@ namespace Skedula.Library.Gui.Controls
 		{
 			BSM.Instance.AddSkedNode();
 		}
+
+		private void OnNodeEdit(object sender, EventArgs e)
+		{
+			BSM.Instance.ReplaceSkedNode();
+		}
+
+		private void OnNodeDelete(object sender, EventArgs e)
+		{
+			BSM.Instance.DeleteSkedNode();
+		}
 	}
 }

@@ -72,5 +72,10 @@ namespace Skedula
 		{
 			BSM.Instance.ReplaceSkedNode();
 		}
+
+		private void OnSkedDelete(object sender, EventArgs e)
+		{
+			BSM.Instance.DeleteSkedNode();
+		}
 	}
 }

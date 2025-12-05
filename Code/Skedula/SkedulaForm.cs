@@ -77,5 +77,10 @@ namespace Skedula
 		{
 			BSM.Instance.DeleteSkedNode();
 		}
+
+		private void OnFileEditSkedTree(object sender, EventArgs e)
+		{
+			BSM.Instance.EditSkedTree();
+		}
 	}
 }

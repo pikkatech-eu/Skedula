@@ -37,6 +37,8 @@
 			this.editNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.deleteNodeToolStripMenuItem = new ToolStripMenuItem();
 			this._ilIcons = new ImageList(this.components);
+			this.toolStripSeparator1 = new ToolStripSeparator();
+			this.unselectToolStripMenuItem = new ToolStripMenuItem();
 			this._tlpUserControl.SuspendLayout();
 			this._cmsSkedTree.SuspendLayout();
 			this.SuspendLayout();
@@ -81,28 +83,28 @@
 			// 
 			this._cmsSkedTree.Font = new Font("Consolas", 10F);
 			this._cmsSkedTree.ImageScalingSize = new Size(20, 20);
-			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem });
+			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem, this.toolStripSeparator1, this.unselectToolStripMenuItem });
 			this._cmsSkedTree.Name = "_cmsSkedTree";
-			this._cmsSkedTree.Size = new Size(178, 76);
+			this._cmsSkedTree.Size = new Size(211, 134);
 			// 
 			// addNodeToolStripMenuItem
 			// 
 			this.addNodeToolStripMenuItem.Name = "addNodeToolStripMenuItem";
-			this.addNodeToolStripMenuItem.Size = new Size(177, 24);
+			this.addNodeToolStripMenuItem.Size = new Size(210, 24);
 			this.addNodeToolStripMenuItem.Text = "&Add Node";
 			this.addNodeToolStripMenuItem.Click += this.OnNodeAdd;
 			// 
 			// editNodeToolStripMenuItem
 			// 
 			this.editNodeToolStripMenuItem.Name = "editNodeToolStripMenuItem";
-			this.editNodeToolStripMenuItem.Size = new Size(177, 24);
+			this.editNodeToolStripMenuItem.Size = new Size(210, 24);
 			this.editNodeToolStripMenuItem.Text = "&Edit Node";
 			this.editNodeToolStripMenuItem.Click += this.OnNodeEdit;
 			// 
 			// deleteNodeToolStripMenuItem
 			// 
 			this.deleteNodeToolStripMenuItem.Name = "deleteNodeToolStripMenuItem";
-			this.deleteNodeToolStripMenuItem.Size = new Size(177, 24);
+			this.deleteNodeToolStripMenuItem.Size = new Size(210, 24);
 			this.deleteNodeToolStripMenuItem.Text = "&Delete Node";
 			this.deleteNodeToolStripMenuItem.Click += this.OnNodeDelete;
 			// 
@@ -112,6 +114,18 @@
 			this._ilIcons.ImageStream = (ImageListStreamer)resources.GetObject("_ilIcons.ImageStream");
 			this._ilIcons.TransparentColor = Color.Transparent;
 			this._ilIcons.Images.SetKeyName(0, "framework");
+			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new Size(207, 6);
+			// 
+			// unselectToolStripMenuItem
+			// 
+			this.unselectToolStripMenuItem.Name = "unselectToolStripMenuItem";
+			this.unselectToolStripMenuItem.Size = new Size(210, 24);
+			this.unselectToolStripMenuItem.Text = "&Unselect";
+			this.unselectToolStripMenuItem.Click += this.OnUnselect;
 			// 
 			// SkedTreeControl
 			// 
@@ -138,5 +152,7 @@
 		private ToolStripMenuItem addNodeToolStripMenuItem;
 		private ToolStripMenuItem editNodeToolStripMenuItem;
 		private ToolStripMenuItem deleteNodeToolStripMenuItem;
+		private ToolStripSeparator toolStripSeparator1;
+		private ToolStripMenuItem unselectToolStripMenuItem;
 	}
 }

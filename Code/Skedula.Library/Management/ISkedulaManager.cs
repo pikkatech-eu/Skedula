@@ -14,13 +14,16 @@ namespace Skedula.Library.Management
 	public interface ISkedulaManager
 	{
 		#region Properties
-		SkedTree	SkedTree		{get;set;}
-		SkedNode	SelectedSkedNode	{get;set;}
-		Settings	Settings		{get;set;}
+		SkedTree	SkedTree				{get;set;}
+		SkedNode	SelectedSkedNode		{get;set;}
+		Settings	Settings				{get;set;}
+
+		Dictionary<string, Image>	Icons	{get;}
 		#endregion
 
 		#region SkedTree Management
 		void NewSkedTree();
+		void EditSkedTree();
 		void LoadSkedTree(string fileName = null);
 		void SaveSkedTree();
 		void SaveSkedTreeAs();

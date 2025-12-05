@@ -17,6 +17,7 @@ namespace Skedula.Library.Management
 	{
 		#region Constants
 		internal const string DEFAULT_EXTENSION = "*.sked";
+		internal const string ICON_FOLDER		= ".\\icons\\";
 		#endregion
 
 		#region Singletonia
@@ -24,7 +25,12 @@ namespace Skedula.Library.Management
 		public static BasicSkedulaManager Instance => _instance.Value;
 		private BasicSkedulaManager() 
 		{
-			// Initialization logic here
+			if (!Directory.Exists(ICON_FOLDER))
+			{
+				Directory.CreateDirectory(ICON_FOLDER);
+			}
+
+			this.LoadIcons();
 		}
 		#endregion
 
@@ -33,11 +39,13 @@ namespace Skedula.Library.Management
 		#endregion
 
 		#region Properties
-		public SkedTree SkedTree		{get;set;}	= null;
+		public SkedTree						SkedTree			{get;set;}	= null;
 
-		public SkedNode SelectedSkedNode	{get;set;}	= null;
+		public SkedNode						SelectedSkedNode	{get;set;}	= null;
 
-		public Settings Settings		{get;set;}	= null;
+		public Settings						Settings			{get;set;}	= null;
+
+		public Dictionary<string, Image>	Icons				{get;internal set;}	= new();
 		#endregion
 
 		#region Events
@@ -95,7 +103,29 @@ namespace Skedula.Library.Management
 				this._skedTreeFileName = dialog.FileName;
 			}
 
-			this.SkedTree.Save(this._skedTreeFileName);
+			try
+			{
+				this.SkedTree.Save(this._skedTreeFileName);
+			}
+			catch (Exception)
+			{
+			}
+		}
+
+		public void EditSkedTree()
+		{
+			SkedTreePropertiesDialog dialog = new SkedTreePropertiesDialog();
+			dialog.ItemName					= this.SkedTree.Title;
+			dialog.ItemDescription			= this.SkedTree.Description;
+
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				this.SkedTree.Title			= dialog.ItemName;
+				this.SkedTree.Description	= dialog.ItemDescription;
+				this.SkedTree.LastModified	= DateTime.Now;
+
+				this.SaveSkedTree();
+			}
 		}
 		#endregion
 
@@ -198,6 +228,25 @@ namespace Skedula.Library.Management
 		public void SaveSettings()
 		{
 			throw new NotImplementedException();
+		}
+		#endregion
+
+		#region Private Auxiliary
+		private void LoadIcons()
+		{
+			string[] fileNames = Directory.GetFiles(ICON_FOLDER);
+
+			this.Icons.Clear();
+
+			foreach (string fileName in fileNames)
+			{
+				try
+				{
+					Image icon = Image.FromFile(fileName);
+					this.Icons.Add(fileName, icon);
+				}
+				catch (Exception)	{}
+			}
 		}
 		#endregion
 	}

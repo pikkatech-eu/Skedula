@@ -7,7 +7,6 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
-using System.ComponentModel;
 using Skedula.Library.Domain;
 using Skedula.Library.Gui.Interfaces;
 using BSM = Skedula.Library.Management.BasicSkedulaManager;
@@ -19,6 +18,11 @@ namespace Skedula.Library.Gui.Controls
 		public SkedTreeControl()
 		{
 			InitializeComponent();
+
+			foreach (string key in BSM.Instance.Icons.Keys)
+			{
+				this._ilIcons.Images.Add(key, BSM.Instance.Icons[key]);
+			}
 		}
 
 		public void Display(SkedTree skedTree)
@@ -27,9 +31,17 @@ namespace Skedula.Library.Gui.Controls
 
 			foreach (SkedNode skedNode in skedTree.Nodes)
 			{
-				TreeNode node = new TreeNode(skedNode.Title);
-				node.Tag = skedNode;
-				node.ImageKey = "framework";
+				TreeNode node	= new TreeNode(skedNode.Title);
+				node.Tag		= skedNode;
+
+				if (!String.IsNullOrEmpty(skedNode.IconKey))
+				{
+					node.ImageKey	= $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
+				}
+				else
+				{
+					node.ImageKey	= "framework";
+				}
 
 				this._tvSkedTree.Nodes.Add(node);
 
@@ -43,7 +55,15 @@ namespace Skedula.Library.Gui.Controls
 			{
 				TreeNode childTreeNode = new TreeNode(child.Title);
 				childTreeNode.Tag = child;
-				childTreeNode.ImageKey = "framework";
+
+				if (!String.IsNullOrEmpty(child.IconKey))
+				{
+					childTreeNode.ImageKey	= $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
+				}
+				else
+				{
+					childTreeNode.ImageKey	= "framework";
+				}
 
 				node.Nodes.Add(childTreeNode);
 
@@ -76,6 +96,15 @@ namespace Skedula.Library.Gui.Controls
 		private void OnNodeDelete(object sender, EventArgs e)
 		{
 			BSM.Instance.DeleteSkedNode();
+		}
+
+		private void OnUnselect(object sender, EventArgs e)
+		{
+			this._tvSkedTree.SelectedNode = null;
+
+			this._tvSkedTree.HideSelection = false;
+			this._tvSkedTree.Refresh();
+			this._tvSkedTree.Focus();
 		}
 	}
 }

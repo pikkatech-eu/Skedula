@@ -38,9 +38,8 @@
 			this._txTitle = new TextBox();
 			this._cxPriority = new ComboBox();
 			this._cxStatus = new ComboBox();
-			this._lvIcons = new ListView();
-			this.IconName = new ColumnHeader();
 			this._rxDescription = new RichTextBox();
+			this._cxIcons = new ImageComboBox();
 			this._ilIcons = new ImageList(this.components);
 			this._tlpUserControl.SuspendLayout();
 			this.SuspendLayout();
@@ -59,8 +58,8 @@
 			this._tlpUserControl.Controls.Add(this._txTitle, 1, 0);
 			this._tlpUserControl.Controls.Add(this._cxPriority, 1, 2);
 			this._tlpUserControl.Controls.Add(this._cxStatus, 1, 3);
-			this._tlpUserControl.Controls.Add(this._lvIcons, 1, 4);
 			this._tlpUserControl.Controls.Add(this._rxDescription, 1, 1);
+			this._tlpUserControl.Controls.Add(this._cxIcons, 1, 4);
 			this._tlpUserControl.Dock = DockStyle.Fill;
 			this._tlpUserControl.ForeColor = SystemColors.WindowText;
 			this._tlpUserControl.Location = new Point(0, 0);
@@ -164,23 +163,6 @@
 			this._cxStatus.Size = new Size(206, 28);
 			this._cxStatus.TabIndex = 7;
 			// 
-			// _lvIcons
-			// 
-			this._lvIcons.Columns.AddRange(new ColumnHeader[] { this.IconName });
-			this._lvIcons.Dock = DockStyle.Fill;
-			this._lvIcons.FullRowSelect = true;
-			this._lvIcons.Location = new Point(114, 360);
-			this._lvIcons.Margin = new Padding(0);
-			this._lvIcons.Name = "_lvIcons";
-			this._lvIcons.Size = new Size(206, 40);
-			this._lvIcons.TabIndex = 8;
-			this._lvIcons.UseCompatibleStateImageBehavior = false;
-			this._lvIcons.View = View.Details;
-			// 
-			// IconName
-			// 
-			this.IconName.Text = "Name";
-			// 
 			// _rxDescription
 			// 
 			this._rxDescription.Dock = DockStyle.Fill;
@@ -190,6 +172,19 @@
 			this._rxDescription.Size = new Size(206, 276);
 			this._rxDescription.TabIndex = 9;
 			this._rxDescription.Text = "";
+			// 
+			// _cxIcons
+			// 
+			this._cxIcons.Dock = DockStyle.Fill;
+			this._cxIcons.DrawMode = DrawMode.OwnerDrawFixed;
+			this._cxIcons.DropDownStyle = ComboBoxStyle.DropDownList;
+			this._cxIcons.FormattingEnabled = true;
+			this._cxIcons.ItemHeight = 20;
+			this._cxIcons.Location = new Point(114, 360);
+			this._cxIcons.Margin = new Padding(0);
+			this._cxIcons.Name = "_cxIcons";
+			this._cxIcons.Size = new Size(206, 26);
+			this._cxIcons.TabIndex = 10;
 			// 
 			// _ilIcons
 			// 
@@ -224,9 +219,8 @@
 		private TextBox _txTitle;
 		private ComboBox _cxPriority;
 		private ComboBox _cxStatus;
-		private ListView _lvIcons;
-		private ColumnHeader IconName;
 		private ImageList _ilIcons;
 		private RichTextBox _rxDescription;
+		private ImageComboBox _cxIcons;
 	}
 }

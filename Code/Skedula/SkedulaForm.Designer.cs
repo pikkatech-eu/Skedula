@@ -47,6 +47,7 @@
 			this._stsSkedula = new StatusStrip();
 			this._scSkedula = new SplitContainer();
 			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
+			this.editSkedTreeToolStripMenuItem = new ToolStripMenuItem();
 			this._msSkedula.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).BeginInit();
 			this._scSkedula.Panel1.SuspendLayout();
@@ -66,7 +67,7 @@
 			// 
 			// fToolStripMenuItem
 			// 
-			this.fToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.newSkedTreeToolStripMenuItem, this.loadSkedTreeToolStripMenuItem, this.saveSkedTreeAsToolStripMenuItem, this.toolStripSeparator1, this.quitToolStripMenuItem });
+			this.fToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.newSkedTreeToolStripMenuItem, this.editSkedTreeToolStripMenuItem, this.loadSkedTreeToolStripMenuItem, this.saveSkedTreeAsToolStripMenuItem, this.toolStripSeparator1, this.quitToolStripMenuItem });
 			this.fToolStripMenuItem.Font = new Font("Consolas", 10F);
 			this.fToolStripMenuItem.Name = "fToolStripMenuItem";
 			this.fToolStripMenuItem.Size = new Size(59, 24);
@@ -144,7 +145,7 @@
 			// settingsToolStripMenuItem
 			// 
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-			this.settingsToolStripMenuItem.Size = new Size(164, 26);
+			this.settingsToolStripMenuItem.Size = new Size(224, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
 			// 
 			// helpToolStripMenuItem
@@ -205,6 +206,13 @@
 			this._ctrlSkedTree.Size = new Size(653, 629);
 			this._ctrlSkedTree.TabIndex = 0;
 			// 
+			// editSkedTreeToolStripMenuItem
+			// 
+			this.editSkedTreeToolStripMenuItem.Name = "editSkedTreeToolStripMenuItem";
+			this.editSkedTreeToolStripMenuItem.Size = new Size(236, 26);
+			this.editSkedTreeToolStripMenuItem.Text = "&Edit Sked Tree";
+			this.editSkedTreeToolStripMenuItem.Click += this.OnFileEditSkedTree;
+			// 
 			// SkedulaForm
 			// 
 			this.AutoScaleDimensions = new SizeF(10F, 20F);
@@ -250,5 +258,6 @@
 		private ToolStripMenuItem aboutToolStripMenuItem;
 		private SplitContainer _scSkedula;
 		private Library.Gui.Controls.SkedTreeControl _ctrlSkedTree;
+		private ToolStripMenuItem editSkedTreeToolStripMenuItem;
 	}
 }

@@ -11,6 +11,7 @@ using System.ComponentModel;
 using Skedula.Library.Domain;
 using Skedula.Library.Domain.Enumerations;
 using Skedula.Library.Gui.Interfaces;
+using BSM = Skedula.Library.Management.BasicSkedulaManager;
 
 namespace Skedula.Library.Gui.Controls
 {
@@ -25,6 +26,14 @@ namespace Skedula.Library.Gui.Controls
 
 			this._cxPriority.SelectedItem	= Priority.Normal;
 			this._cxStatus.SelectedItem		= Status.Pending;
+
+			this._cxIcons.ImageDictionary	= BSM.Instance.Icons;
+
+			foreach (string iconFile in BSM.Instance.Icons.Keys)
+			{
+				string iconName = new FileInfo(iconFile).Name;
+				this._cxIcons.AddItem(iconName, iconFile);
+			}
 		}
 
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -39,6 +48,8 @@ namespace Skedula.Library.Gui.Controls
 
 				sked.Priority		= (Priority)this._cxPriority.SelectedItem;
 				sked.Status			= (Status)this._cxStatus.SelectedItem;
+
+				sked.IconKey		= this._cxIcons.SelectedItem.ToString();
 
 				return sked;
 			}

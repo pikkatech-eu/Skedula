@@ -35,9 +35,13 @@ namespace Skedula.Library.Management
 		#region Properties
 		public SkedTree SkedTree		{get;set;}	= null;
 
-		public SkedNode SelectedNode	{get;set;}	= null;
+		public SkedNode SelectedSkedNode	{get;set;}	= null;
 
 		public Settings Settings		{get;set;}	= null;
+		#endregion
+
+		#region Events
+		public event Action<SkedTree> SkedTreeChanged;
 		#endregion
 
 		#region SkedTree Management
@@ -64,6 +68,8 @@ namespace Skedula.Library.Management
 			{
 				this._skedTreeFileName = dialog.FileName;
 				this.SkedTree = SkedTree.Load(this._skedTreeFileName);
+
+				this.SkedTreeChanged(this.SkedTree);
 			}
 		}
 
@@ -116,10 +122,10 @@ namespace Skedula.Library.Management
 			{
 				SkedNode skedNode = dialog.SkedNode;
 
-				if (this.SelectedNode != null)
+				if (this.SelectedSkedNode != null)
 				{
-					this.SelectedNode.Children.Add(skedNode);
-					skedNode.ParentId	= this.SelectedNode.Id;
+					this.SelectedSkedNode.Children.Add(skedNode);
+					skedNode.ParentId	= this.SelectedSkedNode.Id;
 				}
 				else
 				{
@@ -127,6 +133,8 @@ namespace Skedula.Library.Management
 					skedNode.ParentId = null;
 				}
 			}
+			
+			this.SkedTreeChanged?.Invoke(this.SkedTree);
 
 			this.SaveSkedTree();
 		}

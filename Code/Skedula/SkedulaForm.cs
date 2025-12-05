@@ -7,7 +7,9 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using Skedula.Library.Domain;
 using BSM = Skedula.Library.Management.BasicSkedulaManager;
+
 
 namespace Skedula
 {
@@ -17,10 +19,16 @@ namespace Skedula
 		{
 			InitializeComponent();
 
+			BSM.Instance.SkedTreeChanged += this.OnSkedTreeChanged;
 			Factotum.Versioning.Version version = new Factotum.Versioning.Version();
 			version.FromToml();
 
 			this.Text = $"Skedula {version}";
+		}
+
+		private void OnSkedTreeChanged(SkedTree skedTree)
+		{
+			this._ctrlSkedTree.Display(skedTree);
 		}
 
 		#region SkedTree management

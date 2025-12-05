@@ -45,7 +45,12 @@
 			this.aboutToolStripMenuItem = new ToolStripMenuItem();
 			this._tsSkedula = new ToolStrip();
 			this._stsSkedula = new StatusStrip();
+			this._scSkedula = new SplitContainer();
+			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
 			this._msSkedula.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)this._scSkedula).BeginInit();
+			this._scSkedula.Panel1.SuspendLayout();
+			this._scSkedula.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// _msSkedula
@@ -111,20 +116,20 @@
 			// addToolStripMenuItem
 			// 
 			this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-			this.addToolStripMenuItem.Size = new Size(224, 26);
+			this.addToolStripMenuItem.Size = new Size(146, 26);
 			this.addToolStripMenuItem.Text = "&Add";
 			this.addToolStripMenuItem.Click += this.OnSkedAdd;
 			// 
 			// editToolStripMenuItem
 			// 
 			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new Size(224, 26);
+			this.editToolStripMenuItem.Size = new Size(146, 26);
 			this.editToolStripMenuItem.Text = "&Edit";
 			// 
 			// deleteToolStripMenuItem
 			// 
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-			this.deleteToolStripMenuItem.Size = new Size(224, 26);
+			this.deleteToolStripMenuItem.Size = new Size(146, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
 			// 
 			// toolsToolStripMenuItem
@@ -172,11 +177,38 @@
 			this._stsSkedula.TabIndex = 2;
 			this._stsSkedula.Text = "statusStrip1";
 			// 
+			// _scSkedula
+			// 
+			this._scSkedula.Dock = DockStyle.Fill;
+			this._scSkedula.Location = new Point(0, 68);
+			this._scSkedula.Margin = new Padding(0);
+			this._scSkedula.Name = "_scSkedula";
+			// 
+			// _scSkedula.Panel1
+			// 
+			this._scSkedula.Panel1.Controls.Add(this._ctrlSkedTree);
+			this._scSkedula.Size = new Size(1294, 629);
+			this._scSkedula.SplitterDistance = 653;
+			this._scSkedula.TabIndex = 3;
+			// 
+			// _ctrlSkedTree
+			// 
+			this._ctrlSkedTree.BackColor = Color.FromArgb(0, 48, 96);
+			this._ctrlSkedTree.Dock = DockStyle.Fill;
+			this._ctrlSkedTree.Font = new Font("Consolas", 10F);
+			this._ctrlSkedTree.ForeColor = Color.White;
+			this._ctrlSkedTree.Location = new Point(0, 0);
+			this._ctrlSkedTree.Margin = new Padding(0);
+			this._ctrlSkedTree.Name = "_ctrlSkedTree";
+			this._ctrlSkedTree.Size = new Size(653, 629);
+			this._ctrlSkedTree.TabIndex = 0;
+			// 
 			// SkedulaForm
 			// 
 			this.AutoScaleDimensions = new SizeF(10F, 20F);
 			this.AutoScaleMode = AutoScaleMode.Font;
 			this.ClientSize = new Size(1294, 719);
+			this.Controls.Add(this._scSkedula);
 			this.Controls.Add(this._stsSkedula);
 			this.Controls.Add(this._tsSkedula);
 			this.Controls.Add(this._msSkedula);
@@ -188,6 +220,9 @@
 			this.WindowState = FormWindowState.Maximized;
 			this._msSkedula.ResumeLayout(false);
 			this._msSkedula.PerformLayout();
+			this._scSkedula.Panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)this._scSkedula).EndInit();
+			this._scSkedula.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
@@ -211,5 +246,7 @@
 		private ToolStripMenuItem settingsToolStripMenuItem;
 		private ToolStripMenuItem helpToolStripMenuItem;
 		private ToolStripMenuItem aboutToolStripMenuItem;
+		private SplitContainer _scSkedula;
+		private Library.Gui.Controls.SkedTreeControl _ctrlSkedTree;
 	}
 }

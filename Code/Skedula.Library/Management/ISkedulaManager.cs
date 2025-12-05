@@ -15,7 +15,7 @@ namespace Skedula.Library.Management
 	{
 		#region Properties
 		SkedTree	SkedTree		{get;set;}
-		SkedNode	SelectedNode	{get;set;}
+		SkedNode	SelectedSkedNode	{get;set;}
 		Settings	Settings		{get;set;}
 		#endregion
 
@@ -36,6 +36,10 @@ namespace Skedula.Library.Management
 		void UpdateSettings();
 		void LoadSettings();
 		void SaveSettings();
+		#endregion
+
+		#region Events
+		event Action<SkedTree> SkedTreeChanged;
 		#endregion
 	}
 }

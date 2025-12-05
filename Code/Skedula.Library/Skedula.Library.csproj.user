@@ -5,6 +5,9 @@
     <Compile Update="Gui\Controls\SkedNodeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Gui\Controls\SkedTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Gui\Dialogs\SkedNodeDialog.cs">
       <SubType>Form</SubType>
     </Compile>

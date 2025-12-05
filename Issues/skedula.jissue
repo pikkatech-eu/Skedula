@@ -1,0 +1,20 @@
+{
+  "Name": "Skedula",
+  "Description": "",
+  "SubmittedOn": "2025-12-05T11:26:02.0289912+01:00",
+  "Issues": {
+    "1": {
+      "IssueId": 1,
+      "Title": "Edit SkedTree",
+      "Details": "Menu item and method",
+      "SubmittedOn": "2025-12-05T11:27:09.9403869+01:00",
+      "Status": 0,
+      "Severity": 2,
+      "Priority": 1,
+      "LastUpdated": "2025-12-05T11:27:09.9407679+01:00",
+      "StepsToReproduce": "",
+      "AdditionalInformation": "",
+      "Notes": []
+    }
+  }
+}

@@ -67,5 +67,10 @@ namespace Skedula
 		{
 			BSM.Instance.AddSkedNode();
 		}
+
+		private void OnSkedEdit(object sender, EventArgs e)
+		{
+			BSM.Instance.ReplaceSkedNode();
+		}
 	}
 }

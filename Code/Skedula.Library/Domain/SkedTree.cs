@@ -24,9 +24,35 @@ namespace Skedula.Library.Domain
 		#endregion
 
 		#region Management
-		public SkedNode Find(int nodeId)
+		public SkedNode Find(Guid nodeId)
 		{
-			throw new NotImplementedException();
+			foreach (SkedNode skedNode in this.Nodes)
+			{
+				SkedNode found = Find(nodeId, skedNode);
+
+				if (found != null)
+				{
+					return found;
+				}
+			}
+
+			return null;
+		}
+
+		public void Replace(Guid guid, SkedNode skedNode)
+		{
+			SkedNode found = this.Find(guid);
+
+			if (found == null)
+			{
+				return;
+			}
+
+			found.Title			= skedNode.Title;
+			found.Description	= skedNode.Description;
+			found.Priority		= skedNode.Priority;
+			found.Status		= skedNode.Status;
+			found.IconKey		= skedNode.IconKey;
 		}
 		#endregion
 
@@ -68,5 +94,25 @@ namespace Skedula.Library.Domain
 			}
 		}
 		#endregion
+
+		private SkedNode Find(Guid nodeId, SkedNode skedNode)
+		{
+			if (skedNode.Id == nodeId)
+			{
+				return skedNode;
+			}
+
+			foreach (SkedNode child in skedNode.Children)
+			{
+				SkedNode found = Find(nodeId, child);
+
+				if (found != null)
+				{
+					return found;
+				}
+			}
+
+			return null;
+		}
 	}
 }

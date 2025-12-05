@@ -135,13 +135,26 @@ namespace Skedula.Library.Management
 			}
 			
 			this.SkedTreeChanged?.Invoke(this.SkedTree);
-
 			this.SaveSkedTree();
 		}
 
 		public void ReplaceSkedNode()
 		{
-			throw new NotImplementedException();
+			if (this.SelectedSkedNode == null)
+			{
+				return;
+			}
+
+			SkedNodeDialog dialog = new SkedNodeDialog();
+			dialog.SkedNode = this.SelectedSkedNode;
+
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				this.SkedTree.Replace(this.SelectedSkedNode.Id, dialog.SkedNode);
+
+				this.SkedTreeChanged?.Invoke(this.SkedTree);
+				this.SaveSkedTree();
+			}
 		}
 
 		public void DeleteSkedNode()

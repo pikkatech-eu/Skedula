@@ -45,7 +45,10 @@ namespace Skedula.Library.Gui.Controls
 
 			set
 			{
-				throw new NotImplementedException();
+				this._txTitle.Text				= value.Title; 
+				this._rxDescription.Text		= value.Description;
+				this._cxPriority.SelectedItem	= value.Priority;
+				this._cxStatus.SelectedItem		= value.Status;
 			}
 		}
 	}

@@ -116,20 +116,21 @@
 			// addToolStripMenuItem
 			// 
 			this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-			this.addToolStripMenuItem.Size = new Size(146, 26);
+			this.addToolStripMenuItem.Size = new Size(224, 26);
 			this.addToolStripMenuItem.Text = "&Add";
 			this.addToolStripMenuItem.Click += this.OnSkedAdd;
 			// 
 			// editToolStripMenuItem
 			// 
 			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new Size(146, 26);
+			this.editToolStripMenuItem.Size = new Size(224, 26);
 			this.editToolStripMenuItem.Text = "&Edit";
+			this.editToolStripMenuItem.Click += this.OnSkedEdit;
 			// 
 			// deleteToolStripMenuItem
 			// 
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-			this.deleteToolStripMenuItem.Size = new Size(146, 26);
+			this.deleteToolStripMenuItem.Size = new Size(224, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
 			// 
 			// toolsToolStripMenuItem

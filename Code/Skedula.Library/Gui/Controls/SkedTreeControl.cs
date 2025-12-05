@@ -62,5 +62,10 @@ namespace Skedula.Library.Gui.Controls
 				BSM.Instance.SelectedSkedNode = null;
 			}
 		}
+
+		private void OnNodeAdd(object sender, EventArgs e)
+		{
+			BSM.Instance.AddSkedNode();
+		}
 	}
 }

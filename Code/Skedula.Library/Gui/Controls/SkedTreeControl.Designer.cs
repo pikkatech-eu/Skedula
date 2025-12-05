@@ -34,7 +34,11 @@
 			this._tvSkedTree = new TreeView();
 			this._ilIcons = new ImageList(this.components);
 			this._cmsSkedTree = new ContextMenuStrip(this.components);
+			this.addNodeToolStripMenuItem = new ToolStripMenuItem();
+			this.editNodeToolStripMenuItem = new ToolStripMenuItem();
+			this.deleteNodeToolStripMenuItem = new ToolStripMenuItem();
 			this._tlpUserControl.SuspendLayout();
+			this._cmsSkedTree.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// _tlpUserControl
@@ -57,6 +61,7 @@
 			// 
 			// _tvSkedTree
 			// 
+			this._tvSkedTree.ContextMenuStrip = this._cmsSkedTree;
 			this._tvSkedTree.Dock = DockStyle.Fill;
 			this._tvSkedTree.FullRowSelect = true;
 			this._tvSkedTree.HideSelection = false;
@@ -81,9 +86,30 @@
 			// 
 			// _cmsSkedTree
 			// 
+			this._cmsSkedTree.Font = new Font("Consolas", 10F);
 			this._cmsSkedTree.ImageScalingSize = new Size(20, 20);
+			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem });
 			this._cmsSkedTree.Name = "_cmsSkedTree";
-			this._cmsSkedTree.Size = new Size(61, 4);
+			this._cmsSkedTree.Size = new Size(178, 76);
+			// 
+			// addNodeToolStripMenuItem
+			// 
+			this.addNodeToolStripMenuItem.Name = "addNodeToolStripMenuItem";
+			this.addNodeToolStripMenuItem.Size = new Size(177, 24);
+			this.addNodeToolStripMenuItem.Text = "&Add Node";
+			this.addNodeToolStripMenuItem.Click += this.OnNodeAdd;
+			// 
+			// editNodeToolStripMenuItem
+			// 
+			this.editNodeToolStripMenuItem.Name = "editNodeToolStripMenuItem";
+			this.editNodeToolStripMenuItem.Size = new Size(177, 24);
+			this.editNodeToolStripMenuItem.Text = "&Edit Node";
+			// 
+			// deleteNodeToolStripMenuItem
+			// 
+			this.deleteNodeToolStripMenuItem.Name = "deleteNodeToolStripMenuItem";
+			this.deleteNodeToolStripMenuItem.Size = new Size(177, 24);
+			this.deleteNodeToolStripMenuItem.Text = "&Delete Node";
 			// 
 			// SkedTreeControl
 			// 
@@ -97,6 +123,7 @@
 			this.Name = "SkedTreeControl";
 			this.Size = new Size(320, 400);
 			this._tlpUserControl.ResumeLayout(false);
+			this._cmsSkedTree.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
 
@@ -106,5 +133,8 @@
 		private TreeView _tvSkedTree;
 		private ContextMenuStrip _cmsSkedTree;
 		private ImageList _ilIcons;
+		private ToolStripMenuItem addNodeToolStripMenuItem;
+		private ToolStripMenuItem editNodeToolStripMenuItem;
+		private ToolStripMenuItem deleteNodeToolStripMenuItem;
 	}
 }

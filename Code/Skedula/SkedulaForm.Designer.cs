@@ -46,19 +46,21 @@
 			this.helpToolStripMenuItem = new ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new ToolStripMenuItem();
 			this._tsSkedula = new ToolStrip();
-			this._stsSkedula = new StatusStrip();
-			this._scSkedula = new SplitContainer();
-			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
+			this.toolStripButton3 = new ToolStripButton();
 			this._btLoad = new ToolStripButton();
 			this._btSave = new ToolStripButton();
 			this.toolStripButton1 = new ToolStripButton();
 			this.toolStripButton2 = new ToolStripButton();
-			this.toolStripButton3 = new ToolStripButton();
 			this.toolStripSeparator2 = new ToolStripSeparator();
+			this._stsSkedula = new StatusStrip();
+			this._scSkedula = new SplitContainer();
+			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
+			this._ctrlExtendedSkedNode = new Skedula.Library.Gui.Controls.ExtendedSkedNodeControl();
 			this._msSkedula.SuspendLayout();
 			this._tsSkedula.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).BeginInit();
 			this._scSkedula.Panel1.SuspendLayout();
+			this._scSkedula.Panel2.SuspendLayout();
 			this._scSkedula.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -83,41 +85,49 @@
 			// 
 			// newSkedTreeToolStripMenuItem
 			// 
+			this.newSkedTreeToolStripMenuItem.Image = Properties.Resources.tree_16;
 			this.newSkedTreeToolStripMenuItem.Name = "newSkedTreeToolStripMenuItem";
-			this.newSkedTreeToolStripMenuItem.Size = new Size(236, 26);
+			this.newSkedTreeToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
+			this.newSkedTreeToolStripMenuItem.Size = new Size(353, 26);
 			this.newSkedTreeToolStripMenuItem.Text = "&New Sked Tree";
 			this.newSkedTreeToolStripMenuItem.Click += this.OnFileNewSkedTree;
 			// 
 			// editSkedTreeToolStripMenuItem
 			// 
 			this.editSkedTreeToolStripMenuItem.Name = "editSkedTreeToolStripMenuItem";
-			this.editSkedTreeToolStripMenuItem.Size = new Size(236, 26);
+			this.editSkedTreeToolStripMenuItem.Size = new Size(353, 26);
 			this.editSkedTreeToolStripMenuItem.Text = "&Edit Sked Tree";
 			this.editSkedTreeToolStripMenuItem.Click += this.OnFileEditSkedTree;
 			// 
 			// loadSkedTreeToolStripMenuItem
 			// 
+			this.loadSkedTreeToolStripMenuItem.Image = Properties.Resources.collection_load;
 			this.loadSkedTreeToolStripMenuItem.Name = "loadSkedTreeToolStripMenuItem";
-			this.loadSkedTreeToolStripMenuItem.Size = new Size(236, 26);
+			this.loadSkedTreeToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.L;
+			this.loadSkedTreeToolStripMenuItem.Size = new Size(353, 26);
 			this.loadSkedTreeToolStripMenuItem.Text = "&Load Sked Tree";
 			this.loadSkedTreeToolStripMenuItem.Click += this.OnFileLoadSkedTree;
 			// 
 			// saveSkedTreeAsToolStripMenuItem
 			// 
+			this.saveSkedTreeAsToolStripMenuItem.Image = Properties.Resources.collection_save;
 			this.saveSkedTreeAsToolStripMenuItem.Name = "saveSkedTreeAsToolStripMenuItem";
-			this.saveSkedTreeAsToolStripMenuItem.Size = new Size(236, 26);
+			this.saveSkedTreeAsToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Shift | Keys.S;
+			this.saveSkedTreeAsToolStripMenuItem.Size = new Size(353, 26);
 			this.saveSkedTreeAsToolStripMenuItem.Text = "&Save SkedTree &As";
 			this.saveSkedTreeAsToolStripMenuItem.Click += this.OnFileSaveSkedTreeAs;
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new Size(233, 6);
+			this.toolStripSeparator1.Size = new Size(350, 6);
 			// 
 			// quitToolStripMenuItem
 			// 
+			this.quitToolStripMenuItem.Image = Properties.Resources.quit;
 			this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-			this.quitToolStripMenuItem.Size = new Size(236, 26);
+			this.quitToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Q;
+			this.quitToolStripMenuItem.Size = new Size(353, 26);
 			this.quitToolStripMenuItem.Text = "&Quit";
 			this.quitToolStripMenuItem.Click += this.OnFileQuit;
 			// 
@@ -131,6 +141,7 @@
 			// 
 			// addToolStripMenuItem
 			// 
+			this.addToolStripMenuItem.Image = Properties.Resources.leaf_add;
 			this.addToolStripMenuItem.Name = "addToolStripMenuItem";
 			this.addToolStripMenuItem.Size = new Size(146, 26);
 			this.addToolStripMenuItem.Text = "&Add";
@@ -138,6 +149,7 @@
 			// 
 			// editToolStripMenuItem
 			// 
+			this.editToolStripMenuItem.Image = Properties.Resources.leaf_edit;
 			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
 			this.editToolStripMenuItem.Size = new Size(146, 26);
 			this.editToolStripMenuItem.Text = "&Edit";
@@ -145,6 +157,7 @@
 			// 
 			// deleteToolStripMenuItem
 			// 
+			this.deleteToolStripMenuItem.Image = Properties.Resources.leaf_delete;
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
 			this.deleteToolStripMenuItem.Size = new Size(146, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
@@ -159,8 +172,9 @@
 			// 
 			// settingsToolStripMenuItem
 			// 
+			this.settingsToolStripMenuItem.Image = Properties.Resources.configuration;
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-			this.settingsToolStripMenuItem.Size = new Size(164, 26);
+			this.settingsToolStripMenuItem.Size = new Size(224, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
 			// 
 			// helpToolStripMenuItem
@@ -187,6 +201,72 @@
 			this._tsSkedula.TabIndex = 1;
 			this._tsSkedula.Text = "toolStrip1";
 			// 
+			// toolStripButton3
+			// 
+			this.toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			this.toolStripButton3.Image = Properties.Resources.tree_32;
+			this.toolStripButton3.ImageTransparentColor = Color.Magenta;
+			this.toolStripButton3.Name = "toolStripButton3";
+			this.toolStripButton3.Size = new Size(29, 37);
+			this.toolStripButton3.Text = "toolStripButton3";
+			this.toolStripButton3.ToolTipText = "Create new sked tree";
+			this.toolStripButton3.Click += this.OnFileNewSkedTree;
+			// 
+			// _btLoad
+			// 
+			this._btLoad.AutoSize = false;
+			this._btLoad.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			this._btLoad.Image = Properties.Resources.collection_load;
+			this._btLoad.ImageScaling = ToolStripItemImageScaling.None;
+			this._btLoad.ImageTransparentColor = Color.Magenta;
+			this._btLoad.Name = "_btLoad";
+			this._btLoad.Size = new Size(37, 37);
+			this._btLoad.Text = "toolStripButton1";
+			this._btLoad.ToolTipText = "Load sked tree";
+			this._btLoad.Click += this.OnFileLoadSkedTree;
+			// 
+			// _btSave
+			// 
+			this._btSave.AutoSize = false;
+			this._btSave.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			this._btSave.Image = Properties.Resources.collection_save;
+			this._btSave.ImageScaling = ToolStripItemImageScaling.None;
+			this._btSave.ImageTransparentColor = Color.Magenta;
+			this._btSave.Name = "_btSave";
+			this._btSave.Size = new Size(37, 37);
+			this._btSave.Text = "toolStripButton2";
+			this._btSave.ToolTipText = "Save current sked tree as a new file";
+			this._btSave.Click += this.OnFileSaveSkedTreeAs;
+			// 
+			// toolStripButton1
+			// 
+			this.toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			this.toolStripButton1.Image = Properties.Resources.configuration;
+			this.toolStripButton1.ImageScaling = ToolStripItemImageScaling.None;
+			this.toolStripButton1.ImageTransparentColor = Color.Magenta;
+			this.toolStripButton1.Name = "toolStripButton1";
+			this.toolStripButton1.Size = new Size(34, 37);
+			this.toolStripButton1.Text = "toolStripButton1";
+			this.toolStripButton1.ToolTipText = "Open settings dialog";
+			// 
+			// toolStripButton2
+			// 
+			this.toolStripButton2.Alignment = ToolStripItemAlignment.Right;
+			this.toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
+			this.toolStripButton2.Image = Properties.Resources.quit;
+			this.toolStripButton2.ImageScaling = ToolStripItemImageScaling.None;
+			this.toolStripButton2.ImageTransparentColor = Color.Magenta;
+			this.toolStripButton2.Name = "toolStripButton2";
+			this.toolStripButton2.Size = new Size(34, 37);
+			this.toolStripButton2.Text = "toolStripButton2";
+			this.toolStripButton2.ToolTipText = "Quit the program";
+			this.toolStripButton2.Click += this.OnFileQuit;
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new Size(6, 40);
+			// 
 			// _stsSkedula
 			// 
 			this._stsSkedula.ImageScalingSize = new Size(20, 20);
@@ -206,6 +286,10 @@
 			// _scSkedula.Panel1
 			// 
 			this._scSkedula.Panel1.Controls.Add(this._ctrlSkedTree);
+			// 
+			// _scSkedula.Panel2
+			// 
+			this._scSkedula.Panel2.Controls.Add(this._ctrlExtendedSkedNode);
 			this._scSkedula.Size = new Size(1294, 629);
 			this._scSkedula.SplitterDistance = 653;
 			this._scSkedula.TabIndex = 3;
@@ -222,65 +306,17 @@
 			this._ctrlSkedTree.Size = new Size(653, 629);
 			this._ctrlSkedTree.TabIndex = 0;
 			// 
-			// _btLoad
+			// _ctrlExtendedSkedNode
 			// 
-			this._btLoad.AutoSize = false;
-			this._btLoad.DisplayStyle = ToolStripItemDisplayStyle.Image;
-			this._btLoad.Image = Properties.Resources.collection_load;
-			this._btLoad.ImageScaling = ToolStripItemImageScaling.None;
-			this._btLoad.ImageTransparentColor = Color.Magenta;
-			this._btLoad.Name = "_btLoad";
-			this._btLoad.Size = new Size(37, 37);
-			this._btLoad.Text = "toolStripButton1";
-			this._btLoad.Click += this.OnFileLoadSkedTree;
-			// 
-			// _btSave
-			// 
-			this._btSave.AutoSize = false;
-			this._btSave.DisplayStyle = ToolStripItemDisplayStyle.Image;
-			this._btSave.Image = Properties.Resources.collection_save;
-			this._btSave.ImageScaling = ToolStripItemImageScaling.None;
-			this._btSave.ImageTransparentColor = Color.Magenta;
-			this._btSave.Name = "_btSave";
-			this._btSave.Size = new Size(37, 37);
-			this._btSave.Text = "toolStripButton2";
-			this._btSave.Click += this.OnFileSaveSkedTreeAs;
-			// 
-			// toolStripButton1
-			// 
-			this.toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-			this.toolStripButton1.Image = Properties.Resources.configuration;
-			this.toolStripButton1.ImageScaling = ToolStripItemImageScaling.None;
-			this.toolStripButton1.ImageTransparentColor = Color.Magenta;
-			this.toolStripButton1.Name = "toolStripButton1";
-			this.toolStripButton1.Size = new Size(34, 37);
-			this.toolStripButton1.Text = "toolStripButton1";
-			// 
-			// toolStripButton2
-			// 
-			this.toolStripButton2.Alignment = ToolStripItemAlignment.Right;
-			this.toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
-			this.toolStripButton2.Image = Properties.Resources.quit;
-			this.toolStripButton2.ImageScaling = ToolStripItemImageScaling.None;
-			this.toolStripButton2.ImageTransparentColor = Color.Magenta;
-			this.toolStripButton2.Name = "toolStripButton2";
-			this.toolStripButton2.Size = new Size(34, 37);
-			this.toolStripButton2.Text = "toolStripButton2";
-			// 
-			// toolStripButton3
-			// 
-			this.toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
-			this.toolStripButton3.Image = Properties.Resources.tree_32;
-			this.toolStripButton3.ImageTransparentColor = Color.Magenta;
-			this.toolStripButton3.Name = "toolStripButton3";
-			this.toolStripButton3.Size = new Size(29, 37);
-			this.toolStripButton3.Text = "toolStripButton3";
-			this.toolStripButton3.Click += this.OnFileNewSkedTree;
-			// 
-			// toolStripSeparator2
-			// 
-			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new Size(6, 40);
+			this._ctrlExtendedSkedNode.BackColor = Color.FromArgb(0, 48, 96);
+			this._ctrlExtendedSkedNode.Dock = DockStyle.Fill;
+			this._ctrlExtendedSkedNode.Font = new Font("Consolas", 14F);
+			this._ctrlExtendedSkedNode.ForeColor = Color.White;
+			this._ctrlExtendedSkedNode.Location = new Point(0, 0);
+			this._ctrlExtendedSkedNode.Margin = new Padding(0);
+			this._ctrlExtendedSkedNode.Name = "_ctrlExtendedSkedNode";
+			this._ctrlExtendedSkedNode.Size = new Size(637, 629);
+			this._ctrlExtendedSkedNode.TabIndex = 0;
 			// 
 			// SkedulaForm
 			// 
@@ -303,6 +339,7 @@
 			this._tsSkedula.ResumeLayout(false);
 			this._tsSkedula.PerformLayout();
 			this._scSkedula.Panel1.ResumeLayout(false);
+			this._scSkedula.Panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).EndInit();
 			this._scSkedula.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -337,5 +374,6 @@
 		private ToolStripButton toolStripButton2;
 		private ToolStripButton toolStripButton3;
 		private ToolStripSeparator toolStripSeparator2;
+		private Library.Gui.Controls.ExtendedSkedNodeControl _ctrlExtendedSkedNode;
 	}
 }

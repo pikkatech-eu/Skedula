@@ -20,4 +20,10 @@
 	  <Exec Command="xcopy &quot;$(SolutionDir)..\version.toml&quot; &quot;$(TargetDir)&quot; /Y" />
 	</Target>
 
+	<ItemGroup>
+	  <Compile Update="Gui\Controls\ExtendedSkedNodeControl.cs">
+	    <SubType>UserControl</SubType>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

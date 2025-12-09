@@ -112,6 +112,20 @@ namespace Skedula.Library.Management
 
 		public void EditSkedTree()
 		{
+			if (this.SkedTree == null)
+			{
+
+				MessageBox.Show
+								(
+									"You must create a new sked tree or load one", 
+									"No sked tree defined", 
+									MessageBoxButtons.OKCancel, 
+									MessageBoxIcon.Stop
+								);
+
+				return;
+			}
+
 			SkedTreePropertiesDialog dialog = new SkedTreePropertiesDialog();
 			dialog.ItemName					= this.SkedTree.Title;
 			dialog.ItemDescription			= this.SkedTree.Description;

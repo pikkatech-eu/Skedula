@@ -15,25 +15,22 @@ using BSM = Skedula.Library.Management.BasicSkedulaManager;
 
 namespace Skedula.Library.Gui.Controls
 {
-	public partial class SkedNodeControl : UserControl, ISkedNodeDevice
+	public partial class ExtendedSkedNodeControl : UserControl, ISkedNodeDevice
 	{
-		public SkedNodeControl()
+		public ExtendedSkedNodeControl()
 		{
 			InitializeComponent();
+
+			foreach (string key in BSM.Instance.Icons.Keys)
+			{
+				this._ilIcons.Images.Add(key, BSM.Instance.Icons[key]);
+			}
 
 			this._cxPriority.DataSource		= Enum.GetValues<Priority>();
 			this._cxStatus.DataSource		= Enum.GetValues<Status>();
 
 			this._cxPriority.SelectedItem	= Priority.Normal;
 			this._cxStatus.SelectedItem		= Status.Pending;
-
-			this._cxIcons.ImageDictionary	= BSM.Instance.Icons;
-
-			foreach (string iconFile in BSM.Instance.Icons.Keys)
-			{
-				string iconName = new FileInfo(iconFile).Name;
-				this._cxIcons.AddItem(iconName, iconFile);
-			}
 		}
 
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -49,8 +46,6 @@ namespace Skedula.Library.Gui.Controls
 				sked.Priority		= (Priority)this._cxPriority.SelectedItem;
 				sked.Status			= (Status)this._cxStatus.SelectedItem;
 
-				sked.IconKey		= this._cxIcons.SelectedItem?.ToString();
-
 				return sked;
 			}
 
@@ -60,6 +55,10 @@ namespace Skedula.Library.Gui.Controls
 				this._rxDescription.Text		= value.Description;
 				this._cxPriority.SelectedItem	= value.Priority;
 				this._cxStatus.SelectedItem		= value.Status;
+
+				this._lblGuid.Text				= $"Guid: {value.Id}";
+				this._lblDates.Text				= $"Created: {value.CreationTime:yyyy-MM-dd HH:mm} *** Last modified: {value.LastModified:yyyy-MM-dd HH:mm}";
+				this._pbIcon.Image				= this._ilIcons.Images[BSM.ICON_FOLDER + value.IconKey];
 			}
 		}
 	}

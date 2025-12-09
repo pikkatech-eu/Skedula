@@ -24,6 +24,13 @@ namespace Skedula
 			version.FromToml();
 
 			this.Text = $"Skedula {version}";
+
+			this._ctrlSkedTree.SkedSelected += this.OnSkedSelected;
+		}
+
+		private void OnSkedSelected(SkedNode skedNode)
+		{
+			this._ctrlExtendedSkedNode.SkedNode = skedNode;
 		}
 
 		private void OnSkedTreeChanged(SkedTree skedTree)

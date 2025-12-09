@@ -25,6 +25,8 @@ namespace Skedula.Library.Gui.Controls
 			}
 		}
 
+		public event Action<SkedNode> SkedSelected;
+
 		public void Display(SkedTree skedTree)
 		{
 			this._tvSkedTree.Nodes.Clear();
@@ -81,6 +83,8 @@ namespace Skedula.Library.Gui.Controls
 			{
 				BSM.Instance.SelectedSkedNode = null;
 			}
+
+			this.SkedSelected?.Invoke(BSM.Instance.SelectedSkedNode);
 		}
 
 		private void OnNodeAdd(object sender, EventArgs e)

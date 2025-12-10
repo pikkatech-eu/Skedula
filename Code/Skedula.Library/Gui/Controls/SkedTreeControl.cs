@@ -37,21 +37,21 @@ namespace Skedula.Library.Gui.Controls
 
 			foreach (SkedNode skedNode in skedTree.Nodes)
 			{
-				TreeNode node	= new TreeNode(skedNode.Title);
-				node.Tag		= skedNode;
+				TreeNode node = new TreeNode(skedNode.Title);
+				node.Tag = skedNode;
 				string imageKey = "";
 
 				if (!String.IsNullOrEmpty(skedNode.IconKey))
 				{
-					imageKey				= $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
-					node.ImageKey			= imageKey;
-					node.SelectedImageKey	= imageKey;
+					imageKey = $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
+					node.ImageKey = imageKey;
+					node.SelectedImageKey = imageKey;
 				}
 				else
 				{
-					imageKey				= skedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
-					node.ImageKey			= imageKey;
-					node.SelectedImageKey	= imageKey;
+					imageKey = skedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
+					node.ImageKey = imageKey;
+					node.SelectedImageKey = imageKey;
 				}
 
 				this._tvSkedTree.Nodes.Add(node);
@@ -66,21 +66,21 @@ namespace Skedula.Library.Gui.Controls
 		{
 			foreach (SkedNode childSkedNode in skedNode.Children)
 			{
-				TreeNode childTreeNode	= new TreeNode(childSkedNode.Title);
-				childTreeNode.Tag		= childSkedNode;
-				string imageKey			= "";
+				TreeNode childTreeNode = new TreeNode(childSkedNode.Title);
+				childTreeNode.Tag = childSkedNode;
+				string imageKey = "";
 
 				if (!String.IsNullOrEmpty(childSkedNode.IconKey))
 				{
-					imageKey						= $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
-					childTreeNode.ImageKey			= imageKey;
-					childTreeNode.SelectedImageKey	= imageKey;
+					imageKey = $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
+					childTreeNode.ImageKey = imageKey;
+					childTreeNode.SelectedImageKey = imageKey;
 				}
 				else
 				{
-					imageKey						= childSkedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
-					childTreeNode.ImageKey			= imageKey;
-					childTreeNode.SelectedImageKey	= imageKey;
+					imageKey = childSkedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
+					childTreeNode.ImageKey = imageKey;
+					childTreeNode.SelectedImageKey = imageKey;
 				}
 
 				node.Nodes.Add(childTreeNode);
@@ -103,7 +103,12 @@ namespace Skedula.Library.Gui.Controls
 			this.SkedSelected?.Invoke(BSM.Instance.SelectedSkedNode);
 		}
 
-		private void OnNodeAdd(object sender, EventArgs e)
+		private void OnNodeAddRootNode(object sender, EventArgs e)
+		{
+			BSM.Instance.AddSkedNode(true);
+		}
+
+		private void OnNodeAddSubnode(object sender, EventArgs e)
 		{
 			BSM.Instance.AddSkedNode();
 		}
@@ -128,5 +133,7 @@ namespace Skedula.Library.Gui.Controls
 
 			BasicSkedulaManager.Instance.SelectedSkedNode = null;
 		}
+
+
 	}
 }

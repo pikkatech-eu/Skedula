@@ -56,6 +56,7 @@
 			this._scSkedula = new SplitContainer();
 			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
 			this._ctrlExtendedSkedNode = new Skedula.Library.Gui.Controls.ExtendedSkedNodeControl();
+			this.addRootNodeToolStripMenuItem = new ToolStripMenuItem();
 			this._msSkedula.SuspendLayout();
 			this._tsSkedula.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).BeginInit();
@@ -133,7 +134,7 @@
 			// 
 			// skedToolStripMenuItem
 			// 
-			this.skedToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.addToolStripMenuItem, this.editToolStripMenuItem, this.deleteToolStripMenuItem });
+			this.skedToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addToolStripMenuItem, this.editToolStripMenuItem, this.deleteToolStripMenuItem });
 			this.skedToolStripMenuItem.Font = new Font("Consolas", 10F);
 			this.skedToolStripMenuItem.Name = "skedToolStripMenuItem";
 			this.skedToolStripMenuItem.Size = new Size(59, 24);
@@ -143,15 +144,15 @@
 			// 
 			this.addToolStripMenuItem.Image = Properties.Resources.leaf_add;
 			this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-			this.addToolStripMenuItem.Size = new Size(146, 26);
-			this.addToolStripMenuItem.Text = "&Add";
+			this.addToolStripMenuItem.Size = new Size(224, 26);
+			this.addToolStripMenuItem.Text = "Add &Subnode";
 			this.addToolStripMenuItem.Click += this.OnSkedAdd;
 			// 
 			// editToolStripMenuItem
 			// 
 			this.editToolStripMenuItem.Image = Properties.Resources.leaf_edit;
 			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new Size(146, 26);
+			this.editToolStripMenuItem.Size = new Size(224, 26);
 			this.editToolStripMenuItem.Text = "&Edit";
 			this.editToolStripMenuItem.Click += this.OnSkedEdit;
 			// 
@@ -159,7 +160,7 @@
 			// 
 			this.deleteToolStripMenuItem.Image = Properties.Resources.leaf_delete;
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-			this.deleteToolStripMenuItem.Size = new Size(146, 26);
+			this.deleteToolStripMenuItem.Size = new Size(224, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
 			this.deleteToolStripMenuItem.Click += this.OnSkedDelete;
 			// 
@@ -174,7 +175,7 @@
 			// 
 			this.settingsToolStripMenuItem.Image = Properties.Resources.configuration;
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-			this.settingsToolStripMenuItem.Size = new Size(224, 26);
+			this.settingsToolStripMenuItem.Size = new Size(164, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
 			// 
 			// helpToolStripMenuItem
@@ -318,6 +319,13 @@
 			this._ctrlExtendedSkedNode.Size = new Size(637, 629);
 			this._ctrlExtendedSkedNode.TabIndex = 0;
 			// 
+			// addRootNodeToolStripMenuItem
+			// 
+			this.addRootNodeToolStripMenuItem.Name = "addRootNodeToolStripMenuItem";
+			this.addRootNodeToolStripMenuItem.Size = new Size(224, 26);
+			this.addRootNodeToolStripMenuItem.Text = "Add &Root Node";
+			this.addRootNodeToolStripMenuItem.Click += this.OnSkedAddRootNode;
+			// 
 			// SkedulaForm
 			// 
 			this.AutoScaleDimensions = new SizeF(10F, 20F);
@@ -375,5 +383,6 @@
 		private ToolStripButton toolStripButton3;
 		private ToolStripSeparator toolStripSeparator2;
 		private Library.Gui.Controls.ExtendedSkedNodeControl _ctrlExtendedSkedNode;
+		private ToolStripMenuItem addRootNodeToolStripMenuItem;
 	}
 }

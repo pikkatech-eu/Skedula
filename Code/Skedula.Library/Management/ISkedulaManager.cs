@@ -30,7 +30,11 @@ namespace Skedula.Library.Management
 		#endregion
 
 		#region SkedNode Management
-		void AddSkedNode();
+		/// <summary>
+		/// Adds a sked node to either the tree itself ("root" node) or to the momentarily selected sked node.
+		/// </summary>
+		/// <param name="isRootNode">If true, a root node should be added.</param>
+		void AddSkedNode(bool isRootNode);
 		void ReplaceSkedNode();
 		void DeleteSkedNode();
 		#endregion

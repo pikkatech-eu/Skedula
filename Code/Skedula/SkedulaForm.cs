@@ -89,5 +89,10 @@ namespace Skedula
 		{
 			BSM.Instance.EditSkedTree();
 		}
+
+		private void OnSkedAddRootNode(object sender, EventArgs e)
+		{
+			BSM.Instance.AddSkedNode(true);
+		}
 	}
 }

@@ -142,7 +142,11 @@ namespace Skedula.Library.Management
 		#endregion
 
 		#region SkedNode Management
-		public void AddSkedNode()
+		/// <summary>
+		/// Adds a sked node to either the tree itself ("root" node) or to the momentarily selected sked node.
+		/// </summary>
+		/// <param name="isRootNode">If true, a root node should be added.</param>
+		public void AddSkedNode(bool isRootNode = false)
 		{
 			if (this.SkedTree == null)
 			{
@@ -164,12 +168,12 @@ namespace Skedula.Library.Management
 			{
 				SkedNode skedNode = dialog.SkedNode;
 
-				if (this.SelectedSkedNode != null)
+				if (!isRootNode && this.SelectedSkedNode != null)
 				{
 					this.SelectedSkedNode.Children.Add(skedNode);
 					skedNode.ParentId	= this.SelectedSkedNode.Id;
 				}
-				else
+				else if (isRootNode)
 				{
 					this.SkedTree.Nodes.Add(skedNode);
 					skedNode.ParentId = null;

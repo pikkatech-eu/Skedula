@@ -7,9 +7,11 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using System.Runtime.CompilerServices;
 using Skedula.Library.Domain;
 using Skedula.Library.Gui.Dialogs;
-using BSM = Skedula.Library.Management.BasicSkedulaManager;
+
+[assembly:InternalsVisibleTo("Skedula")]
 
 namespace Skedula.Library.Management
 {
@@ -25,6 +27,8 @@ namespace Skedula.Library.Management
 		public static BasicSkedulaManager Instance => _instance.Value;
 		private BasicSkedulaManager() 
 		{
+			this.Settings = Settings.Load();
+
 			if (!Directory.Exists(ICON_FOLDER))
 			{
 				Directory.CreateDirectory(ICON_FOLDER);
@@ -35,7 +39,7 @@ namespace Skedula.Library.Management
 		#endregion
 
 		#region Private Members
-		private string _skedTreeFileName = null;
+		internal string SkedTreeFileName	{get;set;} = null;
 		#endregion
 
 		#region Properties
@@ -43,7 +47,7 @@ namespace Skedula.Library.Management
 
 		public SkedNode						SelectedSkedNode	{get;set;}	= null;
 
-		public Settings						Settings			{get;set;}	= null;
+		public Settings						Settings			{get;set;}	= new Settings();
 
 		public Dictionary<string, Image>	Icons				{get;internal set;}	= new();
 		#endregion
@@ -64,32 +68,46 @@ namespace Skedula.Library.Management
 				this.SkedTree.Description	= dialog.ItemDescription;
 
 				this.SaveSkedTree();
+
+				this.Settings.AddRecentlyOpenedProject(this.SkedTreeFileName);
+				this.Settings.Save();
 			}
 		}
 
 		public void LoadSkedTree(string fileName = null)
 		{
-			OpenFileDialog dialog = new OpenFileDialog();
-			dialog.Filter = $"Skedula Files ({DEFAULT_EXTENSION})|{DEFAULT_EXTENSION}|All files (*.*)|(*.*)";
-
-			if (dialog.ShowDialog() == DialogResult.OK)
+			if (String.IsNullOrEmpty(fileName))
 			{
-				this._skedTreeFileName = dialog.FileName;
-				this.SkedTree = SkedTree.Load(this._skedTreeFileName);
+				OpenFileDialog dialog	= new OpenFileDialog();
+				dialog.Filter			= $"Skedula Files ({DEFAULT_EXTENSION})|{DEFAULT_EXTENSION}|All files (*.*)|(*.*)";
 
-				this.SkedTreeChanged(this.SkedTree);
+				if (dialog.ShowDialog() == DialogResult.OK)
+				{
+					this.SkedTreeFileName	= dialog.FileName;
+				}
 			}
+			else
+			{
+				this.SkedTreeFileName	= fileName;
+			}
+
+			this.SkedTree			= SkedTree.Load(this.SkedTreeFileName);
+
+			this.SkedTreeChanged(this.SkedTree);
+
+			this.Settings.AddRecentlyOpenedProject(this.SkedTreeFileName);
+			this.Settings.Save();
 		}
 
 		public void SaveSkedTree()
 		{
-			if (String.IsNullOrEmpty(this._skedTreeFileName))
+			if (String.IsNullOrEmpty(this.SkedTreeFileName))
 			{
 				this.SaveSkedTreeAs();
 			}
 			else
 			{
-				this.SkedTree.Save(this._skedTreeFileName);
+				this.SkedTree.Save(this.SkedTreeFileName);
 			}
 		}
 
@@ -100,12 +118,12 @@ namespace Skedula.Library.Management
 
 			if (dialog.ShowDialog() == DialogResult.OK)
 			{
-				this._skedTreeFileName = dialog.FileName;
+				this.SkedTreeFileName = dialog.FileName;
 			}
 
 			try
 			{
-				this.SkedTree.Save(this._skedTreeFileName);
+				this.SkedTree.Save(this.SkedTreeFileName);
 			}
 			catch (Exception)	{}
 		}

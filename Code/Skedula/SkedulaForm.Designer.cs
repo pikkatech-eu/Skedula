@@ -38,6 +38,7 @@
 			this.toolStripSeparator1 = new ToolStripSeparator();
 			this.quitToolStripMenuItem = new ToolStripMenuItem();
 			this.skedToolStripMenuItem = new ToolStripMenuItem();
+			this.addRootNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.addToolStripMenuItem = new ToolStripMenuItem();
 			this.editToolStripMenuItem = new ToolStripMenuItem();
 			this.deleteToolStripMenuItem = new ToolStripMenuItem();
@@ -56,7 +57,7 @@
 			this._scSkedula = new SplitContainer();
 			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
 			this._ctrlExtendedSkedNode = new Skedula.Library.Gui.Controls.ExtendedSkedNodeControl();
-			this.addRootNodeToolStripMenuItem = new ToolStripMenuItem();
+			this._menuItemRecentProjects = new ToolStripMenuItem();
 			this._msSkedula.SuspendLayout();
 			this._tsSkedula.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).BeginInit();
@@ -78,7 +79,7 @@
 			// 
 			// fToolStripMenuItem
 			// 
-			this.fToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.newSkedTreeToolStripMenuItem, this.editSkedTreeToolStripMenuItem, this.loadSkedTreeToolStripMenuItem, this.saveSkedTreeAsToolStripMenuItem, this.toolStripSeparator1, this.quitToolStripMenuItem });
+			this.fToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.newSkedTreeToolStripMenuItem, this.editSkedTreeToolStripMenuItem, this.loadSkedTreeToolStripMenuItem, this.saveSkedTreeAsToolStripMenuItem, this._menuItemRecentProjects, this.toolStripSeparator1, this.quitToolStripMenuItem });
 			this.fToolStripMenuItem.Font = new Font("Consolas", 10F);
 			this.fToolStripMenuItem.Name = "fToolStripMenuItem";
 			this.fToolStripMenuItem.Size = new Size(59, 24);
@@ -140,11 +141,18 @@
 			this.skedToolStripMenuItem.Size = new Size(59, 24);
 			this.skedToolStripMenuItem.Text = "&Sked";
 			// 
+			// addRootNodeToolStripMenuItem
+			// 
+			this.addRootNodeToolStripMenuItem.Name = "addRootNodeToolStripMenuItem";
+			this.addRootNodeToolStripMenuItem.Size = new Size(209, 26);
+			this.addRootNodeToolStripMenuItem.Text = "Add &Root Node";
+			this.addRootNodeToolStripMenuItem.Click += this.OnSkedAddRootNode;
+			// 
 			// addToolStripMenuItem
 			// 
 			this.addToolStripMenuItem.Image = Properties.Resources.leaf_add;
 			this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-			this.addToolStripMenuItem.Size = new Size(224, 26);
+			this.addToolStripMenuItem.Size = new Size(209, 26);
 			this.addToolStripMenuItem.Text = "Add &Subnode";
 			this.addToolStripMenuItem.Click += this.OnSkedAdd;
 			// 
@@ -152,7 +160,7 @@
 			// 
 			this.editToolStripMenuItem.Image = Properties.Resources.leaf_edit;
 			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new Size(224, 26);
+			this.editToolStripMenuItem.Size = new Size(209, 26);
 			this.editToolStripMenuItem.Text = "&Edit";
 			this.editToolStripMenuItem.Click += this.OnSkedEdit;
 			// 
@@ -160,7 +168,7 @@
 			// 
 			this.deleteToolStripMenuItem.Image = Properties.Resources.leaf_delete;
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-			this.deleteToolStripMenuItem.Size = new Size(224, 26);
+			this.deleteToolStripMenuItem.Size = new Size(209, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
 			this.deleteToolStripMenuItem.Click += this.OnSkedDelete;
 			// 
@@ -319,12 +327,11 @@
 			this._ctrlExtendedSkedNode.Size = new Size(637, 629);
 			this._ctrlExtendedSkedNode.TabIndex = 0;
 			// 
-			// addRootNodeToolStripMenuItem
+			// _menuItemRecentProjects
 			// 
-			this.addRootNodeToolStripMenuItem.Name = "addRootNodeToolStripMenuItem";
-			this.addRootNodeToolStripMenuItem.Size = new Size(224, 26);
-			this.addRootNodeToolStripMenuItem.Text = "Add &Root Node";
-			this.addRootNodeToolStripMenuItem.Click += this.OnSkedAddRootNode;
+			this._menuItemRecentProjects.Name = "_menuItemRecentProjects";
+			this._menuItemRecentProjects.Size = new Size(353, 26);
+			this._menuItemRecentProjects.Text = "&Recent Sked Trees";
 			// 
 			// SkedulaForm
 			// 
@@ -384,5 +391,6 @@
 		private ToolStripSeparator toolStripSeparator2;
 		private Library.Gui.Controls.ExtendedSkedNodeControl _ctrlExtendedSkedNode;
 		private ToolStripMenuItem addRootNodeToolStripMenuItem;
+		private ToolStripMenuItem _menuItemRecentProjects;
 	}
 }

@@ -19,13 +19,47 @@ namespace Skedula
 		{
 			InitializeComponent();
 
+			BSM.Instance.Settings.RecentlyOpenedProjectsChanged += this.OnRecentlyOpenedProjectsChanged;
+
 			BSM.Instance.SkedTreeChanged += this.OnSkedTreeChanged;
 			Factotum.Versioning.Version version = new Factotum.Versioning.Version();
 			version.FromToml();
 
 			this.Text = $"Skedula {version}";
 
+			this.OnRecentlyOpenedProjectsChanged(BSM.Instance.Settings.RecentlyOpenedProjects);
+
 			this._ctrlSkedTree.SkedSelected += this.OnSkedSelected;
+		}
+
+		private void OnRecentlyOpenedProjectsChanged(List<string> paths)
+		{
+			List<ToolStripItem> items = new List<ToolStripItem>();
+
+			this._menuItemRecentProjects.DropDownItems.Clear();
+
+			foreach (string path in paths)
+			{
+				ToolStripItem item = this._menuItemRecentProjects.DropDownItems.Add(path);
+
+				item.Click += this.RecentlyOpenedItemClicked;
+
+				items.Add(item);
+			}
+		}
+
+		private void RecentlyOpenedItemClicked(object? sender, EventArgs e)
+		{
+			string filePath = ((ToolStripItem)sender).Text;
+
+			if (File.Exists(filePath))
+			{
+				BSM.Instance.LoadSkedTree(filePath);
+			}
+			else
+			{
+				BSM.Instance.Settings.RemoveRecentlyOpenedProject(filePath);
+			}
 		}
 
 		private void OnSkedSelected(SkedNode skedNode)

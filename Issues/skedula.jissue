@@ -145,6 +145,19 @@
       "StepsToReproduce": "",
       "AdditionalInformation": "",
       "Notes": []
+    },
+    "12": {
+      "IssueId": 12,
+      "Title": "Cannot create root node",
+      "Details": "Only the very first time; otherwise a new \u0022root\u0022 node is attached to a node (the first one?)",
+      "SubmittedOn": "2025-12-10T14:29:19.0053842+01:00",
+      "Status": 0,
+      "Severity": 0,
+      "Priority": 0,
+      "LastUpdated": "2025-12-10T14:29:19.0054604+01:00",
+      "StepsToReproduce": "",
+      "AdditionalInformation": "",
+      "Notes": []
     }
   }
 }

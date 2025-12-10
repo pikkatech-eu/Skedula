@@ -15,6 +15,9 @@ namespace Skedula.Library.Gui.Controls
 {
 	public partial class SkedTreeControl : UserControl, ISkedTreeDevice
 	{
+		internal const string DEFAULT_LEAF_ICON = "leaf_16";
+		internal const string DEFAULT_TREE_ICON = "tree_16";
+
 		public SkedTreeControl()
 		{
 			InitializeComponent();
@@ -42,7 +45,8 @@ namespace Skedula.Library.Gui.Controls
 				}
 				else
 				{
-					node.ImageKey	= "framework";
+					node.ImageKey	= skedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
+					// node.ImageKey	= "framework";
 				}
 
 				this._tvSkedTree.Nodes.Add(node);
@@ -64,7 +68,7 @@ namespace Skedula.Library.Gui.Controls
 				}
 				else
 				{
-					childTreeNode.ImageKey	= "framework";
+					childTreeNode.ImageKey	= skedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
 				}
 
 				node.Nodes.Add(childTreeNode);

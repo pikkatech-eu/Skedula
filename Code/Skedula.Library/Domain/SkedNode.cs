@@ -34,5 +34,10 @@ namespace Skedula.Library.Domain
 		{
 			return $"{this.Title}";
 		}
+
+		public bool IsLeaf()
+		{
+			return this.Children.Count == 0;
+		}
 	}
 }

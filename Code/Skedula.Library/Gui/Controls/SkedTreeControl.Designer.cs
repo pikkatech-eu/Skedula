@@ -125,9 +125,8 @@
 			this._ilIcons.ColorDepth = ColorDepth.Depth32Bit;
 			this._ilIcons.ImageStream = (ImageListStreamer)resources.GetObject("_ilIcons.ImageStream");
 			this._ilIcons.TransparentColor = Color.Transparent;
-			this._ilIcons.Images.SetKeyName(0, "framework");
-			this._ilIcons.Images.SetKeyName(1, "tree_16");
-			this._ilIcons.Images.SetKeyName(2, "leaf_16");
+			this._ilIcons.Images.SetKeyName(0, "tree_16");
+			this._ilIcons.Images.SetKeyName(1, "leaf_16");
 			// 
 			// SkedTreeControl
 			// 

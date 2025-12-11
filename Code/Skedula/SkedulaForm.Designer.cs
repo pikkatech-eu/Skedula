@@ -35,6 +35,7 @@
 			this.editSkedTreeToolStripMenuItem = new ToolStripMenuItem();
 			this.loadSkedTreeToolStripMenuItem = new ToolStripMenuItem();
 			this.saveSkedTreeAsToolStripMenuItem = new ToolStripMenuItem();
+			this._menuItemRecentProjects = new ToolStripMenuItem();
 			this.toolStripSeparator1 = new ToolStripSeparator();
 			this.quitToolStripMenuItem = new ToolStripMenuItem();
 			this.skedToolStripMenuItem = new ToolStripMenuItem();
@@ -54,12 +55,13 @@
 			this.toolStripButton2 = new ToolStripButton();
 			this.toolStripSeparator2 = new ToolStripSeparator();
 			this._stsSkedula = new StatusStrip();
+			this._lblInfo = new ToolStripStatusLabel();
 			this._scSkedula = new SplitContainer();
 			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
 			this._ctrlExtendedSkedNode = new Skedula.Library.Gui.Controls.ExtendedSkedNodeControl();
-			this._menuItemRecentProjects = new ToolStripMenuItem();
 			this._msSkedula.SuspendLayout();
 			this._tsSkedula.SuspendLayout();
+			this._stsSkedula.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).BeginInit();
 			this._scSkedula.Panel1.SuspendLayout();
 			this._scSkedula.Panel2.SuspendLayout();
@@ -118,6 +120,12 @@
 			this.saveSkedTreeAsToolStripMenuItem.Size = new Size(353, 26);
 			this.saveSkedTreeAsToolStripMenuItem.Text = "&Save SkedTree &As";
 			this.saveSkedTreeAsToolStripMenuItem.Click += this.OnFileSaveSkedTreeAs;
+			// 
+			// _menuItemRecentProjects
+			// 
+			this._menuItemRecentProjects.Name = "_menuItemRecentProjects";
+			this._menuItemRecentProjects.Size = new Size(353, 26);
+			this._menuItemRecentProjects.Text = "&Recent Sked Trees";
 			// 
 			// toolStripSeparator1
 			// 
@@ -185,6 +193,7 @@
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
 			this.settingsToolStripMenuItem.Size = new Size(164, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
+			this.settingsToolStripMenuItem.Click += this.OnToolsSettings;
 			// 
 			// helpToolStripMenuItem
 			// 
@@ -196,8 +205,9 @@
 			// aboutToolStripMenuItem
 			// 
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-			this.aboutToolStripMenuItem.Size = new Size(137, 26);
+			this.aboutToolStripMenuItem.Size = new Size(224, 26);
 			this.aboutToolStripMenuItem.Text = "&About";
+			this.aboutToolStripMenuItem.Click += this.OnHelpAbout;
 			// 
 			// _tsSkedula
 			// 
@@ -278,12 +288,21 @@
 			// 
 			// _stsSkedula
 			// 
+			this._stsSkedula.Font = new Font("Consolas", 14F);
 			this._stsSkedula.ImageScalingSize = new Size(20, 20);
-			this._stsSkedula.Location = new Point(0, 697);
+			this._stsSkedula.Items.AddRange(new ToolStripItem[] { this._lblInfo });
+			this._stsSkedula.Location = new Point(0, 685);
 			this._stsSkedula.Name = "_stsSkedula";
-			this._stsSkedula.Size = new Size(1294, 22);
+			this._stsSkedula.Size = new Size(1294, 34);
 			this._stsSkedula.TabIndex = 2;
 			this._stsSkedula.Text = "statusStrip1";
+			// 
+			// _lblInfo
+			// 
+			this._lblInfo.ForeColor = Color.MidnightBlue;
+			this._lblInfo.Name = "_lblInfo";
+			this._lblInfo.Size = new Size(51, 28);
+			this._lblInfo.Text = "***";
 			// 
 			// _scSkedula
 			// 
@@ -299,7 +318,7 @@
 			// _scSkedula.Panel2
 			// 
 			this._scSkedula.Panel2.Controls.Add(this._ctrlExtendedSkedNode);
-			this._scSkedula.Size = new Size(1294, 629);
+			this._scSkedula.Size = new Size(1294, 617);
 			this._scSkedula.SplitterDistance = 653;
 			this._scSkedula.TabIndex = 3;
 			// 
@@ -312,7 +331,7 @@
 			this._ctrlSkedTree.Location = new Point(0, 0);
 			this._ctrlSkedTree.Margin = new Padding(0);
 			this._ctrlSkedTree.Name = "_ctrlSkedTree";
-			this._ctrlSkedTree.Size = new Size(653, 629);
+			this._ctrlSkedTree.Size = new Size(653, 617);
 			this._ctrlSkedTree.TabIndex = 0;
 			// 
 			// _ctrlExtendedSkedNode
@@ -324,14 +343,8 @@
 			this._ctrlExtendedSkedNode.Location = new Point(0, 0);
 			this._ctrlExtendedSkedNode.Margin = new Padding(0);
 			this._ctrlExtendedSkedNode.Name = "_ctrlExtendedSkedNode";
-			this._ctrlExtendedSkedNode.Size = new Size(637, 629);
+			this._ctrlExtendedSkedNode.Size = new Size(637, 617);
 			this._ctrlExtendedSkedNode.TabIndex = 0;
-			// 
-			// _menuItemRecentProjects
-			// 
-			this._menuItemRecentProjects.Name = "_menuItemRecentProjects";
-			this._menuItemRecentProjects.Size = new Size(353, 26);
-			this._menuItemRecentProjects.Text = "&Recent Sked Trees";
 			// 
 			// SkedulaForm
 			// 
@@ -353,6 +366,8 @@
 			this._msSkedula.PerformLayout();
 			this._tsSkedula.ResumeLayout(false);
 			this._tsSkedula.PerformLayout();
+			this._stsSkedula.ResumeLayout(false);
+			this._stsSkedula.PerformLayout();
 			this._scSkedula.Panel1.ResumeLayout(false);
 			this._scSkedula.Panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)this._scSkedula).EndInit();
@@ -392,5 +407,6 @@
 		private Library.Gui.Controls.ExtendedSkedNodeControl _ctrlExtendedSkedNode;
 		private ToolStripMenuItem addRootNodeToolStripMenuItem;
 		private ToolStripMenuItem _menuItemRecentProjects;
+		private ToolStripStatusLabel _lblInfo;
 	}
 }

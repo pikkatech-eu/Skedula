@@ -7,7 +7,9 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using Kairos.Library.Gui;
 using Skedula.Library.Domain;
+using Skedula.Library.Gui.Dialogs;
 using BSM = Skedula.Library.Management.BasicSkedulaManager;
 
 
@@ -34,6 +36,8 @@ namespace Skedula
 			if (BSM.Instance.Settings.AutoLoadLastProject && BSM.Instance.Settings.RecentlyOpenedProjects.Count > 0)
 			{
 				BSM.Instance.LoadSkedTree(BSM.Instance.Settings.RecentlyOpenedProjects[0]);
+
+				this._lblInfo.Text = BSM.Instance.SkedTree.Title;
 			}
 		}
 
@@ -60,6 +64,8 @@ namespace Skedula
 			if (File.Exists(filePath))
 			{
 				BSM.Instance.LoadSkedTree(filePath);
+
+				this._lblInfo.Text = BSM.Instance.SkedTree.Title;
 			}
 			else
 			{
@@ -89,11 +95,15 @@ namespace Skedula
 		private void OnFileNewSkedTree(object sender, EventArgs e)
 		{
 			BSM.Instance.NewSkedTree();
+
+			this._lblInfo.Text = BSM.Instance.SkedTree.Title;
 		}
 
 		private void OnFileLoadSkedTree(object sender, EventArgs e)
 		{
 			BSM.Instance.LoadSkedTree();
+
+			this._lblInfo.Text = BSM.Instance.SkedTree.Title;
 		}
 		#endregion
 
@@ -132,6 +142,24 @@ namespace Skedula
 		private void OnSkedAddRootNode(object sender, EventArgs e)
 		{
 			BSM.Instance.AddSkedNode(true);
+		}
+
+		private void OnToolsSettings(object sender, EventArgs e)
+		{
+			SettingsDialog dialog = new SettingsDialog();
+			dialog.Settings = BSM.Instance.Settings;
+
+			if (dialog.ShowDialog() == DialogResult.OK)
+			{
+				BSM.Instance.Settings = dialog.Settings;
+				BSM.Instance.Settings.Save();
+			}
+		}
+
+		private void OnHelpAbout(object sender, EventArgs e)
+		{
+			SkedulaAboutDialog dialog = new SkedulaAboutDialog();
+			dialog.ShowDialog();
 		}
 	}
 }

@@ -10,6 +10,7 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
+using Skedula.Library.Management;
 
 namespace Skedula.Library.Domain
 {
@@ -52,7 +53,7 @@ namespace Skedula.Library.Domain
 			found.Description	= skedNode.Description;
 			found.Priority		= skedNode.Priority;
 			found.Status		= skedNode.Status;
-			found.IconKey		= skedNode.IconKey;
+			found.IconKey		= $"{BasicSkedulaManager.ICON_FOLDER}{skedNode.IconKey}";
 			found.LastModified	= DateTime.Now;
 		}
 		#endregion

@@ -72,7 +72,7 @@ namespace Skedula.Library.Gui.Controls
 
 				if (!String.IsNullOrEmpty(childSkedNode.IconKey))
 				{
-					imageKey = $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
+					imageKey = $"{skedNode.IconKey}";
 					childTreeNode.ImageKey = imageKey;
 					childTreeNode.SelectedImageKey = imageKey;
 				}

@@ -21,6 +21,10 @@
 	</Target>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Factotum\Code\CSharp\Factotum\Factotum.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Update="Gui\Controls\ExtendedSkedNodeControl.cs">
 	    <SubType>UserControl</SubType>
 	  </Compile>

@@ -49,10 +49,11 @@
 			// _tlpUserControl
 			// 
 			this._tlpUserControl.BackColor = SystemColors.Control;
-			this._tlpUserControl.ColumnCount = 2;
+			this._tlpUserControl.ColumnCount = 3;
 			this._tlpUserControl.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 110F));
+			this._tlpUserControl.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 38F));
 			this._tlpUserControl.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-			this._tlpUserControl.Controls.Add(this._lblDates, 1, 1);
+			this._tlpUserControl.Controls.Add(this._lblDates, 2, 1);
 			this._tlpUserControl.Controls.Add(this.label1, 0, 2);
 			this._tlpUserControl.Controls.Add(this.label2, 0, 3);
 			this._tlpUserControl.Controls.Add(this.label3, 0, 4);
@@ -61,8 +62,8 @@
 			this._tlpUserControl.Controls.Add(this._cxPriority, 1, 4);
 			this._tlpUserControl.Controls.Add(this._cxStatus, 1, 5);
 			this._tlpUserControl.Controls.Add(this._rxDescription, 1, 3);
-			this._tlpUserControl.Controls.Add(this._pbIcon, 0, 0);
-			this._tlpUserControl.Controls.Add(this._lblGuid, 1, 0);
+			this._tlpUserControl.Controls.Add(this._pbIcon, 1, 0);
+			this._tlpUserControl.Controls.Add(this._lblGuid, 2, 0);
 			this._tlpUserControl.Dock = DockStyle.Fill;
 			this._tlpUserControl.ForeColor = SystemColors.WindowText;
 			this._tlpUserControl.Location = new Point(0, 0);
@@ -83,9 +84,9 @@
 			this._lblDates.AutoSize = true;
 			this._lblDates.Dock = DockStyle.Fill;
 			this._lblDates.Font = new Font("Consolas", 12F);
-			this._lblDates.Location = new Point(113, 38);
+			this._lblDates.Location = new Point(151, 38);
 			this._lblDates.Name = "_lblDates";
-			this._lblDates.Size = new Size(723, 38);
+			this._lblDates.Size = new Size(685, 38);
 			this._lblDates.TabIndex = 13;
 			this._lblDates.Text = "***";
 			this._lblDates.TextAlign = ContentAlignment.MiddleLeft;
@@ -145,6 +146,7 @@
 			// _txTitle
 			// 
 			this._txTitle.BackColor = SystemColors.Window;
+			this._tlpUserControl.SetColumnSpan(this._txTitle, 2);
 			this._txTitle.Dock = DockStyle.Fill;
 			this._txTitle.Location = new Point(110, 76);
 			this._txTitle.Margin = new Padding(0);
@@ -155,6 +157,7 @@
 			// 
 			// _cxPriority
 			// 
+			this._tlpUserControl.SetColumnSpan(this._cxPriority, 2);
 			this._cxPriority.Dock = DockStyle.Fill;
 			this._cxPriority.DropDownStyle = ComboBoxStyle.DropDownList;
 			this._cxPriority.FormattingEnabled = true;
@@ -166,6 +169,7 @@
 			// 
 			// _cxStatus
 			// 
+			this._tlpUserControl.SetColumnSpan(this._cxStatus, 2);
 			this._cxStatus.Dock = DockStyle.Fill;
 			this._cxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
 			this._cxStatus.FormattingEnabled = true;
@@ -178,6 +182,7 @@
 			// _rxDescription
 			// 
 			this._rxDescription.BackColor = SystemColors.Window;
+			this._tlpUserControl.SetColumnSpan(this._rxDescription, 2);
 			this._rxDescription.Dock = DockStyle.Fill;
 			this._rxDescription.Location = new Point(110, 114);
 			this._rxDescription.Margin = new Padding(0);
@@ -190,7 +195,7 @@
 			// _pbIcon
 			// 
 			this._pbIcon.Dock = DockStyle.Right;
-			this._pbIcon.Location = new Point(72, 0);
+			this._pbIcon.Location = new Point(110, 0);
 			this._pbIcon.Margin = new Padding(0);
 			this._pbIcon.Name = "_pbIcon";
 			this._pbIcon.Size = new Size(38, 38);
@@ -203,9 +208,9 @@
 			this._lblGuid.AutoSize = true;
 			this._lblGuid.Dock = DockStyle.Fill;
 			this._lblGuid.Font = new Font("Consolas", 12F);
-			this._lblGuid.Location = new Point(113, 0);
+			this._lblGuid.Location = new Point(151, 0);
 			this._lblGuid.Name = "_lblGuid";
-			this._lblGuid.Size = new Size(723, 38);
+			this._lblGuid.Size = new Size(685, 38);
 			this._lblGuid.TabIndex = 12;
 			this._lblGuid.Text = "***";
 			this._lblGuid.TextAlign = ContentAlignment.MiddleLeft;

@@ -72,3 +72,9 @@ This is a personal tool, but contributions and suggestions are welcome.
 ## ✨ Status
 Primary working prototype is what is present now, extensions expected soon.
 Stay tuned!
+
+---
+
+## Installation
+* Go to [Release page](https://github.com/pikkatech-eu/Skedula/releases)
+* Select the last *.exe file ()

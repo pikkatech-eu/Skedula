@@ -13,17 +13,18 @@ in larger task management applications.
 ### 🌿 Hierarchical Outlining
 - Organize items in a natural tree structure  
 - Collapse and expand branches with ease  
+- Changing the order of nodes (up & down) *(planned)* 
 - Drag & drop for fast reordering *(planned)*  
 
 ### 🪶 Clean, Minimal UI
 - TreeView-based item list for instant load time  
-- Details panel for notes and extended properties  
-- Optional modernized TreeView styling (no lines, no plus/minus icons)
+- Details panel for notes and extended properties  *(simple version at present, extension planned)* 
+- Optional modernized styling (no lines, custom icons)
 
 ### 📦 Lightweight Storage
 - All data stored in **JSON**  
 - Human-readable, version-friendly, and portable  
-- Auto-save support *(planned)*
+- Auto-save support 
 
 ### ⚡ Fast & Responsive
 - Written in C# (.NET) with a focus on performance  
@@ -46,20 +47,17 @@ comfort of software.
 ---
 
 ### 🚀 Roadmap
-
+* Up-and-down reordering
 * Drag & drop reordering
-* Editing directly in tree view
-* Custom icons for items
+* Extended styling in extenden properties panel (markdown support)
 * Search/filter
 * Repeater/reminder system (maybe?)
-* Theme support (light/dark)
-* Auto-save & versioning
+* Theme support (light/dark/blue)
   
 ---
 
 ### 💬 Naming
-*Skedula* comes from schedula, the Latin word for a small note —
-the origin of the English “schedule”.
+*Skedula* comes from *schedula*, the Latin word for a small note.
 
 The name reflects the app’s purpose:
 a simple place to keep your small notes, plans, and intentions.
@@ -72,5 +70,5 @@ This is a personal tool, but contributions and suggestions are welcome.
 ---
 
 ## ✨ Status
-Primary working prototype expected soon.
+Primary working prototype is what is present now, extensions expected soon.
 Stay tuned!

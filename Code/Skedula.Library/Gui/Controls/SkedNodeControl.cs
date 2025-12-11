@@ -11,6 +11,7 @@ using System.ComponentModel;
 using Skedula.Library.Domain;
 using Skedula.Library.Domain.Enumerations;
 using Skedula.Library.Gui.Interfaces;
+using static Skedula.Library.Gui.Controls.ImageComboBox;
 using BSM = Skedula.Library.Management.BasicSkedulaManager;
 
 namespace Skedula.Library.Gui.Controls
@@ -60,6 +61,13 @@ namespace Skedula.Library.Gui.Controls
 				this._rxDescription.Text		= value.Description;
 				this._cxPriority.SelectedItem	= value.Priority;
 				this._cxStatus.SelectedItem		= value.Status;
+
+				var existing					= _cxIcons.Items.OfType<ImageComboItem>().FirstOrDefault(x => x.ImageKey == value.IconKey);
+
+				if (existing != null)
+				{
+					this._cxIcons.SelectedItem = existing;
+				}
 			}
 		}
 	}

@@ -30,6 +30,11 @@ namespace Skedula
 			this.OnRecentlyOpenedProjectsChanged(BSM.Instance.Settings.RecentlyOpenedProjects);
 
 			this._ctrlSkedTree.SkedSelected += this.OnSkedSelected;
+
+			if (BSM.Instance.Settings.AutoLoadLastProject && BSM.Instance.Settings.RecentlyOpenedProjects.Count > 0)
+			{
+				BSM.Instance.LoadSkedTree(BSM.Instance.Settings.RecentlyOpenedProjects[0]);
+			}
 		}
 
 		private void OnRecentlyOpenedProjectsChanged(List<string> paths)

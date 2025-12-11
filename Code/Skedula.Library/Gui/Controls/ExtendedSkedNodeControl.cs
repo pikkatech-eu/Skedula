@@ -58,7 +58,7 @@ namespace Skedula.Library.Gui.Controls
 
 				this._lblGuid.Text				= $"Guid: {value.Id}";
 				this._lblDates.Text				= $"Created: {value.CreationTime:yyyy-MM-dd HH:mm} *** Last modified: {value.LastModified:yyyy-MM-dd HH:mm}";
-				this._pbIcon.Image				= this._ilIcons.Images[BSM.ICON_FOLDER + value.IconKey];
+				this._pbIcon.Image				= this._ilIcons.Images[value.IconKey];
 			}
 		}
 	}

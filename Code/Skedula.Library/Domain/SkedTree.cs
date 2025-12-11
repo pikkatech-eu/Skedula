@@ -53,7 +53,7 @@ namespace Skedula.Library.Domain
 			found.Description	= skedNode.Description;
 			found.Priority		= skedNode.Priority;
 			found.Status		= skedNode.Status;
-			found.IconKey		= $"{BasicSkedulaManager.ICON_FOLDER}{skedNode.IconKey}";
+			found.IconKey		= skedNode.IconKey;
 			found.LastModified	= DateTime.Now;
 		}
 		#endregion

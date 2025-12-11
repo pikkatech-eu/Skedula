@@ -19,6 +19,7 @@ namespace Skedula.Library.Management
 	{
 		#region Constants
 		internal const string DEFAULT_EXTENSION = "*.sked";
+
 		internal const string ICON_FOLDER		= ".\\icons\\";
 		#endregion
 
@@ -38,7 +39,7 @@ namespace Skedula.Library.Management
 		}
 		#endregion
 
-		#region Private Members
+		#region Internal Members
 		internal string SkedTreeFileName	{get;set;} = null;
 		#endregion
 
@@ -276,8 +277,9 @@ namespace Skedula.Library.Management
 			{
 				try
 				{
-					Image icon = Image.FromFile(fileName);
-					this.Icons.Add(fileName, icon);
+					Image icon		= Image.FromFile(fileName);
+					string imageKey	= Path.GetFileName(fileName);
+					this.Icons.Add(imageKey, icon);
 				}
 				catch (Exception)	{}
 			}

@@ -75,7 +75,6 @@
 			this._tlpUserControl.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
 			this._tlpUserControl.RowStyles.Add(new RowStyle(SizeType.Absolute, 38F));
 			this._tlpUserControl.RowStyles.Add(new RowStyle(SizeType.Absolute, 38F));
-			this._tlpUserControl.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
 			this._tlpUserControl.Size = new Size(839, 675);
 			this._tlpUserControl.TabIndex = 0;
 			// 
@@ -88,8 +87,8 @@
 			this._lblDates.Name = "_lblDates";
 			this._lblDates.Size = new Size(723, 38);
 			this._lblDates.TabIndex = 13;
-			this._lblDates.Text = "label6";
-			this._lblDates.TextAlign = ContentAlignment.MiddleCenter;
+			this._lblDates.Text = "***";
+			this._lblDates.TextAlign = ContentAlignment.MiddleLeft;
 			// 
 			// label1
 			// 
@@ -208,8 +207,8 @@
 			this._lblGuid.Name = "_lblGuid";
 			this._lblGuid.Size = new Size(723, 38);
 			this._lblGuid.TabIndex = 12;
-			this._lblGuid.Text = "label6";
-			this._lblGuid.TextAlign = ContentAlignment.MiddleCenter;
+			this._lblGuid.Text = "***";
+			this._lblGuid.TextAlign = ContentAlignment.MiddleLeft;
 			// 
 			// _ilIcons
 			// 

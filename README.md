@@ -83,4 +83,4 @@ Stay tuned!
 ---
 
 ## 🛸 Help
-A few help items are to find on [🔰]([help.md](https://github.com/pikkatech-eu/Skedula/blob/main/howto.md))
+A few help items are to find on [🔰](https://github.com/pikkatech-eu/Skedula/blob/main/howto.md)

@@ -37,6 +37,7 @@
 			this._pbIcon = new PictureBox();
 			this._txKairos = new TextBox();
 			this._linkPikkatech = new LinkLabel();
+			this.linkLabel1 = new LinkLabel();
 			this._tlpAbout.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)this._pbIcon).BeginInit();
 			this.SuspendLayout();
@@ -46,7 +47,7 @@
 			this._btOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
 			this._btOK.BackColor = Color.FromArgb(0, 48, 96);
 			this._btOK.DialogResult = DialogResult.OK;
-			this._btOK.Location = new Point(9, 248);
+			this._btOK.Location = new Point(9, 268);
 			this._btOK.Margin = new Padding(0);
 			this._btOK.Name = "_btOK";
 			this._btOK.Size = new Size(80, 32);
@@ -59,7 +60,7 @@
 			this._btCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
 			this._btCancel.BackColor = Color.FromArgb(0, 48, 96);
 			this._btCancel.DialogResult = DialogResult.Cancel;
-			this._btCancel.Location = new Point(114, 248);
+			this._btCancel.Location = new Point(114, 268);
 			this._btCancel.Margin = new Padding(0);
 			this._btCancel.Name = "_btCancel";
 			this._btCancel.Size = new Size(80, 32);
@@ -76,17 +77,19 @@
 			this._tlpAbout.Controls.Add(this._txVersion, 1, 1);
 			this._tlpAbout.Controls.Add(this._pbIcon, 0, 0);
 			this._tlpAbout.Controls.Add(this._txKairos, 1, 0);
-			this._tlpAbout.Controls.Add(this._linkPikkatech, 1, 3);
+			this._tlpAbout.Controls.Add(this._linkPikkatech, 1, 4);
+			this._tlpAbout.Controls.Add(this.linkLabel1, 1, 3);
 			this._tlpAbout.Dock = DockStyle.Top;
 			this._tlpAbout.Location = new Point(0, 0);
 			this._tlpAbout.Name = "_tlpAbout";
-			this._tlpAbout.RowCount = 5;
+			this._tlpAbout.RowCount = 6;
 			this._tlpAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 32F));
 			this._tlpAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 32F));
 			this._tlpAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 128F));
 			this._tlpAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 32F));
+			this._tlpAbout.RowStyles.Add(new RowStyle(SizeType.Absolute, 32F));
 			this._tlpAbout.RowStyles.Add(new RowStyle());
-			this._tlpAbout.Size = new Size(800, 232);
+			this._tlpAbout.Size = new Size(800, 256);
 			this._tlpAbout.TabIndex = 1;
 			// 
 			// _txFormula
@@ -125,8 +128,8 @@
 			this._pbIcon.Image = Skedula.Library.Properties.Resources.skedula_logo_128;
 			this._pbIcon.Location = new Point(3, 3);
 			this._pbIcon.Name = "_pbIcon";
-			this._tlpAbout.SetRowSpan(this._pbIcon, 4);
-			this._pbIcon.Size = new Size(159, 218);
+			this._tlpAbout.SetRowSpan(this._pbIcon, 5);
+			this._pbIcon.Size = new Size(159, 250);
 			this._pbIcon.SizeMode = PictureBoxSizeMode.Zoom;
 			this._pbIcon.TabIndex = 0;
 			this._pbIcon.TabStop = false;
@@ -152,7 +155,7 @@
 			this._linkPikkatech.Dock = DockStyle.Fill;
 			this._linkPikkatech.Font = new Font("Consolas", 13F);
 			this._linkPikkatech.LinkColor = Color.White;
-			this._linkPikkatech.Location = new Point(168, 192);
+			this._linkPikkatech.Location = new Point(168, 224);
 			this._linkPikkatech.Name = "_linkPikkatech";
 			this._linkPikkatech.Size = new Size(629, 32);
 			this._linkPikkatech.TabIndex = 4;
@@ -162,12 +165,26 @@
 			this._linkPikkatech.VisitedLinkColor = Color.FromArgb(255, 128, 0);
 			this._linkPikkatech.LinkClicked += this.OnPikkatechLinkClicked;
 			// 
+			// linkLabel1
+			// 
+			this.linkLabel1.AutoSize = true;
+			this.linkLabel1.Dock = DockStyle.Fill;
+			this.linkLabel1.LinkColor = Color.White;
+			this.linkLabel1.Location = new Point(168, 192);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new Size(629, 32);
+			this.linkLabel1.TabIndex = 5;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.Text = "Project website";
+			this.linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
+			this.linkLabel1.LinkClicked += this.OnProjectLinkClicked;
+			// 
 			// SkedulaAboutDialog
 			// 
 			this.AutoScaleDimensions = new SizeF(9F, 20F);
 			this.AutoScaleMode = AutoScaleMode.Font;
 			this.BackColor = Color.FromArgb(0, 48, 96);
-			this.ClientSize = new Size(800, 289);
+			this.ClientSize = new Size(800, 309);
 			this.Controls.Add(this._tlpAbout);
 			this.Controls.Add(this._btCancel);
 			this.Controls.Add(this._btOK);
@@ -193,5 +210,6 @@
 		private TextBox _txVersion;
 		private TextBox _txFormula;
 		private LinkLabel _linkPikkatech;
+		private LinkLabel linkLabel1;
 	}
 }

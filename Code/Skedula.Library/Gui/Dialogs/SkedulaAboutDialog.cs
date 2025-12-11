@@ -14,7 +14,9 @@ namespace Kairos.Library.Gui
 {
 	public partial class SkedulaAboutDialog : Form
 	{
-		private const string URL = "http://www.pikkatech.eu";
+		private const string COMPANY_URL = "http://www.pikkatech.eu";
+		private const string PROJECT_URL = "https://github.com/pikkatech-eu/Skedula/";
+
 		public SkedulaAboutDialog()
 		{
 			InitializeComponent();
@@ -22,14 +24,28 @@ namespace Kairos.Library.Gui
 			FV.Version version = new FV.Version();
 			version.FromToml();
 
-			this._txVersion.Text =  $"Skedula {version}";
+			this._txVersion.Text = $"Skedula {version}";
 		}
 
 		private void OnPikkatechLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
 			try
 			{
-				ProcessStartInfo sInfo = new ProcessStartInfo(URL);
+				ProcessStartInfo sInfo = new ProcessStartInfo(COMPANY_URL);
+				sInfo.UseShellExecute = true;
+				Process.Start(sInfo);
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
+		}
+
+		private void OnProjectLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			try
+			{
+				ProcessStartInfo sInfo = new ProcessStartInfo(PROJECT_URL);
 				sInfo.UseShellExecute = true;
 				Process.Start(sInfo);
 			}

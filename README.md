@@ -79,3 +79,8 @@ Stay tuned!
 * Go to [Release page](https://github.com/pikkatech-eu/Skedula/releases)
 * Select the last *.exe file (named something like  Skedula_Setup-xxxx.exe) - this is an installation file
 * Download and execute
+
+---
+
+## 🛸 Help
+A few help items are to find on [🔰](help.md)

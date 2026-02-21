@@ -30,7 +30,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this._tlpUserControl = new TableLayoutPanel();
-			this._lblDates = new Label();
 			this.label1 = new Label();
 			this.label2 = new Label();
 			this.label3 = new Label();
@@ -39,11 +38,8 @@
 			this._cxPriority = new ComboBox();
 			this._cxStatus = new ComboBox();
 			this._rxDescription = new RichTextBox();
-			this._pbIcon = new PictureBox();
-			this._lblGuid = new Label();
 			this._ilIcons = new ImageList(this.components);
 			this._tlpUserControl.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)this._pbIcon).BeginInit();
 			this.SuspendLayout();
 			// 
 			// _tlpUserControl
@@ -53,17 +49,14 @@
 			this._tlpUserControl.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 110F));
 			this._tlpUserControl.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 38F));
 			this._tlpUserControl.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-			this._tlpUserControl.Controls.Add(this._lblDates, 2, 1);
 			this._tlpUserControl.Controls.Add(this.label1, 0, 2);
 			this._tlpUserControl.Controls.Add(this.label2, 0, 3);
 			this._tlpUserControl.Controls.Add(this.label3, 0, 4);
 			this._tlpUserControl.Controls.Add(this.label4, 0, 5);
-			this._tlpUserControl.Controls.Add(this._txTitle, 1, 2);
+			this._tlpUserControl.Controls.Add(this._txTitle, 1, 0);
 			this._tlpUserControl.Controls.Add(this._cxPriority, 1, 4);
 			this._tlpUserControl.Controls.Add(this._cxStatus, 1, 5);
-			this._tlpUserControl.Controls.Add(this._rxDescription, 1, 3);
-			this._tlpUserControl.Controls.Add(this._pbIcon, 1, 0);
-			this._tlpUserControl.Controls.Add(this._lblGuid, 2, 0);
+			this._tlpUserControl.Controls.Add(this._rxDescription, 1, 1);
 			this._tlpUserControl.Dock = DockStyle.Fill;
 			this._tlpUserControl.ForeColor = SystemColors.WindowText;
 			this._tlpUserControl.Location = new Point(0, 0);
@@ -78,18 +71,6 @@
 			this._tlpUserControl.RowStyles.Add(new RowStyle(SizeType.Absolute, 38F));
 			this._tlpUserControl.Size = new Size(839, 675);
 			this._tlpUserControl.TabIndex = 0;
-			// 
-			// _lblDates
-			// 
-			this._lblDates.AutoSize = true;
-			this._lblDates.Dock = DockStyle.Fill;
-			this._lblDates.Font = new Font("Consolas", 12F);
-			this._lblDates.Location = new Point(151, 38);
-			this._lblDates.Name = "_lblDates";
-			this._lblDates.Size = new Size(685, 38);
-			this._lblDates.TabIndex = 13;
-			this._lblDates.Text = "***";
-			this._lblDates.TextAlign = ContentAlignment.MiddleLeft;
 			// 
 			// label1
 			// 
@@ -148,7 +129,7 @@
 			this._txTitle.BackColor = SystemColors.Window;
 			this._tlpUserControl.SetColumnSpan(this._txTitle, 2);
 			this._txTitle.Dock = DockStyle.Fill;
-			this._txTitle.Location = new Point(110, 76);
+			this._txTitle.Location = new Point(110, 0);
 			this._txTitle.Margin = new Padding(0);
 			this._txTitle.Name = "_txTitle";
 			this._txTitle.ReadOnly = true;
@@ -184,36 +165,14 @@
 			this._rxDescription.BackColor = SystemColors.Window;
 			this._tlpUserControl.SetColumnSpan(this._rxDescription, 2);
 			this._rxDescription.Dock = DockStyle.Fill;
-			this._rxDescription.Location = new Point(110, 114);
+			this._rxDescription.Location = new Point(110, 38);
 			this._rxDescription.Margin = new Padding(0);
 			this._rxDescription.Name = "_rxDescription";
 			this._rxDescription.ReadOnly = true;
-			this._rxDescription.Size = new Size(729, 485);
+			this._tlpUserControl.SetRowSpan(this._rxDescription, 3);
+			this._rxDescription.Size = new Size(729, 561);
 			this._rxDescription.TabIndex = 9;
 			this._rxDescription.Text = "";
-			// 
-			// _pbIcon
-			// 
-			this._pbIcon.Dock = DockStyle.Right;
-			this._pbIcon.Location = new Point(110, 0);
-			this._pbIcon.Margin = new Padding(0);
-			this._pbIcon.Name = "_pbIcon";
-			this._pbIcon.Size = new Size(38, 38);
-			this._pbIcon.SizeMode = PictureBoxSizeMode.Zoom;
-			this._pbIcon.TabIndex = 11;
-			this._pbIcon.TabStop = false;
-			// 
-			// _lblGuid
-			// 
-			this._lblGuid.AutoSize = true;
-			this._lblGuid.Dock = DockStyle.Fill;
-			this._lblGuid.Font = new Font("Consolas", 12F);
-			this._lblGuid.Location = new Point(151, 0);
-			this._lblGuid.Name = "_lblGuid";
-			this._lblGuid.Size = new Size(685, 38);
-			this._lblGuid.TabIndex = 12;
-			this._lblGuid.Text = "***";
-			this._lblGuid.TextAlign = ContentAlignment.MiddleLeft;
 			// 
 			// _ilIcons
 			// 
@@ -234,7 +193,6 @@
 			this.Size = new Size(839, 675);
 			this._tlpUserControl.ResumeLayout(false);
 			this._tlpUserControl.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)this._pbIcon).EndInit();
 			this.ResumeLayout(false);
 		}
 
@@ -250,8 +208,5 @@
 		private ComboBox _cxStatus;
 		private ImageList _ilIcons;
 		private RichTextBox _rxDescription;
-		private PictureBox _pbIcon;
-		private Label _lblGuid;
-		private Label _lblDates;
 	}
 }

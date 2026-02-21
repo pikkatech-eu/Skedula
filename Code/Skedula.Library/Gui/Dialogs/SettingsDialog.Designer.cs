@@ -80,6 +80,7 @@
 			this.Controls.Add(this._btOK);
 			this.Font = new Font("Consolas", 10F);
 			this.ForeColor = Color.White;
+			this.FormBorderStyle = FormBorderStyle.FixedDialog;
 			this.Icon = (Icon)resources.GetObject("$this.Icon");
 			this.Name = "SettingsDialog";
 			this.StartPosition = FormStartPosition.CenterParent;

@@ -88,11 +88,19 @@ namespace Skedula.Library.Domain
 
 		public static SkedTree Load(string fileName)
 		{
-			using (StreamReader reader = new StreamReader(fileName))
+			try
 			{
-				string json = reader.ReadToEnd();
+				using (StreamReader reader = new StreamReader(fileName))
+				{
+					string json = reader.ReadToEnd();
 
-				return FromJson(json);
+					return FromJson(json);
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+				return null;
 			}
 		}
 		#endregion

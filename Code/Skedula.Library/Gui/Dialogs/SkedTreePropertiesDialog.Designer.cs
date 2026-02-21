@@ -94,6 +94,7 @@ namespace Skedula.Library.Gui.Dialogs
 			this.AutoScaleMode = AutoScaleMode.Font;
 			this.CancelButton = this._btCancel;
 			this.Controls.Add(this._tlpItemProperties);
+			this.FormBorderStyle = FormBorderStyle.FixedDialog;
 			this.Name = "SkedTreePropertiesDialog";
 			this._tlpItemProperties.ResumeLayout(false);
 			this._tlpItemProperties.PerformLayout();

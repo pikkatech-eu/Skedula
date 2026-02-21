@@ -33,7 +33,7 @@ namespace Skedula
 
 			this._ctrlSkedTree.SkedSelected += this.OnSkedSelected;
 
-			if (BSM.Instance.Settings.AutoLoadLastProject && BSM.Instance.Settings.RecentlyOpenedProjects.Count > 0)
+			if (BSM.Instance.Settings.AutoLoadLastProject && BSM.Instance.Settings.RecentlyOpenedProjects.Count > 0 && BSM.Instance.SkedTree != null)
 			{
 				BSM.Instance.LoadSkedTree(BSM.Instance.Settings.RecentlyOpenedProjects[0]);
 

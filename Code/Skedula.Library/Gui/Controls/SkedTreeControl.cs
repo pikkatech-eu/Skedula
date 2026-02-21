@@ -35,6 +35,11 @@ namespace Skedula.Library.Gui.Controls
 		{
 			this._tvSkedTree.Nodes.Clear();
 
+			if (skedTree is null)
+			{
+				return;
+			}
+
 			foreach (SkedNode skedNode in skedTree.Nodes)
 			{
 				TreeNode node = new TreeNode(skedNode.Title);
@@ -44,14 +49,14 @@ namespace Skedula.Library.Gui.Controls
 				if (!String.IsNullOrEmpty(skedNode.IconKey))
 				{
 					// imageKey				= $"{BSM.ICON_FOLDER}{skedNode.IconKey}";
-					node.ImageKey			= skedNode.IconKey;
-					node.SelectedImageKey	= skedNode.IconKey;
+					node.ImageKey = skedNode.IconKey;
+					node.SelectedImageKey = skedNode.IconKey;
 				}
 				else
 				{
-					imageKey				= skedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
-					node.ImageKey			= imageKey;
-					node.SelectedImageKey	= imageKey;
+					imageKey = skedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
+					node.ImageKey = imageKey;
+					node.SelectedImageKey = imageKey;
 				}
 
 				this._tvSkedTree.Nodes.Add(node);
@@ -66,20 +71,20 @@ namespace Skedula.Library.Gui.Controls
 		{
 			foreach (SkedNode childSkedNode in skedNode.Children)
 			{
-				TreeNode childTreeNode	= new TreeNode(childSkedNode.Title);
-				childTreeNode.Tag		= childSkedNode;
-				string imageKey			= "";
+				TreeNode childTreeNode = new TreeNode(childSkedNode.Title);
+				childTreeNode.Tag = childSkedNode;
+				string imageKey = "";
 
 				if (!String.IsNullOrEmpty(childSkedNode.IconKey))
 				{
-					childTreeNode.ImageKey			= childSkedNode.IconKey;
-					childTreeNode.SelectedImageKey	= childSkedNode.IconKey;
+					childTreeNode.ImageKey = childSkedNode.IconKey;
+					childTreeNode.SelectedImageKey = childSkedNode.IconKey;
 				}
 				else
 				{
 					imageKey = childSkedNode.IsLeaf() ? DEFAULT_LEAF_ICON : DEFAULT_TREE_ICON;
-					childTreeNode.ImageKey			= imageKey;
-					childTreeNode.SelectedImageKey	= imageKey;
+					childTreeNode.ImageKey = imageKey;
+					childTreeNode.SelectedImageKey = imageKey;
 				}
 
 				node.Nodes.Add(childTreeNode);
@@ -133,6 +138,9 @@ namespace Skedula.Library.Gui.Controls
 			BasicSkedulaManager.Instance.SelectedSkedNode = null;
 		}
 
-
+		private void OnDoubleclick(object sender, EventArgs e)
+		{
+			this.OnNodeEdit(sender, e);
+		}
 	}
 }

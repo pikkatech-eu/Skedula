@@ -83,8 +83,10 @@
 			this.Controls.Add(this._btOK);
 			this.Font = new Font("Consolas", 10F);
 			this.ForeColor = SystemColors.WindowText;
+			this.FormBorderStyle = FormBorderStyle.FixedDialog;
 			this.Icon = (Icon)resources.GetObject("$this.Icon");
 			this.Name = "SkedNodeDialog";
+			this.StartPosition = FormStartPosition.CenterParent;
 			this.Text = "Sked Node Properties";
 			this.ResumeLayout(false);
 		}

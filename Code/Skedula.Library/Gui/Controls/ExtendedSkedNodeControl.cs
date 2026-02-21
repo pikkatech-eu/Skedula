@@ -56,9 +56,9 @@ namespace Skedula.Library.Gui.Controls
 				this._cxPriority.SelectedItem	= value.Priority;
 				this._cxStatus.SelectedItem		= value.Status;
 
-				this._lblGuid.Text				= $"Guid: {value.Id}";
-				this._lblDates.Text				= $"Created: {value.CreationTime:yyyy-MM-dd HH:mm} *** Last modified: {value.LastModified:yyyy-MM-dd HH:mm}";
-				this._pbIcon.Image				= this._ilIcons.Images[value.IconKey];
+				// this._lblGuid.Text				= $"Guid: {value.Id}";
+				// this._lblDates.Text				= $"Created: {value.CreationTime:yyyy-MM-dd HH:mm} *** Last modified: {value.LastModified:yyyy-MM-dd HH:mm}";
+				// this._pbIcon.Image				= this._ilIcons.Images[value.IconKey];
 			}
 		}
 	}

@@ -205,7 +205,7 @@
 			// aboutToolStripMenuItem
 			// 
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-			this.aboutToolStripMenuItem.Size = new Size(224, 26);
+			this.aboutToolStripMenuItem.Size = new Size(137, 26);
 			this.aboutToolStripMenuItem.Text = "&About";
 			this.aboutToolStripMenuItem.Click += this.OnHelpAbout;
 			// 
@@ -360,8 +360,8 @@
 			this.MainMenuStrip = this._msSkedula;
 			this.Margin = new Padding(4, 3, 4, 3);
 			this.Name = "SkedulaForm";
+			this.StartPosition = FormStartPosition.CenterScreen;
 			this.Text = "Skedula 1.0.0";
-			this.WindowState = FormWindowState.Maximized;
 			this._msSkedula.ResumeLayout(false);
 			this._msSkedula.PerformLayout();
 			this._tsSkedula.ResumeLayout(false);

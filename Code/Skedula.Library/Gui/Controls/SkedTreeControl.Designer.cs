@@ -79,6 +79,7 @@
 			this._tvSkedTree.Size = new Size(320, 400);
 			this._tvSkedTree.TabIndex = 0;
 			this._tvSkedTree.AfterSelect += this.SelectedNodeChanged;
+			this._tvSkedTree.DoubleClick += this.OnDoubleclick;
 			// 
 			// _cmsSkedTree
 			// 

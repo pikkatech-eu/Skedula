@@ -190,10 +190,11 @@
 			this.Controls.Add(this._btOK);
 			this.Font = new Font("Consolas", 10F);
 			this.ForeColor = Color.White;
+			this.FormBorderStyle = FormBorderStyle.FixedDialog;
 			this.Icon = (Icon)resources.GetObject("$this.Icon");
 			this.Name = "SkedulaAboutDialog";
 			this.StartPosition = FormStartPosition.CenterParent;
-			this.Text = "About Kairos";
+			this.Text = "About Skedula";
 			this._tlpAbout.ResumeLayout(false);
 			this._tlpAbout.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)this._pbIcon).EndInit();

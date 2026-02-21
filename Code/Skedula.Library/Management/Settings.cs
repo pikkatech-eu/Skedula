@@ -22,7 +22,7 @@ namespace Skedula.Library.Management
 		#region Properties
 		[Category("General")]
 		[Description("If set to true, will try to open the last project.")]
-		public bool AutoLoadLastProject	{get;set;}	= false;
+		public bool AutoLoadLastProject	{get;set;}	= true;
 
 		[Browsable(false)]
 		public List<string>	RecentlyOpenedProjects	{get;set;}	= new List<string>();

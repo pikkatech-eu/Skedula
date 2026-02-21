@@ -279,7 +279,6 @@ namespace Skedula.Library.Management
 				}
 				else
 				{
-					// this.SelectedSkedNode.ParentId == null -> this.SelectedSkedNode is a root node
 					int index = this.SkedTree.Nodes.IndexOf(this.SelectedSkedNode);
 
 					SkedNodeDialog dialog = new SkedNodeDialog();

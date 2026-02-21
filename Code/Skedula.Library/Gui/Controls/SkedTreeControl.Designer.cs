@@ -35,12 +35,12 @@
 			this._cmsSkedTree = new ContextMenuStrip(this.components);
 			this.addRootNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.addNodeToolStripMenuItem = new ToolStripMenuItem();
+			this.addSiblingNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.editNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.deleteNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.toolStripSeparator1 = new ToolStripSeparator();
 			this.unselectToolStripMenuItem = new ToolStripMenuItem();
 			this._ilIcons = new ImageList(this.components);
-			this.addSiblingNodeToolStripMenuItem = new ToolStripMenuItem();
 			this._tlpUserControl.SuspendLayout();
 			this._cmsSkedTree.SuspendLayout();
 			this.SuspendLayout();
@@ -106,6 +106,15 @@
 			this.addNodeToolStripMenuItem.Text = "Add &Subnode";
 			this.addNodeToolStripMenuItem.Click += this.OnNodeAddSubnode;
 			// 
+			// addSiblingNodeToolStripMenuItem
+			// 
+			this.addSiblingNodeToolStripMenuItem.Name = "addSiblingNodeToolStripMenuItem";
+			this.addSiblingNodeToolStripMenuItem.ShortcutKeys = Keys.Shift | Keys.Insert;
+			this.addSiblingNodeToolStripMenuItem.Size = new Size(303, 24);
+			this.addSiblingNodeToolStripMenuItem.Text = "&Insert node";
+			this.addSiblingNodeToolStripMenuItem.ToolTipText = "Inserts a sibling node below selected";
+			this.addSiblingNodeToolStripMenuItem.Click += this.OnAddSiblingNode;
+			// 
 			// editNodeToolStripMenuItem
 			// 
 			this.editNodeToolStripMenuItem.Name = "editNodeToolStripMenuItem";
@@ -141,13 +150,6 @@
 			this._ilIcons.TransparentColor = Color.Transparent;
 			this._ilIcons.Images.SetKeyName(0, "tree_16");
 			this._ilIcons.Images.SetKeyName(1, "leaf_16");
-			// 
-			// addSiblingNodeToolStripMenuItem
-			// 
-			this.addSiblingNodeToolStripMenuItem.Name = "addSiblingNodeToolStripMenuItem";
-			this.addSiblingNodeToolStripMenuItem.Size = new Size(303, 24);
-			this.addSiblingNodeToolStripMenuItem.Text = "Add S&ibling node";
-			this.addSiblingNodeToolStripMenuItem.Click += this.OnAddSiblingNode;
 			// 
 			// SkedTreeControl
 			// 

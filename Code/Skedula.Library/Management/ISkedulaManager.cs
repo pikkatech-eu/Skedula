@@ -7,6 +7,7 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using System.Xml.Linq;
 using Skedula.Library.Domain;
 
 namespace Skedula.Library.Management
@@ -27,6 +28,10 @@ namespace Skedula.Library.Management
 		void LoadSkedTree(string fileName = null);
 		void SaveSkedTree();
 		void SaveSkedTreeAs();
+
+		XElement ToXElement();
+
+		string ToHtml();
 		#endregion
 
 		#region SkedNode Management

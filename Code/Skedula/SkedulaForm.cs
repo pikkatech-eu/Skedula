@@ -7,6 +7,7 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using System.Xml.Linq;
 using Kairos.Library.Gui;
 using Skedula.Library.Domain;
 using Skedula.Library.Gui.Dialogs;
@@ -166,6 +167,41 @@ namespace Skedula
 		{
 			SkedulaAboutDialog dialog = new SkedulaAboutDialog();
 			dialog.ShowDialog();
+		}
+
+		private void OnExportToXml(object sender, EventArgs e)
+		{
+			XElement x = BSM.Instance.ToXElement();
+
+			if (x != null)
+			{
+				SaveFileDialog dialog = new SaveFileDialog();
+				dialog.Filter = "XML files (*.xml)|*.xml";
+
+				if (dialog.ShowDialog() == DialogResult.OK)
+				{
+					x.Save(dialog.FileName);
+				}
+			}
+		}
+
+		private void ObExportToHtml(object sender, EventArgs e)
+		{
+			string html = BSM.Instance.ToHtml();
+
+			if (html != null)
+			{
+				SaveFileDialog dialog = new SaveFileDialog();
+				dialog.Filter = "HTML files (*.html)|*.html";
+
+				if (dialog.ShowDialog() == DialogResult.OK)
+				{
+					using (StreamWriter writer = new StreamWriter(dialog.FileName))
+					{
+						writer.Write(html);
+					}
+				}
+			}
 		}
 	}
 }

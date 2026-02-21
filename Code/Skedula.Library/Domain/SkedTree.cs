@@ -10,6 +10,8 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
+using System.Xml.Linq;
+using Factotum.Xml;
 using Skedula.Library.Management;
 
 namespace Skedula.Library.Domain
@@ -102,6 +104,25 @@ namespace Skedula.Library.Domain
 				MessageBox.Show(ex.Message);
 				return null;
 			}
+		}
+
+		public XElement ToXElement()
+		{
+			XElement x = new XElement("SkedTree");
+			x.AppendAttribute("Title", this.Title);
+			x.AppendAttribute("Description", this.Description);
+			x.AppendAttribute("CreationTime", this.CreationTime);
+			x.AppendAttribute("LastModified", this.LastModified);
+
+			XElement xNodes = new XElement("Nodes");
+			x.Add(xNodes);
+
+			foreach (SkedNode node in this.Nodes)
+			{
+				xNodes.Add(node.ToXElement());
+			}
+
+			return x;
 		}
 		#endregion
 

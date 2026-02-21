@@ -7,6 +7,8 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using System.Xml.Linq;
+using Factotum.Xml;
 using Skedula.Library.Domain.Enumerations;
 
 namespace Skedula.Library.Domain
@@ -56,6 +58,31 @@ namespace Skedula.Library.Domain
 			this.Children.Insert(index2, node1);
 
 			this.Children.RemoveAt(index2 + 1);
+		}
+
+		public XElement ToXElement()
+		{
+			XElement x = new XElement("SkedNode");
+
+			x.AppendAttribute("Id", this.Id);
+			x.AppendAttribute("Title", this.Title);
+			x.AppendAttribute("Description", this.Description);
+			x.AppendAttribute("CreationTime", this.CreationTime);
+			x.AppendAttribute("LastModified", this.LastModified);
+			x.AppendAttribute("Priority", this.Priority);
+			x.AppendAttribute("IconKey", this.IconKey);
+			x.AppendAttribute("Status", this.Status);
+
+			XElement xChildren = new XElement("Children");
+
+			x.Add(xChildren);
+
+			foreach (SkedNode child in this.Children)
+			{
+				xChildren.Add(child.ToXElement());
+			}
+
+			return x;
 		}
 	}
 }

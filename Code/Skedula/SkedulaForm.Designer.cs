@@ -38,6 +38,7 @@
 			this._menuItemRecentProjects = new ToolStripMenuItem();
 			this.toolStripSeparator1 = new ToolStripSeparator();
 			this.quitToolStripMenuItem = new ToolStripMenuItem();
+			this.toolStripSeparator3 = new ToolStripSeparator();
 			this.skedToolStripMenuItem = new ToolStripMenuItem();
 			this.addRootNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.addToolStripMenuItem = new ToolStripMenuItem();
@@ -59,6 +60,9 @@
 			this._scSkedula = new SplitContainer();
 			this._ctrlSkedTree = new Skedula.Library.Gui.Controls.SkedTreeControl();
 			this._ctrlExtendedSkedNode = new Skedula.Library.Gui.Controls.ExtendedSkedNodeControl();
+			this.exportToolStripMenuItem = new ToolStripMenuItem();
+			this.toXMLToolStripMenuItem = new ToolStripMenuItem();
+			this.toHTMLToolStripMenuItem = new ToolStripMenuItem();
 			this._msSkedula.SuspendLayout();
 			this._tsSkedula.SuspendLayout();
 			this._stsSkedula.SuspendLayout();
@@ -81,7 +85,7 @@
 			// 
 			// fToolStripMenuItem
 			// 
-			this.fToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.newSkedTreeToolStripMenuItem, this.editSkedTreeToolStripMenuItem, this.loadSkedTreeToolStripMenuItem, this.saveSkedTreeAsToolStripMenuItem, this._menuItemRecentProjects, this.toolStripSeparator1, this.quitToolStripMenuItem });
+			this.fToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.newSkedTreeToolStripMenuItem, this.editSkedTreeToolStripMenuItem, this.loadSkedTreeToolStripMenuItem, this.saveSkedTreeAsToolStripMenuItem, this._menuItemRecentProjects, this.toolStripSeparator1, this.exportToolStripMenuItem, this.toolStripSeparator3, this.quitToolStripMenuItem });
 			this.fToolStripMenuItem.Font = new Font("Consolas", 10F);
 			this.fToolStripMenuItem.Name = "fToolStripMenuItem";
 			this.fToolStripMenuItem.Size = new Size(59, 24);
@@ -141,6 +145,11 @@
 			this.quitToolStripMenuItem.Text = "&Quit";
 			this.quitToolStripMenuItem.Click += this.OnFileQuit;
 			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new Size(350, 6);
+			// 
 			// skedToolStripMenuItem
 			// 
 			this.skedToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addToolStripMenuItem, this.editToolStripMenuItem, this.deleteToolStripMenuItem });
@@ -195,7 +204,7 @@
 			// 
 			this.settingsToolStripMenuItem.Image = Properties.Resources.configuration;
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-			this.settingsToolStripMenuItem.Size = new Size(224, 26);
+			this.settingsToolStripMenuItem.Size = new Size(164, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
 			this.settingsToolStripMenuItem.Click += this.OnToolsSettings;
 			// 
@@ -350,6 +359,27 @@
 			this._ctrlExtendedSkedNode.Size = new Size(637, 617);
 			this._ctrlExtendedSkedNode.TabIndex = 0;
 			// 
+			// exportToolStripMenuItem
+			// 
+			this.exportToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.toXMLToolStripMenuItem, this.toHTMLToolStripMenuItem });
+			this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
+			this.exportToolStripMenuItem.Size = new Size(353, 26);
+			this.exportToolStripMenuItem.Text = "&Export";
+			// 
+			// toXMLToolStripMenuItem
+			// 
+			this.toXMLToolStripMenuItem.Name = "toXMLToolStripMenuItem";
+			this.toXMLToolStripMenuItem.Size = new Size(224, 26);
+			this.toXMLToolStripMenuItem.Text = "To &XML";
+			this.toXMLToolStripMenuItem.Click += this.OnExportToXml;
+			// 
+			// toHTMLToolStripMenuItem
+			// 
+			this.toHTMLToolStripMenuItem.Name = "toHTMLToolStripMenuItem";
+			this.toHTMLToolStripMenuItem.Size = new Size(224, 26);
+			this.toHTMLToolStripMenuItem.Text = "To HTML";
+			this.toHTMLToolStripMenuItem.Click += this.ObExportToHtml;
+			// 
 			// SkedulaForm
 			// 
 			this.AutoScaleDimensions = new SizeF(10F, 20F);
@@ -412,5 +442,9 @@
 		private ToolStripMenuItem addRootNodeToolStripMenuItem;
 		private ToolStripMenuItem _menuItemRecentProjects;
 		private ToolStripStatusLabel _lblInfo;
+		private ToolStripSeparator toolStripSeparator3;
+		private ToolStripMenuItem exportToolStripMenuItem;
+		private ToolStripMenuItem toXMLToolStripMenuItem;
+		private ToolStripMenuItem toHTMLToolStripMenuItem;
 	}
 }

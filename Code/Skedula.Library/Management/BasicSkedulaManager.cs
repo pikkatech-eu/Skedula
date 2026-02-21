@@ -9,8 +9,10 @@
 
 using System;
 using System.Runtime.CompilerServices;
+using System.Xml.Linq;
 using Skedula.Library.Domain;
 using Skedula.Library.Gui.Dialogs;
+using Skedula.Library.Tools;
 
 [assembly:InternalsVisibleTo("Skedula")]
 
@@ -128,6 +130,30 @@ namespace Skedula.Library.Management
 				this.SkedTree.Save(this.SkedTreeFileName);
 			}
 			catch (Exception)	{}
+		}
+
+		public XElement ToXElement()
+		{
+			if (this.SkedTree == null)
+			{
+				return null;
+			}
+			else
+			{
+				return this.SkedTree.ToXElement();
+			}
+		}
+
+		public string ToHtml()
+		{
+			if (this.SkedTree == null)
+			{
+				return null;
+			}
+			else
+			{
+				return HtmlCreator.ToHtml(this.SkedTree);
+			}
 		}
 
 		public void EditSkedTree()

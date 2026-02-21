@@ -255,6 +255,18 @@ namespace Skedula.Library.Management
 		/// </summary>
 		public void InsertNode()
 		{
+			//------------------------- DEBUG! ---------
+			//Guid guidParent = Guid.Parse("5c9ff7fa-58bc-4b72-99cd-3d519ac59a3e");
+			//Guid guid1 = Guid.Parse("b5ccd8bb-15e8-49f0-a318-988227652c22");
+			//Guid guid2 = Guid.Parse("acccb24c-0353-4c23-85b2-e6d571b0be7a");
+
+			//SkedNode node1 = this.FindNode(guid1);
+			//SkedNode node2 = this.FindNode(guid2);
+
+			//SkedNode parent0 = this.FindNode(guidParent);
+			//parent0.SwapChildren(node1, node2);
+			//------------------------------------------
+
 			if (this.SelectedSkedNode != null)
 			{
 				if (this.SelectedSkedNode.ParentId != null)
@@ -305,6 +317,51 @@ namespace Skedula.Library.Management
 			else
 			{
 				return null;
+			}
+		}
+
+		public void MoveUp()
+		{
+			if (this.SelectedSkedNode == null)
+			{
+				return;
+			}
+
+			if (SelectedSkedNode.ParentId != null)
+			{
+				SkedNode parent = this.FindNode((Guid)this.SelectedSkedNode.ParentId);
+
+				int index = parent.Children.IndexOf(this.SelectedSkedNode);
+
+				if (index > 0)
+				{
+					parent.SwapChildren(this.SelectedSkedNode, parent.Children[index - 1]);
+
+					this.SkedTreeChanged?.Invoke(this.SkedTree);
+					this.SaveSkedTree();
+				}
+			}
+		}
+
+		public void MoveDown()
+		{
+			if (this.SelectedSkedNode == null)
+			{
+				return;
+			}
+
+			if (SelectedSkedNode.ParentId != null)
+			{
+				SkedNode parent = this.FindNode((Guid)this.SelectedSkedNode.ParentId);
+				int index = parent.Children.IndexOf(this.SelectedSkedNode);
+
+				if (index < parent.Children.Count - 1)
+				{
+					parent.SwapChildren(parent.Children[index + 1], this.SelectedSkedNode);
+
+					this.SkedTreeChanged?.Invoke(this.SkedTree);
+					this.SaveSkedTree();
+				}
 			}
 		}
 		#endregion

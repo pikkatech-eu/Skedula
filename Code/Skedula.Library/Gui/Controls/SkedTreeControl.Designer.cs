@@ -39,6 +39,9 @@
 			this.editNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.deleteNodeToolStripMenuItem = new ToolStripMenuItem();
 			this.toolStripSeparator1 = new ToolStripSeparator();
+			this.moveUpToolStripMenuItem = new ToolStripMenuItem();
+			this.moveDownToolStripMenuItem = new ToolStripMenuItem();
+			this.toolStripSeparator2 = new ToolStripSeparator();
 			this.unselectToolStripMenuItem = new ToolStripMenuItem();
 			this._ilIcons = new ImageList(this.components);
 			this._tlpUserControl.SuspendLayout();
@@ -86,9 +89,9 @@
 			// 
 			this._cmsSkedTree.Font = new Font("Consolas", 10F);
 			this._cmsSkedTree.ImageScalingSize = new Size(20, 20);
-			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addNodeToolStripMenuItem, this.addSiblingNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem, this.toolStripSeparator1, this.unselectToolStripMenuItem });
+			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addNodeToolStripMenuItem, this.addSiblingNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem, this.toolStripSeparator1, this.moveUpToolStripMenuItem, this.moveDownToolStripMenuItem, this.toolStripSeparator2, this.unselectToolStripMenuItem });
 			this._cmsSkedTree.Name = "_cmsSkedTree";
-			this._cmsSkedTree.Size = new Size(304, 182);
+			this._cmsSkedTree.Size = new Size(304, 236);
 			// 
 			// addRootNodeToolStripMenuItem
 			// 
@@ -136,6 +139,27 @@
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.Size = new Size(300, 6);
 			// 
+			// moveUpToolStripMenuItem
+			// 
+			this.moveUpToolStripMenuItem.Name = "moveUpToolStripMenuItem";
+			this.moveUpToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Up;
+			this.moveUpToolStripMenuItem.Size = new Size(303, 24);
+			this.moveUpToolStripMenuItem.Text = "Move &Up";
+			this.moveUpToolStripMenuItem.Click += this.OnMoveUp;
+			// 
+			// moveDownToolStripMenuItem
+			// 
+			this.moveDownToolStripMenuItem.Name = "moveDownToolStripMenuItem";
+			this.moveDownToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Down;
+			this.moveDownToolStripMenuItem.Size = new Size(303, 24);
+			this.moveDownToolStripMenuItem.Text = "Move &Down";
+			this.moveDownToolStripMenuItem.Click += this.OnMoveDown;
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new Size(300, 6);
+			// 
 			// unselectToolStripMenuItem
 			// 
 			this.unselectToolStripMenuItem.Name = "unselectToolStripMenuItem";
@@ -180,5 +204,8 @@
 		private ToolStripMenuItem unselectToolStripMenuItem;
 		private ToolStripMenuItem addRootNodeToolStripMenuItem;
 		private ToolStripMenuItem addSiblingNodeToolStripMenuItem;
+		private ToolStripMenuItem moveUpToolStripMenuItem;
+		private ToolStripMenuItem moveDownToolStripMenuItem;
+		private ToolStripSeparator toolStripSeparator2;
 	}
 }

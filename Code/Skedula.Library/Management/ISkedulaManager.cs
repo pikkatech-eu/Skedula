@@ -43,6 +43,10 @@ namespace Skedula.Library.Management
 		/// </summary>
 		void InsertNode();
 
+		void MoveUp();
+
+		void MoveDown();
+
 		SkedNode FindNode(Guid id);
 		#endregion
 

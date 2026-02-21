@@ -147,5 +147,15 @@ namespace Skedula.Library.Gui.Controls
 		{
 			BSM.Instance.InsertNode();
 		}
+
+		private void OnMoveUp(object sender, EventArgs e)
+		{
+			BSM.Instance.MoveUp();
+		}
+
+		private void OnMoveDown(object sender, EventArgs e)
+		{
+			BSM.Instance.MoveDown();
+		}
 	}
 }

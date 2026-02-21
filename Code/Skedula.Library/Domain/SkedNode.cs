@@ -39,5 +39,23 @@ namespace Skedula.Library.Domain
 		{
 			return this.Children.Count == 0;
 		}
+
+		public void SwapChildren(SkedNode node1, SkedNode node2)
+		{
+			int index1 = this.Children.IndexOf(node1);
+			int index2 = this.Children.IndexOf(node2);
+
+			if (index1 < 0 || index2 < 0)
+			{
+				return;
+			}
+
+			this.Children.Insert(index1, node2);
+
+			this.Children.RemoveAt(index1 + 1);
+			this.Children.Insert(index2, node1);
+
+			this.Children.RemoveAt(index2 + 1);
+		}
 	}
 }

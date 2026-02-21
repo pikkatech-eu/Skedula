@@ -353,6 +353,19 @@
       "StepsToReproduce": "",
       "AdditionalInformation": "",
       "Notes": []
+    },
+    "28": {
+      "IssueId": 28,
+      "Title": "Move Up and Move Down",
+      "Details": "* not implemented for root nodes \r\n* for subnodes does not work always - why?\r\n* after swapping selection is lost",
+      "SubmittedOn": "2026-02-21T13:20:44.5528186+01:00",
+      "LastUpdated": "2026-02-21T13:20:44.5527968+01:00",
+      "Status": "Open",
+      "Severity": "Major",
+      "Priority": "Normal",
+      "StepsToReproduce": "",
+      "AdditionalInformation": "BasicSkedulaManager, lines 323-366",
+      "Notes": []
     }
   }
 }

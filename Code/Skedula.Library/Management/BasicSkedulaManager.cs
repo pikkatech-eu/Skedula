@@ -7,6 +7,7 @@
 * Copyright:    pikkatech.eu (www.pikkatech.eu)                                    *
 ***********************************************************************************/
 
+using System;
 using System.Runtime.CompilerServices;
 using Skedula.Library.Domain;
 using Skedula.Library.Gui.Dialogs;
@@ -218,6 +219,7 @@ namespace Skedula.Library.Management
 				this.SkedTree.Replace(this.SelectedSkedNode.Id, dialog.SkedNode);
 
 				this.SkedTreeChanged?.Invoke(this.SkedTree);
+
 				this.SaveSkedTree();
 			}
 		}
@@ -246,6 +248,65 @@ namespace Skedula.Library.Management
 				this.SaveSkedTree();
 			}
 				
+		}
+
+		/// <summary>
+		/// Tries to insert a node as a sibling of the currently selected node, just under it.
+		/// </summary>
+		public void InsertNode()
+		{
+			if (this.SelectedSkedNode != null)
+			{
+				if (this.SelectedSkedNode.ParentId != null)
+				{
+					SkedNode parent = this.FindNode((Guid)this.SelectedSkedNode.ParentId);
+
+					int index = parent.Children.IndexOf(this.SelectedSkedNode);
+
+					SkedNodeDialog dialog = new SkedNodeDialog();
+
+					if (dialog.ShowDialog() == DialogResult.OK)
+					{
+						SkedNode skedNode = dialog.SkedNode;
+
+						skedNode.ParentId = this.SelectedSkedNode.Id;
+
+						parent.Children.Insert(index + 1, skedNode);
+
+						this.SkedTreeChanged?.Invoke(this.SkedTree);
+						this.SaveSkedTree();
+					}
+				}
+				else
+				{
+					// this.SelectedSkedNode.ParentId == null -> this.SelectedSkedNode is a root node
+					int index = this.SkedTree.Nodes.IndexOf(this.SelectedSkedNode);
+
+					SkedNodeDialog dialog = new SkedNodeDialog();
+
+					if (dialog.ShowDialog() == DialogResult.OK)
+					{
+						SkedNode skedNode = dialog.SkedNode;
+
+						this.SkedTree.Nodes.Insert(index + 1, skedNode);
+
+						this.SkedTreeChanged?.Invoke(this.SkedTree);
+						this.SaveSkedTree();
+					}
+				}
+			}
+		}
+
+		public SkedNode FindNode(Guid id)
+		{
+			if (this.SkedTree != null)
+			{
+				return this.SkedTree.Find(id);
+			}
+			else
+			{
+				return null;
+			}
 		}
 		#endregion
 

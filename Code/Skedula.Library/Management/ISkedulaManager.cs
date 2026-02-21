@@ -37,6 +37,13 @@ namespace Skedula.Library.Management
 		void AddSkedNode(bool isRootNode);
 		void ReplaceSkedNode();
 		void DeleteSkedNode();
+
+		/// <summary>
+		/// Tries to insert a node as a sibling of the currently selected node, just under it.
+		/// </summary>
+		void InsertNode();
+
+		SkedNode FindNode(Guid id);
 		#endregion
 
 		#region Settings Management

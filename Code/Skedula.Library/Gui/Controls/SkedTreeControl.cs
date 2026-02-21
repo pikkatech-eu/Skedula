@@ -142,5 +142,10 @@ namespace Skedula.Library.Gui.Controls
 		{
 			this.OnNodeEdit(sender, e);
 		}
+
+		private void OnAddSiblingNode(object sender, EventArgs e)
+		{
+			BSM.Instance.InsertNode();
+		}
 	}
 }

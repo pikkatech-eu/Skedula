@@ -40,6 +40,7 @@
 			this.toolStripSeparator1 = new ToolStripSeparator();
 			this.unselectToolStripMenuItem = new ToolStripMenuItem();
 			this._ilIcons = new ImageList(this.components);
+			this.addSiblingNodeToolStripMenuItem = new ToolStripMenuItem();
 			this._tlpUserControl.SuspendLayout();
 			this._cmsSkedTree.SuspendLayout();
 			this.SuspendLayout();
@@ -85,9 +86,9 @@
 			// 
 			this._cmsSkedTree.Font = new Font("Consolas", 10F);
 			this._cmsSkedTree.ImageScalingSize = new Size(20, 20);
-			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem, this.toolStripSeparator1, this.unselectToolStripMenuItem });
+			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addNodeToolStripMenuItem, this.addSiblingNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem, this.toolStripSeparator1, this.unselectToolStripMenuItem });
 			this._cmsSkedTree.Name = "_cmsSkedTree";
-			this._cmsSkedTree.Size = new Size(304, 158);
+			this._cmsSkedTree.Size = new Size(304, 182);
 			// 
 			// addRootNodeToolStripMenuItem
 			// 
@@ -141,6 +142,13 @@
 			this._ilIcons.Images.SetKeyName(0, "tree_16");
 			this._ilIcons.Images.SetKeyName(1, "leaf_16");
 			// 
+			// addSiblingNodeToolStripMenuItem
+			// 
+			this.addSiblingNodeToolStripMenuItem.Name = "addSiblingNodeToolStripMenuItem";
+			this.addSiblingNodeToolStripMenuItem.Size = new Size(303, 24);
+			this.addSiblingNodeToolStripMenuItem.Text = "Add S&ibling node";
+			this.addSiblingNodeToolStripMenuItem.Click += this.OnAddSiblingNode;
+			// 
 			// SkedTreeControl
 			// 
 			this.AutoScaleDimensions = new SizeF(9F, 20F);
@@ -169,5 +177,6 @@
 		private ToolStripSeparator toolStripSeparator1;
 		private ToolStripMenuItem unselectToolStripMenuItem;
 		private ToolStripMenuItem addRootNodeToolStripMenuItem;
+		private ToolStripMenuItem addSiblingNodeToolStripMenuItem;
 	}
 }

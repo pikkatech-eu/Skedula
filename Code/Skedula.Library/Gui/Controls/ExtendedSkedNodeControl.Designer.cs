@@ -168,11 +168,12 @@
 			this._rxDescription.Location = new Point(110, 38);
 			this._rxDescription.Margin = new Padding(0);
 			this._rxDescription.Name = "_rxDescription";
-			this._rxDescription.ReadOnly = true;
 			this._tlpUserControl.SetRowSpan(this._rxDescription, 3);
 			this._rxDescription.Size = new Size(729, 561);
 			this._rxDescription.TabIndex = 9;
 			this._rxDescription.Text = "";
+			this._rxDescription.TextChanged += this.OnTextChanged;
+			this._rxDescription.Leave += this.OnLeave;
 			// 
 			// _ilIcons
 			// 

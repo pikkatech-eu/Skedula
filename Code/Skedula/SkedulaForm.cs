@@ -96,7 +96,10 @@ namespace Skedula
 		{
 			BSM.Instance.NewSkedTree();
 
-			this._lblInfo.Text = BSM.Instance.SkedTree.Title;
+			if (BSM.Instance.SkedTree != null)
+			{
+				this._lblInfo.Text = BSM.Instance.SkedTree.Title;
+			}
 		}
 
 		private void OnFileLoadSkedTree(object sender, EventArgs e)

@@ -242,10 +242,10 @@
       "Title": "Make items editable in right pane",
       "Details": "and take the changes over -\u003E left",
       "SubmittedOn": "2026-02-20T12:06:47.8864758+01:00",
-      "LastUpdated": "2026-02-20T12:06:47.8864572+01:00",
-      "Status": "Open",
+      "LastUpdated": "2026-02-21T11:22:02.2084114+01:00",
+      "Status": "Resolved",
       "Severity": "Major",
-      "Priority": "Normal",
+      "Priority": "None",
       "StepsToReproduce": "",
       "AdditionalInformation": "",
       "Notes": []

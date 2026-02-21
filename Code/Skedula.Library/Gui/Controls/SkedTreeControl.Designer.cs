@@ -87,45 +87,49 @@
 			this._cmsSkedTree.ImageScalingSize = new Size(20, 20);
 			this._cmsSkedTree.Items.AddRange(new ToolStripItem[] { this.addRootNodeToolStripMenuItem, this.addNodeToolStripMenuItem, this.editNodeToolStripMenuItem, this.deleteNodeToolStripMenuItem, this.toolStripSeparator1, this.unselectToolStripMenuItem });
 			this._cmsSkedTree.Name = "_cmsSkedTree";
-			this._cmsSkedTree.Size = new Size(196, 130);
+			this._cmsSkedTree.Size = new Size(304, 158);
 			// 
 			// addRootNodeToolStripMenuItem
 			// 
 			this.addRootNodeToolStripMenuItem.Name = "addRootNodeToolStripMenuItem";
-			this.addRootNodeToolStripMenuItem.Size = new Size(195, 24);
+			this.addRootNodeToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Insert;
+			this.addRootNodeToolStripMenuItem.Size = new Size(303, 24);
 			this.addRootNodeToolStripMenuItem.Text = "Add &Root Node";
 			this.addRootNodeToolStripMenuItem.Click += this.OnNodeAddRootNode;
 			// 
 			// addNodeToolStripMenuItem
 			// 
 			this.addNodeToolStripMenuItem.Name = "addNodeToolStripMenuItem";
-			this.addNodeToolStripMenuItem.Size = new Size(195, 24);
+			this.addNodeToolStripMenuItem.ShortcutKeys = Keys.Insert;
+			this.addNodeToolStripMenuItem.Size = new Size(303, 24);
 			this.addNodeToolStripMenuItem.Text = "Add &Subnode";
 			this.addNodeToolStripMenuItem.Click += this.OnNodeAddSubnode;
 			// 
 			// editNodeToolStripMenuItem
 			// 
 			this.editNodeToolStripMenuItem.Name = "editNodeToolStripMenuItem";
-			this.editNodeToolStripMenuItem.Size = new Size(195, 24);
+			this.editNodeToolStripMenuItem.ShortcutKeys = Keys.F2;
+			this.editNodeToolStripMenuItem.Size = new Size(303, 24);
 			this.editNodeToolStripMenuItem.Text = "&Edit Node";
 			this.editNodeToolStripMenuItem.Click += this.OnNodeEdit;
 			// 
 			// deleteNodeToolStripMenuItem
 			// 
 			this.deleteNodeToolStripMenuItem.Name = "deleteNodeToolStripMenuItem";
-			this.deleteNodeToolStripMenuItem.Size = new Size(195, 24);
+			this.deleteNodeToolStripMenuItem.ShortcutKeys = Keys.Delete;
+			this.deleteNodeToolStripMenuItem.Size = new Size(303, 24);
 			this.deleteNodeToolStripMenuItem.Text = "&Delete Node";
 			this.deleteNodeToolStripMenuItem.Click += this.OnNodeDelete;
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new Size(192, 6);
+			this.toolStripSeparator1.Size = new Size(300, 6);
 			// 
 			// unselectToolStripMenuItem
 			// 
 			this.unselectToolStripMenuItem.Name = "unselectToolStripMenuItem";
-			this.unselectToolStripMenuItem.Size = new Size(195, 24);
+			this.unselectToolStripMenuItem.Size = new Size(303, 24);
 			this.unselectToolStripMenuItem.Text = "&Unselect";
 			this.unselectToolStripMenuItem.Click += this.OnUnselect;
 			// 

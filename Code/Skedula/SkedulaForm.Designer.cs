@@ -152,7 +152,8 @@
 			// addRootNodeToolStripMenuItem
 			// 
 			this.addRootNodeToolStripMenuItem.Name = "addRootNodeToolStripMenuItem";
-			this.addRootNodeToolStripMenuItem.Size = new Size(209, 26);
+			this.addRootNodeToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Insert;
+			this.addRootNodeToolStripMenuItem.Size = new Size(317, 26);
 			this.addRootNodeToolStripMenuItem.Text = "Add &Root Node";
 			this.addRootNodeToolStripMenuItem.Click += this.OnSkedAddRootNode;
 			// 
@@ -160,7 +161,8 @@
 			// 
 			this.addToolStripMenuItem.Image = Properties.Resources.leaf_add;
 			this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-			this.addToolStripMenuItem.Size = new Size(209, 26);
+			this.addToolStripMenuItem.ShortcutKeys = Keys.Insert;
+			this.addToolStripMenuItem.Size = new Size(317, 26);
 			this.addToolStripMenuItem.Text = "Add &Subnode";
 			this.addToolStripMenuItem.Click += this.OnSkedAdd;
 			// 
@@ -168,7 +170,8 @@
 			// 
 			this.editToolStripMenuItem.Image = Properties.Resources.leaf_edit;
 			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new Size(209, 26);
+			this.editToolStripMenuItem.ShortcutKeys = Keys.F2;
+			this.editToolStripMenuItem.Size = new Size(317, 26);
 			this.editToolStripMenuItem.Text = "&Edit";
 			this.editToolStripMenuItem.Click += this.OnSkedEdit;
 			// 
@@ -176,7 +179,8 @@
 			// 
 			this.deleteToolStripMenuItem.Image = Properties.Resources.leaf_delete;
 			this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-			this.deleteToolStripMenuItem.Size = new Size(209, 26);
+			this.deleteToolStripMenuItem.ShortcutKeys = Keys.Delete;
+			this.deleteToolStripMenuItem.Size = new Size(317, 26);
 			this.deleteToolStripMenuItem.Text = "&Delete";
 			this.deleteToolStripMenuItem.Click += this.OnSkedDelete;
 			// 
@@ -191,7 +195,7 @@
 			// 
 			this.settingsToolStripMenuItem.Image = Properties.Resources.configuration;
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-			this.settingsToolStripMenuItem.Size = new Size(164, 26);
+			this.settingsToolStripMenuItem.Size = new Size(224, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
 			this.settingsToolStripMenuItem.Click += this.OnToolsSettings;
 			// 

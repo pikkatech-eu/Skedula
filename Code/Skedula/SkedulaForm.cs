@@ -11,6 +11,7 @@ using System.Xml.Linq;
 using Kairos.Library.Gui;
 using Skedula.Library.Domain;
 using Skedula.Library.Gui.Dialogs;
+using Skedula.Library.Management;
 using BSM = Skedula.Library.Management.BasicSkedulaManager;
 
 
@@ -201,6 +202,26 @@ namespace Skedula
 						writer.Write(html);
 					}
 				}
+			}
+		}
+
+		internal void LoadProject(string fileName)
+		{
+			try
+			{
+				BasicSkedulaManager.Instance.LoadSkedTree(fileName);
+				this._lblInfo.Text = BasicSkedulaManager.Instance.SkedTree.Title;
+				this._ctrlSkedTree.Display(BasicSkedulaManager.Instance.SkedTree);
+			}
+			catch (Exception)
+			{
+				MessageBox.Show
+								(
+									$"Unable to open project {fileName}", 
+									"The project will be removed from Recently Opened Projects", 
+									MessageBoxButtons.OK, 
+									MessageBoxIcon.Warning
+								);
 			}
 		}
 	}

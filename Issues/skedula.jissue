@@ -292,9 +292,9 @@
     "23": {
       "IssueId": 23,
       "Title": "add priorities and sorting by priority",
-      "Details": "like todo list abstract spoon (list view?)",
+      "Details": "like todo list abstract spoon (list view?)\r\nno status any longer, only priorities",
       "SubmittedOn": "2026-02-20T12:09:33.9662035+01:00",
-      "LastUpdated": "2026-02-20T12:10:00.668585+01:00",
+      "LastUpdated": "2026-02-23T14:20:02.5379187+01:00",
       "Status": "Open",
       "Severity": "Feature",
       "Priority": "Normal",
@@ -365,6 +365,32 @@
       "Priority": "Normal",
       "StepsToReproduce": "",
       "AdditionalInformation": "BasicSkedulaManager, lines 323-366",
+      "Notes": []
+    },
+    "29": {
+      "IssueId": 29,
+      "Title": "Open skedula files in Program.cs",
+      "Details": "- just like BugLite does",
+      "SubmittedOn": "2026-02-23T14:18:37.6166954+01:00",
+      "LastUpdated": "2026-02-23T14:18:37.6145708+01:00",
+      "Status": "Open",
+      "Severity": "Major",
+      "Priority": "Normal",
+      "StepsToReproduce": "",
+      "AdditionalInformation": "",
+      "Notes": []
+    },
+    "30": {
+      "IssueId": 30,
+      "Title": "Possibility to mark processed (closed) tasks",
+      "Details": "- by color?\r\n- overstrike?",
+      "SubmittedOn": "2026-02-23T14:19:37.8454891+01:00",
+      "LastUpdated": "2026-02-23T14:19:37.8454423+01:00",
+      "Status": "Open",
+      "Severity": "Major",
+      "Priority": "Normal",
+      "StepsToReproduce": "",
+      "AdditionalInformation": "",
       "Notes": []
     }
   }

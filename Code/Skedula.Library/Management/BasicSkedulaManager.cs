@@ -111,7 +111,14 @@ namespace Skedula.Library.Management
 			}
 			else
 			{
-				this.SkedTree.Save(this.SkedTreeFileName);
+				if (File.Exists(this.SkedTreeFileName))
+				{
+					this.SkedTree.Save(this.SkedTreeFileName);
+				}
+				else
+				{
+					this.SaveSkedTreeAs();
+				}
 			}
 		}
 

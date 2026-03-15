@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
-		<BaseOutputPath>C:\pikkatech.eu\Projects\Active\Skedula\Code\Binary</BaseOutputPath>
+		<BaseOutputPath>C:\pikkatech.eu\Projects\Zoo\Skedula\Code\Binary</BaseOutputPath>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -21,7 +21,7 @@
 	</Target>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\..\Factotum\Code\CSharp\Factotum\Factotum.csproj" />
+	  <ProjectReference Include="C:\pikkatech.eu\Projects\Root\Factotum\Code\CSharp\Factotum\Factotum.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

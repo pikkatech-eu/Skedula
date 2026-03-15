@@ -392,6 +392,32 @@
       "StepsToReproduce": "",
       "AdditionalInformation": "",
       "Notes": []
+    },
+    "31": {
+      "IssueId": 31,
+      "Title": "Deletion of a node does not work",
+      "Details": "Cannot delete a child node",
+      "SubmittedOn": "2026-03-13T08:10:54.567663+01:00",
+      "LastUpdated": "2026-03-13T08:10:54.5664357+01:00",
+      "Status": "Open",
+      "Severity": "Major",
+      "Priority": "Normal",
+      "StepsToReproduce": "Create a tree, create a cupole of child nodes; C1, C2. Then create a child in C2. Create a sibling in C2 - it will be appended to C1 as a child. Try to delete it then - won\u0027t go.",
+      "AdditionalInformation": "",
+      "Notes": []
+    },
+    "32": {
+      "IssueId": 32,
+      "Title": "Move up and move down do not function properly",
+      "Details": "mostly, they do not work at all",
+      "SubmittedOn": "2026-03-13T08:28:41.9209591+01:00",
+      "LastUpdated": "2026-03-13T08:28:41.9208757+01:00",
+      "Status": "Open",
+      "Severity": "Major",
+      "Priority": "Normal",
+      "StepsToReproduce": "",
+      "AdditionalInformation": "",
+      "Notes": []
     }
   }
 }
